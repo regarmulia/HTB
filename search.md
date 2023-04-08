@@ -70,6 +70,7 @@ sed -i 's/<sheetProtection[^>]*>//' xl/worksheets/sheet2.xml
 zip -fr Phishing_Attempt.xlsx *
 ```
 Sierra.Frye | $$49=wide=STRAIGHT=jordan=28$$18
+
 ![image](https://user-images.githubusercontent.com/33616880/230701177-73c2b4d3-8c15-4e0d-9930-900c7ce19fcf.png)
 ![image](https://user-images.githubusercontent.com/33616880/230701253-86e219b9-7f85-4d24-a73a-479962c1c0fa.png)
 
