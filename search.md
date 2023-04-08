@@ -89,3 +89,12 @@ smbclient \\\\10.10.11.129\\RedirectedFolders$ -U search.htb/Sierra.Frye
 ![image](https://user-images.githubusercontent.com/33616880/230701555-c290fc03-b77a-4471-8dbf-3ebf49ad7348.png)
 
 
+
+![image](https://user-images.githubusercontent.com/33616880/230701672-0cf8bba7-d1d6-442d-b859-5371cf1395d7.png)
+![image](https://user-images.githubusercontent.com/33616880/230701705-26df0b61-24f9-4d58-a34f-b7830a9f3358.png)
+```
+pfx2john staff.pfx > pfx_hash
+john pfx_hash -w=/usr/share/wordlists/rockyou.txt
+```
+![image](https://user-images.githubusercontent.com/33616880/230701880-f44b38ab-db4a-45e3-9544-d36bb638e82f.png)
+
