@@ -63,5 +63,13 @@ smbclient \\\\10.10.11.129\\RedirectedFolders$ -U search.htb/Edgar.Jacobs
 ![image](https://user-images.githubusercontent.com/33616880/230700969-8a257621-812a-4357-b398-5949598ce182.png)
 
 
+![image](https://user-images.githubusercontent.com/33616880/230701046-18ec17fc-1694-4a03-9a76-90f26e1ae622.png)
+```
+unzip Phishing_Attempt.xlsx
+sed -i 's/<sheetProtection[^>]*>//' xl/worksheets/sheet2.xml
+zip -fr Phishing_Attempt.xlsx *
+```
+![image](https://user-images.githubusercontent.com/33616880/230701177-73c2b4d3-8c15-4e0d-9930-900c7ce19fcf.png)
+![image](https://user-images.githubusercontent.com/33616880/230701253-86e219b9-7f85-4d24-a73a-479962c1c0fa.png)
 
 
