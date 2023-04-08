@@ -57,6 +57,10 @@ search.htb\Edgar.Jacobs:@3ONEmillionbaby
 ![image](https://user-images.githubusercontent.com/33616880/230700260-1809d1ec-e297-4d00-9ba5-5213526fed84.png)
 
 
+```
+smbclient \\\\10.10.11.129\\RedirectedFolders$ -U search.htb/Edgar.Jacobs
+```
+![image](https://user-images.githubusercontent.com/33616880/230700969-8a257621-812a-4357-b398-5949598ce182.png)
 
 
 
