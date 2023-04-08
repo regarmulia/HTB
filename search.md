@@ -132,6 +132,8 @@ neo4j console
 
 
 mark user as owned
+
 shortest to admin
+
 ![image](https://user-images.githubusercontent.com/33616880/230702940-0fd2b84e-cecb-40f6-9f23-9e64f4a29a64.png)
 
