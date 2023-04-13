@@ -1,9 +1,11 @@
+```
 SQL Injection
 ffuf with authentication
 evil-winrm
 winPEAS
-
-
+BloodHound
+PowerView.ps1
+```
 
 
 
