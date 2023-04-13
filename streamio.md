@@ -15,7 +15,7 @@ https://watch.streamio.htb/
 
 
 
-ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html![image](https://user-images.githubusercontent.com/33616880/231679110-329c5d3d-31d3-47c3-a82c-60f431c2b08a.png)
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
 
 
 
