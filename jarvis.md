@@ -3,6 +3,7 @@ SQL injection
 Webshell
 sudo -l
 Reverse Shell - Bash
+LinEnum
 PrivEsc - systemctl
 ```
 
