@@ -28,3 +28,11 @@ http://10.10.10.143/room.php?cod=2
 
 
 ![image](https://user-images.githubusercontent.com/33616880/231967993-6a81e947-d988-4e23-9042-a8ba3eb2bca0.png)
+
+
+
+![image](https://user-images.githubusercontent.com/33616880/231968678-abdd6033-6a96-45b6-bc8e-0fd5e45791de.png)
+![image](https://user-images.githubusercontent.com/33616880/231968797-0152fad4-d673-488d-aff8-4cbd8d10910d.png)
+![image](https://user-images.githubusercontent.com/33616880/231968997-2d0da6ba-012b-480d-83b6-8c185543e797.png)
+
+
