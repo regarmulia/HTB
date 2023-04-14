@@ -27,6 +27,4 @@ http://10.10.10.143/room.php?cod=2
 
 
 
-![image](https://user-images.githubusercontent.com/33616880/231967801-2f5bd5b6-9767-41e1-89f4-82d8f5d4f615.png)
-![image](https://user-images.githubusercontent.com/33616880/231967856-7435605f-89d9-4062-aa65-6075b6bfcd58.png)
 ![image](https://user-images.githubusercontent.com/33616880/231967993-6a81e947-d988-4e23-9042-a8ba3eb2bca0.png)
