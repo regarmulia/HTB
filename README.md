@@ -13,6 +13,15 @@ JuicyPotato
 
 
 
+# Lin-SolidState
+https://0xdf.gitlab.io/2020/04/30/htb-solidstate.html
+```
+nc 10.10.10.51 4555
+telnet 10.10.10.51 110
+Escape rbash
+reverse shell - nc
+move to bash
+```
 
 # Lin-Jarvis
 https://0xdf.gitlab.io/2019/11/09/htb-jarvis.html
