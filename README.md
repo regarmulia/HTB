@@ -19,6 +19,7 @@ https://0xdf.gitlab.io/2020/04/30/htb-solidstate.html
 nc 10.10.10.51 4555
 telnet 10.10.10.51 110
 Escape rbash
+LinEnum.sh
 reverse shell - nc
 move to bash
 ```
@@ -30,6 +31,6 @@ SQL injection
 Webshell
 sudo -l
 Reverse Shell - Bash
-LinEnum
+LinEnum.sh
 PrivEsc - systemctl
 ```
