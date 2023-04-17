@@ -7,7 +7,7 @@ john
 ipsec up conceal
 ftp
 webshell .asp
-reverse shell
+reverse shell - PowerShell
 JuicyPotato
 ```
 
