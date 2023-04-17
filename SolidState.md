@@ -1,4 +1,14 @@
 ```
+nc 10.10.10.51 4555
+telnet 10.10.10.51 110
+Escape rbash
+reverse shell - nc
+move to bash
+```
+
+
+
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.51
 ```
 ![image](https://user-images.githubusercontent.com/33616880/232411290-0737e4a9-3728-48cc-8020-4d623612be4c.png)
