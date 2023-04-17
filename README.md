@@ -12,6 +12,7 @@ JuicyPotato
 ```
 
 # Win-Search
+https://0xdf.gitlab.io/2022/04/30/htb-search.html
 ```
 smbclient \\\\10.10.11.129\\RedirectedFolders$ -U search.htb/hope.sharp
 ldapdomaindump -u search\\hope.sharp -p IsolationIsKey? 10.10.11.129
