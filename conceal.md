@@ -1,6 +1,12 @@
 ```
-nmap -sU 10.10.10.116
-
+nmap -sU
+snmpwalk
+john
+ipsec up conceal
+ftp
+webshell
+reverse shell
+```
 
 
 
