@@ -29,6 +29,17 @@ pfx2john staff.pfx > pfx_hash
 
 
 
+# Win-StreamIO
+```
+SQL Injection
+ffuf with authentication
+evil-winrm
+winPEAS
+BloodHound
+PowerView.ps1
+```
+
+
 # Lin-Bashed
 https://0xdf.gitlab.io/2018/04/29/htb-bashed.html
 ```
