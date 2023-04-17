@@ -2,6 +2,7 @@
 nc 10.10.10.51 4555
 telnet 10.10.10.51 110
 Escape rbash
+LinEnum.sh
 reverse shell - nc
 move to bash
 ```
@@ -42,6 +43,10 @@ telnet 10.10.10.51 110
 ssh mindy@10.10.10.51 -t bash
 ```
 ![image](https://user-images.githubusercontent.com/33616880/232411850-787a182b-1bf5-409f-b09d-8b6d55570d87.png)
+
+
+
+![image](https://user-images.githubusercontent.com/33616880/232417537-d85deedc-395d-4e0e-a8ee-c581372f6d2c.png)
 
 
 
