@@ -4,8 +4,9 @@ snmpwalk
 john
 ipsec up conceal
 ftp
-webshell
+webshell .asp
 reverse shell
+JuicyPotato
 ```
 
 
