@@ -113,6 +113,9 @@ PrivEsc - systemctl
 ```
 
 
+# Lin-Haircut
+/exposed.php
+
 # Lin-Backdoor
 https://0xdf.gitlab.io/2022/04/23/htb-backdoor.html
 ```
