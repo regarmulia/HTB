@@ -157,8 +157,7 @@ mark user as owned
 
 shortest to admin
 
-![image](https://user-images.githubusercontent.com/33616880/230702940-0fd2b84e-cecb-40f6-9f23-9e64f4a29a64.png)
-
+![image](https://github.com/regarmulia/HTB/assets/33616880/b6436221-4812-48bd-a50b-f48afe06e4d7)
 
 
 ```
