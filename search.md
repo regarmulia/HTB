@@ -32,6 +32,12 @@ hope.sharp | IsolationIsKey?
 
 
 ```
+crackmapexec smb 10.10.11.129 -u Hope.Sharp -p IsolationIsKey?
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/e60a5f3f-687d-49d2-854f-83268863b008)
+
+
+```
 smbclient -L \\\\10.10.11.129\\ -U search.htb/hope.sharp
 smbclient \\\\10.10.11.129\\RedirectedFolders$ -U search.htb/hope.sharp
 ```
