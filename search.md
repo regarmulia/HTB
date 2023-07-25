@@ -107,7 +107,6 @@ Sierra.Frye | $$49=wide=STRAIGHT=jordan=28$$18
 smbclient \\\\10.10.11.129\\RedirectedFolders$ -U search.htb/Sierra.Frye
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/74e7abd8-4bb1-4dce-99a5-a9adeeb4d3ab)
-![image](https://user-images.githubusercontent.com/33616880/230701438-ca0a0370-ad85-4b25-bb67-c9491f61bde8.png)
 ![image](https://user-images.githubusercontent.com/33616880/230701452-c57c8661-21de-4ef7-bc42-0e57ef04ab48.png)
 ![image](https://user-images.githubusercontent.com/33616880/230701555-c290fc03-b77a-4471-8dbf-3ebf49ad7348.png)
 
