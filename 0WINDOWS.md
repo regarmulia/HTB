@@ -12,6 +12,10 @@ john hash_admin -w=/usr/share/wordlists/rockyou.txt
 ```
 
 
+# Win-Jerry
+
+
+
 # Win-Search
 https://0xdf.gitlab.io/2022/04/30/htb-search.html
 ```
