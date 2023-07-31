@@ -30,18 +30,15 @@ http://10.10.10.143/room.php?cod=2%20and%201=1
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/954aab73-ed1c-419c-8120-3785d666d6ad)
 
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/33616880/231967279-462d7629-3f4f-4f75-bff1-b82ba0cfeb7b.png)
-
-![image](https://user-images.githubusercontent.com/33616880/231967320-8aa8e60a-e6b3-4552-882e-0ad264e09771.png)
-
-
-
 ![image](https://user-images.githubusercontent.com/33616880/231967993-6a81e947-d988-4e23-9042-a8ba3eb2bca0.png)
+
+```
+https://book.hacktricks.xyz/pentesting-web/sql-injection
+http://10.10.10.143/room.php?cod=2%20and%20sleep(1)
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/ddf2a7c4-21db-4f02-b720-c395f310f43d)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/3d1f65d6-d527-4714-96fd-937e21ca143e)
 
 
 
