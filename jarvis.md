@@ -25,6 +25,15 @@ http://10.10.10.143/room.php?cod=2
 ![image](https://user-images.githubusercontent.com/33616880/231967239-40ac1ae1-c35f-4c56-9740-62bd236b9436.png)
 
 
+```
+http://10.10.10.143/room.php?cod=2%20and%201=1
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/954aab73-ed1c-419c-8120-3785d666d6ad)
+
+
+
+
+
 
 ![image](https://user-images.githubusercontent.com/33616880/231967279-462d7629-3f4f-4f75-bff1-b82ba0cfeb7b.png)
 
