@@ -1,4 +1,5 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/55d9649e-1925-4ff6-a308-f6f0d024e1c4)```
+![image](https://github.com/regarmulia/HTB/assets/33616880/55d9649e-1925-4ff6-a308-f6f0d024e1c4)
+```
 /exposed.php
 php-reverse-shell
 10.10.10.24/uploads/shell2.php
