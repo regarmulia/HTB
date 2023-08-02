@@ -24,6 +24,14 @@ ike-scan 10.10.10.116
 ![image](https://user-images.githubusercontent.com/33616880/232364778-a4a13ea3-021b-4d83-8b00-c03c57b5a620.png)
 
 
+```
+https://book.hacktricks.xyz/network-services-pentesting/ipsec-ike-vpn-pentesting
+ike-scan -M 10.10.10.116
+ike-scan -M --showbackoff 10.10.10.116
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c508137c-11a9-4f6e-8d80-781a3670a7e6)
+![image](https://github.com/regarmulia/HTB/assets/33616880/e16751c3-eeb3-4562-b04e-01b0144a7b82)
+
 
 ```
 snmpwalk -v2c -c public 10.10.10.116
