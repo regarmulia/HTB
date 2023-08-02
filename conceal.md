@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/ccfcb353-7d9c-47dc-977c-5e399760fa9d)```
 nmap -sU
 snmpwalk
 john
@@ -37,6 +37,12 @@ john hash -w=/usr/share/wordlists/rockyou.txt --format=NT
 ```
 ![image](https://user-images.githubusercontent.com/33616880/232364875-518777e7-95f3-41ef-bfbe-53774db9d249.png)
 
+
+```
+https://crackstation.net/
+Dudecake1!
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c1b4e31c-0f2c-4bc6-bf11-a97d3ee2f339)
 
 
 ```
