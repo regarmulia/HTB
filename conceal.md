@@ -1,4 +1,4 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/ccfcb353-7d9c-47dc-977c-5e399760fa9d)```
+```
 nmap -sU
 snmpwalk
 john
