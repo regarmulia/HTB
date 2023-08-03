@@ -133,6 +133,8 @@ type proof.txt
 
 ```
 whoami /priv
+SeImpresonatePrivilege : JuicyPotato
+https://0xdf.gitlab.io/2019/05/18/htb-conceal.html
 ```
 ![image](https://user-images.githubusercontent.com/33616880/232365422-2e537ec4-2461-4de6-b1ef-bb85995c0182.png)
 
