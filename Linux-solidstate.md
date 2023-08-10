@@ -15,7 +15,15 @@ nmap -sS -sC -sV -T5 -Pn 10.10.10.51
 ![image](https://user-images.githubusercontent.com/33616880/232411290-0737e4a9-3728-48cc-8020-4d623612be4c.png)
 
 
+```
+nmap -p- -T5 10.10.10.51
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c4dc1085-200e-4e78-8228-8110bf48ae04)
 
+
+```
+apache james server
+```
 ![image](https://user-images.githubusercontent.com/33616880/232411391-2215be98-0a72-481c-ada2-a785cb0045de.png)
 
 
