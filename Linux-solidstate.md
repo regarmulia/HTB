@@ -22,7 +22,7 @@ nmap -p- -T5 10.10.10.51
 
 
 ```
-apache james server
+Apache James Server 2.3.2
 ```
 ![image](https://user-images.githubusercontent.com/33616880/232411391-2215be98-0a72-481c-ada2-a785cb0045de.png)
 
