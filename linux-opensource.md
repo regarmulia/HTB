@@ -94,6 +94,8 @@ ssh -i id_rsa dev01@10.10.11.164
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0370c502-059d-4b9c-8101-6b96ae788174)
 
+![image](https://github.com/regarmulia/HTB/assets/33616880/7cca059c-705b-4052-b79d-67c0fd5a91fe)
+
 
 ```
 /usr/local/bin/git-sync
