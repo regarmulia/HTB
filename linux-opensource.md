@@ -18,6 +18,8 @@ git log
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d789400c-a783-427a-912f-402b6a3abb62)
 
+![image](https://github.com/regarmulia/HTB/assets/33616880/259419d5-99bc-40eb-93a0-9564fe70068c)
+
 
 ```
 http://10.10.11.164/upcloud
