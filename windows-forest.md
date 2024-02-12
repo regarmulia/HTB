@@ -20,8 +20,12 @@ nmap -sS -sC -sV -T5 -Pn 10.10.10.161
 
 ```
 ldapsearch -x -b "dc=htb,dc=local" -H ldap://10.10.10.161 > ldapsearch.txt
+grep PrincipalName ldapsearch.txt
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/2d1bca0f-df1d-4d9e-8722-41643add32cc)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/f328f6e7-861f-4b4c-94d0-3259e5d82907)
+![image](https://github.com/regarmulia/HTB/assets/33616880/e64f2ccd-8f69-440b-bc52-c1a8ba5a99d2)
 
 
 ```
