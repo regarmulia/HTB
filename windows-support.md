@@ -15,6 +15,16 @@ cat UserInfo.exe.config
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/98094d02-a256-46d6-9bf1-f38c289f4c73)
 
+
+```
+wget https://github.com/icsharpcode/AvaloniaILSpy/releases/download/v7.2-rc/Linux.x64.Release.zip
+unzip Linux.x64.Release.zip
+unzip ILSpy-linux-x64-Release.zip
+cd artifacts/linux-arm64
+sudo ./ILSpy
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c25352b4-a0c5-4d1c-bd87-6b71045eee0f)
+
 ```
 import base64
 from itertools import cycle
