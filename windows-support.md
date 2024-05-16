@@ -79,3 +79,14 @@ download 20240514001541_BloodHound.zip
 ![image](https://github.com/regarmulia/HTB/assets/33616880/3a94dd19-bd0e-46f4-8099-c5e90c3cb25b)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/91ef72f1-2187-471b-9c81-94bebd11c9d6)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/e6e064fc-121f-4fe9-b1c8-2202bedd5815)
+
+
+```
+Get-ADObject -Identity ((Get-ADDomain).distinguishedname) -Properties ms-DS-MachineAccountQuota
+upload PowerView.ps1
+. ./PowerView.ps1
+Get-DomainComputer DC | select name, msds-allowedtoactonbehalfofotheridentity
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/3d6b600f-4598-4175-bd67-5112eda8a285)
