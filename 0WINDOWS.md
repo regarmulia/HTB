@@ -211,6 +211,12 @@ evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
 ```
 
 
+# Win-Support
+```
+
+```
+
+
 # Win-Timelapse
 ```
 smbclient -L \\\\10.10.11.152\\
