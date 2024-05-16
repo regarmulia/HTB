@@ -78,4 +78,4 @@ download 20240514001541_BloodHound.zip
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/3a94dd19-bd0e-46f4-8099-c5e90c3cb25b)
 
-![image](https://github.com/regarmulia/HTB/assets/33616880/7f8ee959-839a-4798-b5bd-0cd53be9436e)
+![image](https://github.com/regarmulia/HTB/assets/33616880/91ef72f1-2187-471b-9c81-94bebd11c9d6)
