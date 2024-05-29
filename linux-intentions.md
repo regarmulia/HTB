@@ -79,6 +79,17 @@ Edited: v2, hash
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/9bde9358-3c79-4186-9cbc-63ebb13ec344)
 
+![image](https://github.com/regarmulia/HTB/assets/33616880/ce76950b-7767-47dd-a328-7d7953ee15f9)
+
+
+```
+http://intentions.htb/admin#/
+http://intentions.htb/api/v2/admin/image/modify
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/0b6871de-0e54-44c1-9d14-27943f81f53b)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/788c8136-6a8f-4715-95b9-e558c5b1a819)
+
 ![Uploading image.png…]()
 
 
