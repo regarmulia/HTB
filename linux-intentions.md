@@ -8,3 +8,7 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.tx
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/7e5bb805-89c5-4842-a466-280fab8a28f3)
 
+```
+registration
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/3a12ee51-5c45-49b3-8cff-a1730160b60d)
