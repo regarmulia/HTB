@@ -139,3 +139,9 @@ git config --global --add safe.directory /var/www/html/intentions
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/f7596d08-39a1-4d35-b979-c91fb211ed4d)
 
+
+```
+HOME=/tmp git config --global --add safe.directory /var/www/html/intentions
+HOME=/tmp git log –p
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/0c4c5df4-014a-4c78-9f4a-d08ae2d9c0c2)
