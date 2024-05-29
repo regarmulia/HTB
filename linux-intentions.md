@@ -1,4 +1,4 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/854153bd-398f-49c3-8909-4e20537ab35b)```
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.220
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/528dff0c-5310-4215-a2d5-7be40b47e7bd)
@@ -68,5 +68,17 @@ curl -d 'email=steve@intentions.htb&hash=$2y$10$M/g27T1kJcOpYOfPqQlI3.YfdLIwr3EW
 ![image](https://github.com/regarmulia/HTB/assets/33616880/a740f795-07cd-49c5-b0fa-4cba7ec0a070)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/50514396-8dea-43e8-8654-ee351d81958b)
+
+
+```
+http://10.10.11.220/
+http://intentions.htb/api/v2/auth/login
+Edited: v2, hash
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/20c9ec85-1a6a-4f92-b883-011609a50140)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/9bde9358-3c79-4186-9cbc-63ebb13ec344)
+
+![Uploading image.png…]()
 
 
