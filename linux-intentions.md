@@ -12,3 +12,15 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.tx
 registration
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/3a12ee51-5c45-49b3-8cff-a1730160b60d)
+
+
+```
+sqlmap -r req1.txt --batch
+sqlmap -r req2b.txt --batch
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/a41968e9-a125-4022-9554-7a2015c569a3)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/a8183c38-7b4f-423c-8661-ca351f473565)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/318256aa-4f54-4605-b7d5-2b4add64a990)
+
