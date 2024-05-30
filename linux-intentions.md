@@ -166,3 +166,9 @@ Gr3g1sTh3B3stDev3l0per!1998!
 getcap /opt/scanner/scanner
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/aa4e9ed7-dffe-4663-a2a1-7d290941534d)
+
+
+```
+ssh –i root_key6 root@10.10.11.220
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/8a989765-878f-4e62-b20b-f4256e9ef0cd)
