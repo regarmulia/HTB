@@ -152,3 +152,11 @@ ssh greg@intentions.htb
 Gr3g1sTh3B3stDev3l0per!1998!
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/95449770-cf05-4dbf-8dd2-634e8a9027a1)
+
+
+```
+/opt/scanner/scanner -d /home/legal/uploads -h /home/greg/dmca_hashes.test
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c38c8eac-7ea4-4d58-ada5-db7a90e2af7a)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/722f714b-d18a-4103-8847-5969f95d9ce1)
