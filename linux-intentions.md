@@ -164,6 +164,7 @@ Gr3g1sTh3B3stDev3l0per!1998!
 
 ```
 getcap /opt/scanner/scanner
+python3 extract.py
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/aa4e9ed7-dffe-4663-a2a1-7d290941534d)
 
