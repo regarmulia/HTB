@@ -160,3 +160,9 @@ Gr3g1sTh3B3stDev3l0per!1998!
 ![image](https://github.com/regarmulia/HTB/assets/33616880/c38c8eac-7ea4-4d58-ada5-db7a90e2af7a)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/722f714b-d18a-4103-8847-5969f95d9ce1)
+
+
+```
+getcap /opt/scanner/scanner
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/aa4e9ed7-dffe-4663-a2a1-7d290941534d)
