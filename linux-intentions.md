@@ -145,3 +145,10 @@ HOME=/tmp git config --global --add safe.directory /var/www/html/intentions
 HOME=/tmp git log –p
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0c4c5df4-014a-4c78-9f4a-d08ae2d9c0c2)
+
+
+```
+ssh greg@intentions.htb
+Gr3g1sTh3B3stDev3l0per!1998!
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/95449770-cf05-4dbf-8dd2-634e8a9027a1)
