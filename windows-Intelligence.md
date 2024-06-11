@@ -34,7 +34,6 @@ python3 findpdfs.py
 wget -i pdfsurl
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/5def43cf-a8a4-43a7-b66b-9ba62c4fb63d)
-```
 
 ```
 exiftool *upload.pdf | grep Creator | sort –u
