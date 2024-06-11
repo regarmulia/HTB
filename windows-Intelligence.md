@@ -12,3 +12,34 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.tx
 wget http://10.10.10.248/documents/2020-01-01-upload.pdf
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/bdc6e7f4-18d2-448d-95b8-1531c66d373e)
+
+```
+exiftool 2020-01-01-upload.pdf
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/44a19195-37c8-4deb-b3ed-b2c660206718)
+
+```
+curl http://10.10.10.248/documents/2020-01-01-upload.pdf --output 2020-01-01-upload.pdf
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/b57f601a-2f11-4db5-ac20-830bd9527e7f)
+
+```
+python3 findpdfs.py
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/0a43ff18-7da3-413d-8e83-ef4b8c33c978)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/5cef87be-c746-4a4f-87d4-f5d4d5f95f63)
+
+```
+wget -i pdfsurl
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/5def43cf-a8a4-43a7-b66b-9ba62c4fb63d)
+```
+
+```
+exiftool *upload.pdf | grep Creator | sort –u
+exiftool *upload.pdf | grep Creator | awk -F': ' '{print $2}' | sort -u
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c455f320-d1a8-4227-8fb2-c7a237733da9)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/447f7d52-ef55-4f5b-9ef1-97e4df35eca7)
