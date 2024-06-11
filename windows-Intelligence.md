@@ -24,6 +24,13 @@ curl http://10.10.10.248/documents/2020-01-01-upload.pdf --output 2020-01-01-upl
 ![image](https://github.com/regarmulia/HTB/assets/33616880/b57f601a-2f11-4db5-ac20-830bd9527e7f)
 
 ```
+wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
+chmod +x kerbrute_linux_amd64
+./kerbrute_linux_amd64 userenum --dc 10.10.10.248 -d intelligence.htb users
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/4efd407f-9ea1-4de4-9387-ba3ea918ac6d)
+
+```
 python3 findpdfs.py
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0a43ff18-7da3-413d-8e83-ef4b8c33c978)
