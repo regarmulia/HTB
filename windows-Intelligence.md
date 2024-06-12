@@ -125,3 +125,18 @@ Ted.Graves | Mr.Teddy
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/95066406-d2c7-472f-a0dd-0dd7827689cb)
 
+```
+sudo apt install bloodhound
+neo4j console
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/49cb9f67-4bbf-4794-9cbd-2087b07b71e8)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/eb604014-04eb-40b0-9659-e440e903fade)
+
+```
+git clone https://github.com/fox-it/BloodHound.py.git
+cd BloodHound.py
+python3 setup.py install
+python3 bloodhound.py -d intelligence.htb -u Ted.Graves -p Mr.Teddy -ns 10.10.10.248 -c All
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/1e1237c4-76e0-4a83-be86-647b7fe2415e)
