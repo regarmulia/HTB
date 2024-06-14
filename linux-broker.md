@@ -21,6 +21,9 @@ activemq broker 5.15.15 exploit
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0c0635b0-741d-46c7-ad00-e4a8c7a45c99)
 
+![image](https://github.com/regarmulia/HTB/assets/33616880/bb33149d-66eb-4c81-904e-8c31d3b0be2c)
+
+
 ```
 
 ```
