@@ -15,3 +15,12 @@ admin:admin
 ![image](https://github.com/regarmulia/HTB/assets/33616880/cc45491e-7042-4a98-8622-5722631b40a6)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/67f7a55f-3471-4f52-a062-46c83d247792)
+
+```
+activemq broker 5.15.15 exploit
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/0c0635b0-741d-46c7-ad00-e4a8c7a45c99)
+
+```
+
+```
