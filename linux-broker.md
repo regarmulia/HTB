@@ -1,4 +1,4 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/c7ddf18e-12d7-49b9-a610-425eb09b68c8)```
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.243
 nmap -p- -T5 10.10.11.243
 ```
