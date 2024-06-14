@@ -37,3 +37,9 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 ![image](https://github.com/regarmulia/HTB/assets/33616880/497cfa98-5b46-4748-bb90-3504ed9869d3)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/b1fd204c-a6df-4c0c-af35-e24df116c0c3)
+
+
+```
+sudo -l
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/b859f21c-8787-40ff-af31-430a25fb5886)
