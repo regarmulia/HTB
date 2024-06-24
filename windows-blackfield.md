@@ -47,6 +47,7 @@ john hash1 -w=/usr/share/wordlists/rockyou.txt
 ```
 neo4j console
 bloodhound
+git clone https://github.com/dirkjanm/BloodHound.py.git
 python3 bloodhound.py -d BLACKFIELD.local -u support -p '#00^BlackKnight' -ns 10.10.10.192 -c All
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/5f5252e0-d56f-416b-aaf0-8199b768611d)
