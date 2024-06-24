@@ -27,7 +27,7 @@ audit2020@BLACKFIELD.local
 svc_backup@BLACKFIELD.local
 support@BLACKFIELD.local
 ```
-![image](https://github.com/regarmulia/HTB/assets/33616880/a5c30c70-01e7-4d3c-97e3-8398a3613fba)
+![image](https://github.com/regarmulia/HTB/assets/33616880/8351ac91-ddd0-4beb-b7a5-07b826d5ea17)
 
 ```
 crackmapexec smb 10.10.10.192 -u users1.txt -p /usr/share/wordlists/rockyou.txt
