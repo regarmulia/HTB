@@ -156,6 +156,7 @@ unix2dos vss.dsh
 ```
 vss.dsh
 ```
+```
 set context persistent nowriters
 set metadata c:\programdata\df.cab
 set verbose on
