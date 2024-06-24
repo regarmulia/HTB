@@ -1,4 +1,4 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/2d7e2e18-ce66-4571-92c9-38103b2e89fb)![image](https://github.com/regarmulia/HTB/assets/33616880/51488acd-3f0e-4414-ac14-e15f1acd4dd4)![image](https://github.com/regarmulia/HTB/assets/33616880/6e1deece-b1d5-4a8e-a7db-06ad5b20e5e1)![image](https://github.com/regarmulia/HTB/assets/33616880/6b80f0a8-6fe7-4b63-a9dd-9f00f9511134)![image](https://github.com/regarmulia/HTB/assets/33616880/8e0eb4aa-0b92-4b15-ad84-73785fa1a0db)![image](https://github.com/regarmulia/HTB/assets/33616880/ea43e108-9492-40ea-ab7b-4b69b7c94a96)```
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.192
 nmap -sU -T5 10.10.10.192
 ```
