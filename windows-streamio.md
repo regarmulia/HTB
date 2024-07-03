@@ -32,21 +32,52 @@ evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
 
 
 
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.158
-![image](https://user-images.githubusercontent.com/33616880/231678963-7c74a0a4-d0d6-4c7a-9dd6-15fa0a3a0f90.png)
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/1d9d63ec-98da-48dc-a9ca-8a36d393a754)
 
 
+```
+nano /etc/hosts
+http://streamio.htb/
+http://watch.streamio.htb/
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/4ad7db0f-8664-4569-acec-863ac85694aa)
 
+![image](https://github.com/regarmulia/HTB/assets/33616880/fa2c28a7-e4ed-4c2c-b545-5501266e527d)
+
+
+```
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.11.158/FUZZ -e .aspx,.php,.txt,.html,.sh
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://watch.streamio.htb/FUZZ -e .aspx,.php,.txt,.html,.sh
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://watch.streamio.htb/aspnet_client/FUZZ -e .aspx,.php,.txt,.html,.sh
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/bcb3c787-0be4-414a-aa4b-d13c7026594e)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/a3ba0e61-0e94-417c-bf78-4c899acecd25)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/35cf6102-f206-4d22-90d3-6edf6baf2d60)
+
+
+```
+https://streamio.htb/
 https://watch.streamio.htb/
-![image](https://user-images.githubusercontent.com/33616880/231679081-ce827ae4-c21b-4073-b1d1-8d9f7ef87bb8.png)
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -e .aspx,.php,.txt,.html,.sh
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://streamio.htb/FUZZ -e .aspx,.php,.txt,.html,.sh
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/66c5d747-edd2-459f-8d30-2fb9c7fcca3c)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/cd007a1f-02d6-4512-8748-83b07fc1ed83)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/4174f3e6-495d-45cb-8866-3da580fbb696)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/728745d7-1f84-4590-bc15-336161ae50a5)
 
 
-
-ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
-
-
-
+```
 https://watch.streamio.htb/search.php
+```
 ![image](https://user-images.githubusercontent.com/33616880/231679168-05ee4b46-32aa-44b9-9dc0-acdac11c53bb.png)
 
 
