@@ -1,4 +1,4 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/3eb2889f-bcf3-421c-b558-1110806dc66f)```
+```
 https://watch.streamio.htb/
 ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
 https://watch.streamio.htb/search.php
