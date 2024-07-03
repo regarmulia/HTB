@@ -266,10 +266,24 @@ python3 bloodhound.py -d streamio.htb -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' -gc dc
 ```
 ![image](https://user-images.githubusercontent.com/33616880/231689571-2822ed95-a439-4a13-bd6d-ecf916b1e419.png)
 
-
-
 ![image](https://user-images.githubusercontent.com/33616880/231689606-cd64e06c-6078-48de-a790-ecdcf6537b66.png)
 
+
+```
+PART 2
+neo4j console
+bloodhound ; neo4j duk
+git clone https://github.com/dirkjanm/BloodHound.py.git
+cd BloodHound.py/
+python3 bloodhound.py -d streamio.htb -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' -ns 10.10.11.158 -c All
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/6aba8c3f-b554-4501-b4cd-239fa8f43917)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/7751437d-cf2e-464d-94b7-bd91a2ca7c13)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/e1cff478-0040-41fb-9871-dc9581392161)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/af2b20e1-3f57-4912-9ac5-126378de801e)
 
 
 ```
