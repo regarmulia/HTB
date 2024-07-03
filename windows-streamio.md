@@ -254,6 +254,7 @@ crackmapexec winrm 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r'
 
 
 ```
+PART 1
 git clone https://github.com/fox-it/BloodHound.py.git
 cd BloodHound.py
 python3 setup.py install
