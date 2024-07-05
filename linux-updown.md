@@ -1,4 +1,4 @@
-![image](https://github.com/regarmulia/HTB/assets/33616880/ecb47e06-0e23-4c6e-9e06-a6a90809d886)![image](https://github.com/regarmulia/HTB/assets/33616880/c5d494a6-2a5c-4ca8-b66b-ecc83a150b8b)![image](https://github.com/regarmulia/HTB/assets/33616880/f7c68ccc-1de1-47b4-a03f-b6a905c7cd3c)![image](https://github.com/regarmulia/HTB/assets/33616880/1588185c-50db-4ed7-89a9-bd654d5e5096)```
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.177
 nmap -p- -T5 10.10.11.177
 nmap -sU -T5 10.10.11.177
