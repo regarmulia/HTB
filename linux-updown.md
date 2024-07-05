@@ -118,9 +118,9 @@ ssh -i id_rsa developer@10.10.11.177
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/e668dfc6-5860-4451-9e77-3b599197e3db)
 
-![image](https://github.com/regarmulia/HTB/assets/33616880/f4a34c73-95a0-4f58-bb6e-5700695b4876)
-
 ![image](https://github.com/regarmulia/HTB/assets/33616880/229d6715-841c-4ec2-9749-1a94b1b39e59)
+
+![image](https://github.com/regarmulia/HTB/assets/33616880/f4a34c73-95a0-4f58-bb6e-5700695b4876)
 
 ```
 sudo –l
