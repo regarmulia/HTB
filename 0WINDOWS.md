@@ -244,6 +244,12 @@ Read GMSA Password
 ```
 
 
+# Win-ServMon
+```
+
+```
+
+
 # Win-Sniper
 ```
 http://10.10.10.151/user/login.php
