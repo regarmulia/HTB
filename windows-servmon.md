@@ -62,21 +62,20 @@ searchsploit 'NSClient++'
 ![image](https://github.com/user-attachments/assets/62cd7886-2c6b-4f61-a0bf-2416204811e0)
 
 ```
-cd "C:\Program Files\NSClient++\“
-ew2x6SsGTxjRwXOT
+cmd /c "C:\Program Files\NSClient++\nscp.exe" --version
 ```
-![image](https://github.com/user-attachments/assets/017d2e31-134e-4d0f-94f8-d0406f14dd40)
+![image](https://github.com/user-attachments/assets/6f0008e4-794f-4bb3-a9f0-c23c5364cee0)
 
 ```
 https://www.exploit-db.com/exploits/46802
 ```
 ![image](https://github.com/user-attachments/assets/d97fcdb8-7f80-4c7d-9679-ad5618af7495)
 
-
 ```
-cmd /c "C:\Program Files\NSClient++\nscp.exe" --version
+cd "C:\Program Files\NSClient++\“
+ew2x6SsGTxjRwXOT
 ```
-![image](https://github.com/user-attachments/assets/6f0008e4-794f-4bb3-a9f0-c23c5364cee0)
+![image](https://github.com/user-attachments/assets/017d2e31-134e-4d0f-94f8-d0406f14dd40)
 
 ```
 sshpass -p 'L1k3B1gBut7s@W0rk' ssh nadine@10.10.10.184 -L 8443:127.0.0.1:8443
