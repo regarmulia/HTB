@@ -12,6 +12,11 @@ anonymous:anonymous
 ![image](https://github.com/user-attachments/assets/f43fd30d-1e25-4c7b-86e7-464d674ea2ed)
 
 ```
+http://10.10.10.184
+```
+![image](https://github.com/user-attachments/assets/f6f1c705-0907-4773-8db1-84e9ef8c1649)
+
+```
 nvms 1000 exploit
 https://www.exploit-db.com/exploits/48311
 ```
