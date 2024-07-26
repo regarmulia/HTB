@@ -166,8 +166,6 @@ rlwrap -cAr nc -lnvp 443
 ```
 ![image](https://github.com/user-attachments/assets/0afb6079-5023-44bc-b3c8-cb525f89e915)
 
-![image](https://github.com/user-attachments/assets/4333ad89-9fd7-4050-a3c8-abbd2c1ac131)
-
 ![image](https://github.com/user-attachments/assets/119887a8-bf17-43ee-a172-7b3faaf16e3d)
 
 ```
