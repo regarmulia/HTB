@@ -312,6 +312,8 @@ whoami /all
 
 ![image](https://github.com/user-attachments/assets/c612edcb-0edf-4b3d-ab89-7c8d20265d61)
 
+![image](https://github.com/user-attachments/assets/d3d7ee4a-30c6-46cc-9a76-eb3b3c1b4248)
+
 ```
 https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
 cd C:\inetpub\development
