@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b45ba484-35b9-4d0c-a4f7-a2619717c04a)![image](https://github.com/user-attachments/assets/78c433ab-7ad9-40ba-94d0-938375ea4deb)![image](https://github.com/user-attachments/assets/0606710c-a3f1-471e-9dd5-e78551175268)![image](https://github.com/user-attachments/assets/4194e679-d537-4eee-a86b-e80b6fc233bf)![image](https://github.com/user-attachments/assets/63cc39db-d0a8-434f-9e2a-43ddfd484c09)![image](https://github.com/user-attachments/assets/f36dbbc9-cd46-489d-9d0f-547d28ce7ad0)![image](https://github.com/user-attachments/assets/199a6c74-26da-480c-ad57-df3cdc190c57)![image](https://github.com/user-attachments/assets/b1e41e08-c821-4e34-8f4a-a80bf5015516)![image](https://github.com/user-attachments/assets/dcdc8b7c-8cdd-42f5-804e-8956970f65d3)![image](https://github.com/user-attachments/assets/7034ce27-9f93-4181-a735-50e911db4a35)```
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.187
 ```
 ![image](https://github.com/user-attachments/assets/da0db716-6fc7-4868-9063-f8eb482b0699)
