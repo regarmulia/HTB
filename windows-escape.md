@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5d7c4776-2792-46dd-890f-24b8d6285e52)![image](https://github.com/user-attachments/assets/9804f07e-0912-450d-a261-07bd7f5f7ac7)![image](https://github.com/user-attachments/assets/6becdeb8-287d-4aa9-82f4-950b24332ba8)```
+```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.202
 dc.sequel.htb
 ```
