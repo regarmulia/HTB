@@ -13,7 +13,7 @@ Input '
 
 ```
 http://10.10.10.63:50000/
-Jetty 9.4.z-SNAPSHOT![image](https://github.com/user-attachments/assets/55d682c3-345c-4a12-a830-95b419c50912)
+Jetty 9.4.z-SNAPSHOT
 ```
 ![image](https://github.com/user-attachments/assets/edbcca3b-a396-4ed8-bd71-7b0cb86b4607)
 
