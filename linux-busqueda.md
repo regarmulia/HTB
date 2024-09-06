@@ -30,7 +30,7 @@ nc -lvnp 9001
 
 ```
 ls –la
-/var/www/app/.git
+cat /var/www/app/.git/config
 jh1usoih2bkjaspwe92
 ```
 ![image](https://github.com/user-attachments/assets/85d62632-00cc-42cc-8da1-7f6413235d1c)
