@@ -9,6 +9,7 @@ chmod +x kerbrute_linux_amd64
 ./kerbrute_linux_amd64 userenum --dc 10.10.10.248 -d intelligence.htb users
 python3 findpdfs.py
 wget -i pdfsurl
+="http://10.10.10.248/documents/2020-01-"&TEXT(ROW(A1),"00")&"-upload.pdf"
 exiftool *upload.pdf | grep Creator | sort –u
 exiftool *upload.pdf | grep Creator | awk -F': ' '{print $2}' | sort -u
 for f in *pdf; do pdftotext $f; done
