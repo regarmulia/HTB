@@ -108,6 +108,12 @@ wget -i pdfsurl
 ![image](https://github.com/regarmulia/HTB/assets/33616880/5def43cf-a8a4-43a7-b66b-9ba62c4fb63d)
 
 ```
+OPT2
+="http://10.10.10.248/documents/2020-01-"&TEXT(ROW(A1),"00")&"-upload.pdf"
+```
+![image](https://github.com/user-attachments/assets/f155f10c-fdf9-4a36-9ccc-8c9f5e91b2c6)
+
+```
 exiftool *upload.pdf | grep Creator | sort –u
 exiftool *upload.pdf | grep Creator | awk -F': ' '{print $2}' | sort -u
 ```
