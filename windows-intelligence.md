@@ -111,8 +111,11 @@ wget -i pdfsurl
 ```
 OPT2
 ="http://10.10.10.248/documents/2020-01-"&TEXT(ROW(A1),"00")&"-upload.pdf"
+wget -i listurl2.txt
 ```
 ![image](https://github.com/user-attachments/assets/f155f10c-fdf9-4a36-9ccc-8c9f5e91b2c6)
+
+![image](https://github.com/user-attachments/assets/22be1f29-6215-41aa-8b3c-674beb0cb8a0)
 
 ```
 exiftool *upload.pdf | grep Creator | sort –u
