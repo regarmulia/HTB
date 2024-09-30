@@ -58,6 +58,8 @@ sqlmap -u "ws://soc-player.soccer.htb:9091" --data '{"id": "*"}' --threads 10 -D
 ```
 ![image](https://github.com/user-attachments/assets/d6a2d1d8-1e2f-44b7-9057-c14ab3b0fa68)
 
+![image](https://github.com/user-attachments/assets/99bd9b25-a226-409f-930a-728f1cbd13c9)
+
 ![image](https://github.com/regarmulia/HTB/assets/33616880/27f854e3-b36e-4beb-90a7-708e4bbeeffa)
 
 ![image](https://github.com/regarmulia/HTB/assets/33616880/176c97ff-d6f4-4bb5-b65e-0206dd0acaf1)
