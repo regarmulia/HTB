@@ -49,8 +49,7 @@ secretlhfIH&FY*#oysuflkhskjfhefesf
 ssh sonny@10.10.10.217
 mutual.madden.manner38974
 ```
-![image](https://github.com/user-attachments/assets/5ead8bdf-a080-4cb3-9a75-768775ae6077)
-
+![image](https://github.com/user-attachments/assets/9a319608-3ec1-435b-b91b-5d46dc94256c)
 
 ```
 whoami /priv
