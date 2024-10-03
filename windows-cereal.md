@@ -53,16 +53,16 @@ mutual.madden.manner38974
 
 
 ```
-ssh sonny@10.10.10.217
-mutual.madden.manner38974
+whoami /priv
+Get-ComputerInfo
 ```
-![image](https://github.com/user-attachments/assets/93fc213e-54eb-4849-9bf9-e260be27f9a9)
+![image](https://github.com/user-attachments/assets/803fe227-986d-4bb8-b4c5-40bb7fe2a417)
 
 
 ```
 ssh -L 8080:127.0.0.1:8080 sonny@cereal.htb
 http://localhost:8080/
 ```
-![image](https://github.com/user-attachments/assets/884b90d4-32a8-45a0-b5bf-8b0da2e16d01)
+![image](https://github.com/user-attachments/assets/4e1b7fba-30b4-4f47-89c1-f5b6d02eec86)
 
-![image](https://github.com/user-attachments/assets/00bd9a9a-136d-4618-abd9-048bf4f3ce63)
+![image](https://github.com/user-attachments/assets/79c79330-3ca6-4eae-96bf-2811559a418c)
