@@ -57,3 +57,12 @@ ssh sonny@10.10.10.217
 mutual.madden.manner38974
 ```
 ![image](https://github.com/user-attachments/assets/93fc213e-54eb-4849-9bf9-e260be27f9a9)
+
+
+```
+ssh -L 8080:127.0.0.1:8080 sonny@cereal.htb
+http://localhost:8080/
+```
+![image](https://github.com/user-attachments/assets/884b90d4-32a8-45a0-b5bf-8b0da2e16d01)
+
+![image](https://github.com/user-attachments/assets/00bd9a9a-136d-4618-abd9-048bf4f3ce63)
