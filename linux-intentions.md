@@ -91,7 +91,6 @@ sqlmap -r req1b.txt --second-req=req2b.txt --batch --tamper=space2comment -T use
 ```
 gobuster dir -w /usr/share/seclists/Discovery/Web-Content/big.txt -e -t 100 -u http://intentions.htb/api/v2/auth/ -b 403,404
 ```
-![image](https://github.com/regarmulia/HTB/assets/33616880/a8a78134-9bdc-4b0b-9bcd-75725f2578f4)
 
 
 ```
