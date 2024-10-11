@@ -108,6 +108,8 @@ curl -X POST http://intentions.htb/api/v1/auth/login
 ```
 curl -d 'email=steve@intentions.htb&hash=$2y$10$M/g27T1kJcOpYOfPqQlI3.YfdLIwr3EWbzWOLfpoTtjpeMqpp4twa' -X POST http://intentions.htb/api/v2/auth/login
 ```
+![image](https://github.com/user-attachments/assets/c1428800-193b-4f62-98b3-420cba7a5f4e)
+
 ![image](https://github.com/regarmulia/HTB/assets/33616880/a740f795-07cd-49c5-b0fa-4cba7ec0a070)
 
 
