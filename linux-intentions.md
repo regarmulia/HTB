@@ -186,6 +186,7 @@ HOME=/tmp git log –p
 ```
 ![image](https://github.com/regarmulia/HTB/assets/33616880/0c4c5df4-014a-4c78-9f4a-d08ae2d9c0c2)
 
+![image](https://github.com/user-attachments/assets/879a642b-4db0-49b4-bda5-f1f86dd7691b)
 
 ```
 ssh greg@intentions.htb
