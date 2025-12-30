@@ -23,8 +23,7 @@ XWiki Debian 15.10.8
 ```
 <img width="575" height="225" alt="image" src="https://github.com/user-attachments/assets/13e8e74d-702b-4c15-9c57-90035fa1bf9c" />
 
-
-
+<img width="597" height="384" alt="image" src="https://github.com/user-attachments/assets/f555a939-e348-455d-9c82-ec01c0ea53ce" />
 
 ```
 https://github.com/dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC
