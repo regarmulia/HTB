@@ -15,3 +15,16 @@ http://editor.htb/
 <img width="572" height="290" alt="image" src="https://github.com/user-attachments/assets/e85fedd7-5487-4b5a-be05-1b8c84f40dc3" />
 
 <img width="948" height="558" alt="image" src="https://github.com/user-attachments/assets/aa269196-4ab2-49d1-911e-79dea798f60f" />
+
+```
+nano /etc/hosts
+http://wiki.editor.htb/xwiki/bin/view/Main/
+XWiki Debian 15.10.8 
+```
+<img width="575" height="225" alt="image" src="https://github.com/user-attachments/assets/13e8e74d-702b-4c15-9c57-90035fa1bf9c" />
+
+
+
+```
+
+```
